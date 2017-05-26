@@ -1,0 +1,87 @@
+[Wed May 24 15:58:31.996787 2017] [ssl:warn] [pid 5388:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:58:32.165948 2017] [ssl:warn] [pid 5388:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:58:32.221094 2017] [mpm_winnt:notice] [pid 5388:tid 572] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed May 24 15:58:32.221094 2017] [mpm_winnt:notice] [pid 5388:tid 572] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed May 24 15:58:32.221094 2017] [core:notice] [pid 5388:tid 572] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed May 24 15:58:32.232625 2017] [mpm_winnt:notice] [pid 5388:tid 572] AH00418: Parent: Created child process 2808
+[Wed May 24 15:58:32.854785 2017] [ssl:warn] [pid 2808:tid 228] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:58:33.000172 2017] [ssl:warn] [pid 2808:tid 228] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:58:33.037773 2017] [mpm_winnt:notice] [pid 2808:tid 228] AH00354: Child: Starting 150 worker threads.
+[Wed May 24 15:59:50.516376 2017] [ssl:warn] [pid 4424:tid 592] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:59:50.702885 2017] [ssl:warn] [pid 4424:tid 592] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:59:50.750004 2017] [mpm_winnt:notice] [pid 4424:tid 592] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed May 24 15:59:50.750004 2017] [mpm_winnt:notice] [pid 4424:tid 592] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed May 24 15:59:50.750004 2017] [core:notice] [pid 4424:tid 592] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed May 24 15:59:50.752009 2017] [mpm_winnt:notice] [pid 4424:tid 592] AH00418: Parent: Created child process 1176
+[Wed May 24 15:59:51.488467 2017] [ssl:warn] [pid 1176:tid 456] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:59:51.642377 2017] [ssl:warn] [pid 1176:tid 456] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 24 15:59:51.684490 2017] [mpm_winnt:notice] [pid 1176:tid 456] AH00354: Child: Starting 150 worker threads.
+[Wed May 24 17:39:14.581253 2017] [:error] [pid 1176:tid 1848] [client ::1:57861] PHP Notice:  Undefined variable: Studiengang in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:39:14.581755 2017] [:error] [pid 1176:tid 1848] [client ::1:57861] PHP Notice:  Undefined variable: Modul in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:42:59.001373 2017] [:error] [pid 1176:tid 1848] [client ::1:57920] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in C:\\xampp\\htdocs\\database.php on line 10, referer: http://localhost/bewertung.html
+[Wed May 24 17:43:30.632367 2017] [:error] [pid 1176:tid 1848] [client ::1:57922] PHP Parse error:  syntax error, unexpected 'text' (T_STRING) in C:\\xampp\\htdocs\\database.php on line 10, referer: http://localhost/bewertung.html
+[Wed May 24 17:46:32.559658 2017] [:error] [pid 1176:tid 1848] [client ::1:57948] PHP Notice:  Undefined variable: Studiengang in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:46:32.559658 2017] [:error] [pid 1176:tid 1848] [client ::1:57948] PHP Notice:  Undefined variable: Modul in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:47:06.941992 2017] [:error] [pid 1176:tid 1848] [client ::1:57957] PHP Notice:  Undefined variable: Studiengang in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:47:06.942494 2017] [:error] [pid 1176:tid 1848] [client ::1:57957] PHP Notice:  Undefined variable: Modul in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:49:07.615654 2017] [:error] [pid 1176:tid 1848] [client ::1:57966] PHP Notice:  Undefined variable: Studiengang in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:49:07.616156 2017] [:error] [pid 1176:tid 1848] [client ::1:57966] PHP Notice:  Undefined variable: Modul in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:54:35.488598 2017] [:error] [pid 1176:tid 1848] [client ::1:58047] PHP Notice:  Undefined variable: Studiengang in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:54:35.488598 2017] [:error] [pid 1176:tid 1848] [client ::1:58047] PHP Notice:  Undefined variable: Modul in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:55:48.775740 2017] [:error] [pid 1176:tid 1848] [client ::1:58103] PHP Notice:  Undefined variable: Studiengang in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:55:48.776243 2017] [:error] [pid 1176:tid 1848] [client ::1:58103] PHP Notice:  Undefined variable: Modul in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Wed May 24 17:59:07.619113 2017] [:error] [pid 1176:tid 1848] [client ::1:58139] PHP Fatal error:  Array callback has to contain indices 0 and 1 in C:\\xampp\\htdocs\\database.php on line 2, referer: http://localhost/bewertung.html
+[Wed May 24 17:59:56.472579 2017] [:error] [pid 1176:tid 1856] [client ::1:58161] PHP Fatal error:  Array callback has to contain indices 0 and 1 in C:\\xampp\\htdocs\\database.php on line 2, referer: http://localhost/bewertung.html
+[Fri May 26 13:09:31.745732 2017] [ssl:warn] [pid 1872:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 13:09:31.783385 2017] [core:warn] [pid 1872:tid 568] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri May 26 13:09:31.867600 2017] [ssl:warn] [pid 1872:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 13:09:32.164326 2017] [mpm_winnt:notice] [pid 1872:tid 568] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Fri May 26 13:09:32.164326 2017] [mpm_winnt:notice] [pid 1872:tid 568] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Fri May 26 13:09:32.164326 2017] [core:notice] [pid 1872:tid 568] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Fri May 26 13:09:32.167319 2017] [mpm_winnt:notice] [pid 1872:tid 568] AH00418: Parent: Created child process 1340
+[Fri May 26 13:09:32.674112 2017] [ssl:warn] [pid 1340:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 13:09:32.817463 2017] [ssl:warn] [pid 1340:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 13:09:32.862579 2017] [mpm_winnt:notice] [pid 1340:tid 572] AH00354: Child: Starting 150 worker threads.
+[Fri May 26 13:11:56.123752 2017] [:error] [pid 1340:tid 1892] [client ::1:63755] script 'C:/xampp/htdocs/bewerten.php' not found or unable to stat
+[Fri May 26 13:46:11.269526 2017] [:error] [pid 1340:tid 1892] [client ::1:64714] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:46:11.269526 2017] [:error] [pid 1340:tid 1892] [client ::1:64714] PHP Notice:  Undefined index: Textarea-Modul in C:\\xampp\\htdocs\\database.php on line 5, referer: http://localhost/bewertung.html
+[Fri May 26 13:46:11.270028 2017] [:error] [pid 1340:tid 1892] [client ::1:64714] PHP Notice:  Undefined index: Dozent in C:\\xampp\\htdocs\\database.php on line 6, referer: http://localhost/bewertung.html
+[Fri May 26 13:46:11.274564 2017] [:error] [pid 1340:tid 1892] [client ::1:64714] PHP Notice:  Undefined index: Textarea-Dozent in C:\\xampp\\htdocs\\database.php on line 7, referer: http://localhost/bewertung.html
+[Fri May 26 13:46:11.275048 2017] [:error] [pid 1340:tid 1892] [client ::1:64714] PHP Notice:  Undefined index: Sterne in C:\\xampp\\htdocs\\database.php on line 8, referer: http://localhost/bewertung.html
+[Fri May 26 13:48:14.982486 2017] [:error] [pid 1340:tid 1892] [client ::1:64728] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:51:27.985274 2017] [:error] [pid 1340:tid 1892] [client ::1:64785] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:56:27.434436 2017] [:error] [pid 1340:tid 1908] [client ::1:64884] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:57:04.766993 2017] [:error] [pid 1340:tid 1908] [client ::1:64911] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:57:31.785136 2017] [:error] [pid 1340:tid 1908] [client ::1:64928] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:58:41.032622 2017] [:error] [pid 1340:tid 1908] [client ::1:64935] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 13:59:44.445505 2017] [:error] [pid 1340:tid 1908] [client ::1:64958] PHP Notice:  Undefined index: Studiengang in C:\\xampp\\htdocs\\database.php on line 2
+[Fri May 26 13:59:44.445505 2017] [:error] [pid 1340:tid 1908] [client ::1:64958] PHP Notice:  Undefined index: Modul in C:\\xampp\\htdocs\\database.php on line 3
+[Fri May 26 13:59:44.445505 2017] [:error] [pid 1340:tid 1908] [client ::1:64958] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4
+[Fri May 26 14:00:02.410392 2017] [:error] [pid 1340:tid 1908] [client ::1:64966] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:04:05.501778 2017] [ssl:warn] [pid 12840:tid 200] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 14:04:05.558117 2017] [core:warn] [pid 12840:tid 200] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri May 26 14:04:05.652475 2017] [ssl:warn] [pid 12840:tid 200] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 14:04:05.929983 2017] [mpm_winnt:notice] [pid 12840:tid 200] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Fri May 26 14:04:05.929983 2017] [mpm_winnt:notice] [pid 12840:tid 200] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Fri May 26 14:04:05.929983 2017] [core:notice] [pid 12840:tid 200] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Fri May 26 14:04:05.932514 2017] [mpm_winnt:notice] [pid 12840:tid 200] AH00418: Parent: Created child process 6408
+[Fri May 26 14:04:06.479533 2017] [ssl:warn] [pid 6408:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 14:04:06.618492 2017] [ssl:warn] [pid 6408:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri May 26 14:04:06.659100 2017] [mpm_winnt:notice] [pid 6408:tid 572] AH00354: Child: Starting 150 worker threads.
+[Fri May 26 14:04:41.283288 2017] [:error] [pid 6408:tid 1896] [client ::1:65043] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:06:44.592393 2017] [:error] [pid 6408:tid 1896] [client ::1:65081] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:07:43.601590 2017] [:error] [pid 6408:tid 1896] [client ::1:65101] PHP Notice:  Undefined index: Zeit in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:09:01.645324 2017] [:error] [pid 6408:tid 1896] [client ::1:65123] PHP Notice:  Undefined index: Zeit in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:09:50.286128 2017] [:error] [pid 6408:tid 1896] [client ::1:65126] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:10:14.936168 2017] [:error] [pid 6408:tid 1896] [client ::1:65132] PHP Notice:  Undefined index: Zeit in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:11:42.908894 2017] [:error] [pid 6408:tid 1896] [client ::1:65150] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:16:49.340363 2017] [:error] [pid 6408:tid 1896] [client ::1:65230] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:16:49.349889 2017] [:error] [pid 6408:tid 1896] [client ::1:65230] PHP Notice:  Undefined variable: conn in C:\\xampp\\htdocs\\database.php on line 12, referer: http://localhost/bewertung.html
+[Fri May 26 14:16:49.349889 2017] [:error] [pid 6408:tid 1896] [client ::1:65230] PHP Notice:  Trying to get property of non-object in C:\\xampp\\htdocs\\database.php on line 12, referer: http://localhost/bewertung.html
+[Fri May 26 14:17:57.442154 2017] [:error] [pid 6408:tid 1896] [client ::1:65240] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:17:57.444660 2017] [:error] [pid 6408:tid 1896] [client ::1:65240] PHP Notice:  Trying to get property of non-object in C:\\xampp\\htdocs\\database.php on line 12, referer: http://localhost/bewertung.html
+[Fri May 26 14:27:21.620183 2017] [:error] [pid 6408:tid 1896] [client ::1:65445] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
+[Fri May 26 14:27:21.623693 2017] [:error] [pid 6408:tid 1896] [client ::1:65445] PHP Notice:  Undefined variable: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 13, referer: http://localhost/bewertung.html
+[Fri May 26 14:38:16.104881 2017] [:error] [pid 6408:tid 1896] [client ::1:49237] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 14, referer: http://localhost/bewertung.html
+[Fri May 26 14:39:21.138741 2017] [:error] [pid 6408:tid 1896] [client ::1:49257] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 14, referer: http://localhost/bewertung.html
+[Fri May 26 14:48:50.796666 2017] [:error] [pid 6408:tid 1896] [client ::1:49498] PHP Notice:  Undefined index: Zeitaufwand in C:\\xampp\\htdocs\\database.php on line 4, referer: http://localhost/bewertung.html
