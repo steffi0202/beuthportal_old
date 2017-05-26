@@ -5,7 +5,7 @@
 # XAMPP Control Panel starten
 - Apache starten
 - MySQL starten
-- via Explorer wir das Verzeichnis geöffnet (C:\xampp)
+- via "Explorer" (rechts im Menü) wir das Verzeichnis geöffnet (C:\xampp)
 
 # im Browser: 
 - http://localhost
