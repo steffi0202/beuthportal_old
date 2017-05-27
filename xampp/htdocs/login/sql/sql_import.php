@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 $user = 'root';
-$password = 'phpmyadminpasswort';
+$password = 'phpmyadminpasswort'; //das müsst ihr auf euer xampp/phpmyadmin-Passwort ändern
 
 //Mysql-Verbindung herstellen
 $mysqli = new mysqli($host,$user,$password);
