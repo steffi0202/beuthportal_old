@@ -1,0 +1,212 @@
+17.05.27 14:55:29 ** --- MESSAGE BEGIN ---
+17.05.27 14:55:29 ** To: alex.tr1@web.de
+17.05.27 14:55:29 ** Subject: Account Verification ( clevertechie.com )
+17.05.27 14:55:30 ** 
+17.05.27 14:55:30 ** 
+17.05.27 14:55:30 **         Hello alex,
+17.05.27 14:55:30 ** 
+17.05.27 14:55:30 **         Thank you for signing up!
+17.05.27 14:55:30 ** 
+17.05.27 14:55:30 **         Please click this link to activate your account:
+17.05.27 14:55:30 ** 
+17.05.27 14:55:30 **         http://localhost/login-system/verify.php?email=alex.tr1@web.de&hash=233509073ed3432027d48b1a83f5fbd2
+17.05.27 14:55:30 ** --- MESSAGE END ---
+17.05.27 14:55:31 ** Connecting to smtp.gmail.com:25
+17.05.27 14:55:32 ** Connected.
+17.05.27 14:55:32 << 220 smtp.gmail.com ESMTP f42sm1838882eda.25 - gsmtp<EOL>
+17.05.27 14:55:32 >> EHLO aa-PC<EOL>
+17.05.27 14:55:32 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 14:55:32 ** Authenticating as beuthportal@gmail.com
+17.05.27 14:55:32 >> STARTTLS<EOL>
+17.05.27 14:55:32 << 220 2.0.0 Ready to start TLS<EOL>
+17.05.27 14:55:32 >> EHLO aa-PC<EOL>
+17.05.27 14:55:32 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 14:55:32 >> AUTH LOGIN<EOL>
+17.05.27 14:55:32 << 334 VXNlcm5hbWU6<EOL>
+17.05.27 14:55:32 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.05.27 14:55:32 << 334 UGFzc3dvcmQ6<EOL>
+17.05.27 14:55:32 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.05.27 14:55:32 << 235 2.7.0 Accepted<EOL>
+17.05.27 14:55:32 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.05.27 14:55:32 << 250 2.1.0 OK f42sm1838882eda.25 - gsmtp<EOL>
+17.05.27 14:55:32 >> RCPT TO: <alex.tr1@web.de><EOL>
+17.05.27 14:55:32 << 250 2.1.5 OK f42sm1838882eda.25 - gsmtp<EOL>
+17.05.27 14:55:32 >> DATA<EOL>
+17.05.27 14:55:33 << 354  Go ahead f42sm1838882eda.25 - gsmtp<EOL>
+17.05.27 14:55:33 >> Date: Sat, 27 May 2017 14:55:33 +0200<EOL>
+17.05.27 14:55:33 >> To: alex.tr1@web.de<EOL>
+17.05.27 14:55:33 >> Subject: Account Verification ( clevertechie.com )<EOL>
+17.05.27 14:55:33 >> <EOL>
+17.05.27 14:55:33 >> <EOL>
+17.05.27 14:55:33 >>         Hello alex,<EOL>
+17.05.27 14:55:33 >> <EOL>
+17.05.27 14:55:33 >>         Thank you for signing up!<EOL>
+17.05.27 14:55:33 >> <EOL>
+17.05.27 14:55:33 >>         Please click this link to activate your account:<EOL>
+17.05.27 14:55:33 >> <EOL>
+17.05.27 14:55:33 >>         http://localhost/login-system/verify.php?email=alex.tr1@web.de&hash=233509073ed3432027d48b1a83f5fbd2<EOL>
+17.05.27 14:55:33 >> .<EOL>
+17.05.27 14:55:34 << 250 2.0.0 OK 1495889726 f42sm1838882eda.25 - gsmtp<EOL>
+17.05.27 14:55:34 >> QUIT<EOL>
+17.05.27 14:55:34 << 221 2.0.0 closing connection f42sm1838882eda.25 - gsmtp<EOL>
+17.05.27 14:55:34 ** Disconnected.
+17.05.27 14:55:34 ** Disconnected.
+17.05.27 14:55:34 ** Disconnected.
+17.05.27 15:03:36 ** --- MESSAGE BEGIN ---
+17.05.27 15:03:36 ** To: alex.tr1@web.de
+17.05.27 15:03:36 ** Subject: Bestätigung der Registrierung (beuthportal.de)
+17.05.27 15:03:36 ** 
+17.05.27 15:03:36 ** 
+17.05.27 15:03:36 **         Hallo alex,
+17.05.27 15:03:36 ** 
+17.05.27 15:03:36 **         danke für deine Registrierung beim Studentenportal der Beuth-Hochschule!
+17.05.27 15:03:36 ** 
+17.05.27 15:03:36 **         Mit einem Klick auf den folgenden Link bestätigst du deine Registrierung:
+17.05.27 15:03:36 ** 
+17.05.27 15:03:36 **         http://localhost/login/verify.php?email=alex.tr1@web.de&hash=17c276c8e723eb46aef576537e9d56d0
+17.05.27 15:03:36 ** --- MESSAGE END ---
+17.05.27 15:03:37 ** Connecting to smtp.gmail.com:25
+17.05.27 15:03:38 ** Connected.
+17.05.27 15:03:38 << 220 smtp.gmail.com ESMTP t17sm1428030edh.1 - gsmtp<EOL>
+17.05.27 15:03:38 >> EHLO aa-PC<EOL>
+17.05.27 15:03:38 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 15:03:38 ** Authenticating as beuthportal@gmail.com
+17.05.27 15:03:38 >> STARTTLS<EOL>
+17.05.27 15:03:38 << 220 2.0.0 Ready to start TLS<EOL>
+17.05.27 15:03:38 >> EHLO aa-PC<EOL>
+17.05.27 15:03:38 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 15:03:38 >> AUTH LOGIN<EOL>
+17.05.27 15:03:38 << 334 VXNlcm5hbWU6<EOL>
+17.05.27 15:03:38 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.05.27 15:03:38 << 334 UGFzc3dvcmQ6<EOL>
+17.05.27 15:03:38 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.05.27 15:03:38 << 235 2.7.0 Accepted<EOL>
+17.05.27 15:03:38 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.05.27 15:03:38 << 250 2.1.0 OK t17sm1428030edh.1 - gsmtp<EOL>
+17.05.27 15:03:38 >> RCPT TO: <alex.tr1@web.de><EOL>
+17.05.27 15:03:39 << 250 2.1.5 OK t17sm1428030edh.1 - gsmtp<EOL>
+17.05.27 15:03:39 >> DATA<EOL>
+17.05.27 15:03:39 << 354  Go ahead t17sm1428030edh.1 - gsmtp<EOL>
+17.05.27 15:03:39 >> Date: Sat, 27 May 2017 15:03:39 +0200<EOL>
+17.05.27 15:03:39 >> To: alex.tr1@web.de<EOL>
+17.05.27 15:03:39 >> Subject: Bestätigung der Registrierung (beuthportal.de)<EOL>
+17.05.27 15:03:39 >> <EOL>
+17.05.27 15:03:39 >> <EOL>
+17.05.27 15:03:39 >>         Hallo alex,<EOL>
+17.05.27 15:03:39 >> <EOL>
+17.05.27 15:03:39 >>         danke für deine Registrierung beim Studentenportal der Beuth-Hochschule!<EOL>
+17.05.27 15:03:39 >> <EOL>
+17.05.27 15:03:39 >>         Mit einem Klick auf den folgenden Link bestätigst du deine Registrierung:<EOL>
+17.05.27 15:03:39 >> <EOL>
+17.05.27 15:03:39 >>         http://localhost/login/verify.php?email=alex.tr1@web.de&hash=17c276c8e723eb46aef576537e9d56d0<EOL>
+17.05.27 15:03:39 >> .<EOL>
+17.05.27 15:03:40 << 250 2.0.0 OK 1495890212 t17sm1428030edh.1 - gsmtp<EOL>
+17.05.27 15:03:40 >> QUIT<EOL>
+17.05.27 15:03:40 << 221 2.0.0 closing connection t17sm1428030edh.1 - gsmtp<EOL>
+17.05.27 15:03:40 ** Disconnecting from smtp.gmail.com:25
+17.05.27 15:03:40 ** Disconnected.
+17.05.27 15:03:40 ** Disconnected.
+17.05.27 15:40:22 ** --- MESSAGE BEGIN ---
+17.05.27 15:40:22 ** To: alex.tr1@web.de
+17.05.27 15:40:22 ** Subject: Bestätigung der Registrierung (beuthportal.de)
+17.05.27 15:40:22 ** 
+17.05.27 15:40:22 ** 
+17.05.27 15:40:22 **         Hallo Alex,
+17.05.27 15:40:22 ** 
+17.05.27 15:40:22 **         danke für deine Registrierung beim Studentenportal der Beuth-Hochschule!
+17.05.27 15:40:22 ** 
+17.05.27 15:40:22 **         Mit einem Klick auf den folgenden Link bestätigst du deine Registrierung:
+17.05.27 15:40:22 ** 
+17.05.27 15:40:22 **         http://localhost/login/verify.php?email=alex.tr1@web.de&hash=9461cce28ebe3e76fb4b931c35a169b0
+17.05.27 15:40:22 ** --- MESSAGE END ---
+17.05.27 15:40:24 ** Connecting to smtp.gmail.com:25
+17.05.27 15:40:24 ** Connected.
+17.05.27 15:40:24 << 220 smtp.gmail.com ESMTP d38sm2702916edb.26 - gsmtp<EOL>
+17.05.27 15:40:24 >> EHLO aa-PC<EOL>
+17.05.27 15:40:24 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 15:40:24 ** Authenticating as beuthportal@gmail.com
+17.05.27 15:40:24 >> STARTTLS<EOL>
+17.05.27 15:40:24 << 220 2.0.0 Ready to start TLS<EOL>
+17.05.27 15:40:24 >> EHLO aa-PC<EOL>
+17.05.27 15:40:24 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 15:40:24 >> AUTH LOGIN<EOL>
+17.05.27 15:40:24 << 334 VXNlcm5hbWU6<EOL>
+17.05.27 15:40:24 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.05.27 15:40:24 << 334 UGFzc3dvcmQ6<EOL>
+17.05.27 15:40:24 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.05.27 15:40:24 << 235 2.7.0 Accepted<EOL>
+17.05.27 15:40:24 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.05.27 15:40:24 << 250 2.1.0 OK d38sm2702916edb.26 - gsmtp<EOL>
+17.05.27 15:40:24 >> RCPT TO: <alex.tr1@web.de><EOL>
+17.05.27 15:40:24 << 250 2.1.5 OK d38sm2702916edb.26 - gsmtp<EOL>
+17.05.27 15:40:24 >> DATA<EOL>
+17.05.27 15:40:25 << 354  Go ahead d38sm2702916edb.26 - gsmtp<EOL>
+17.05.27 15:40:25 >> Date: Sat, 27 May 2017 15:40:25 +0200<EOL>
+17.05.27 15:40:25 >> To: alex.tr1@web.de<EOL>
+17.05.27 15:40:25 >> Subject: Bestätigung der Registrierung (beuthportal.de)<EOL>
+17.05.27 15:40:25 >> <EOL>
+17.05.27 15:40:25 >> <EOL>
+17.05.27 15:40:25 >>         Hallo Alex,<EOL>
+17.05.27 15:40:25 >> <EOL>
+17.05.27 15:40:25 >>         danke für deine Registrierung beim Studentenportal der Beuth-Hochschule!<EOL>
+17.05.27 15:40:25 >> <EOL>
+17.05.27 15:40:25 >>         Mit einem Klick auf den folgenden Link bestätigst du deine Registrierung:<EOL>
+17.05.27 15:40:25 >> <EOL>
+17.05.27 15:40:25 >>         http://localhost/login/verify.php?email=alex.tr1@web.de&hash=9461cce28ebe3e76fb4b931c35a169b0<EOL>
+17.05.27 15:40:25 >> .<EOL>
+17.05.27 15:40:26 << 250 2.0.0 OK 1495892418 d38sm2702916edb.26 - gsmtp<EOL>
+17.05.27 15:40:26 >> QUIT<EOL>
+17.05.27 15:40:26 << 221 2.0.0 closing connection d38sm2702916edb.26 - gsmtp<EOL>
+17.05.27 15:40:26 ** Disconnecting from smtp.gmail.com:25
+17.05.27 15:40:26 ** Disconnected.
+17.05.27 15:40:26 ** Disconnected.
+17.05.27 15:44:56 ** --- MESSAGE BEGIN ---
+17.05.27 15:44:56 ** To: alex.tr1@web.de
+17.05.27 15:44:56 ** Subject: Passwort zurücksetzen (beuthportal.de)
+17.05.27 15:44:56 ** 
+17.05.27 15:44:56 ** 
+17.05.27 15:44:56 **         Hallo Alex,
+17.05.27 15:44:56 ** 
+17.05.27 15:44:56 ** 		mit einem Klick auf den folgenden Link setzt du dein Passwort zurueck:
+17.05.27 15:44:56 ** 
+17.05.27 15:44:56 **         http://localhost/login/reset.php?email=alex.tr1@web.de&hash=9461cce28ebe3e76fb4b931c35a169b0
+17.05.27 15:44:56 ** --- MESSAGE END ---
+17.05.27 15:44:57 ** Connecting to smtp.gmail.com:25
+17.05.27 15:44:58 ** Connected.
+17.05.27 15:44:58 << 220 smtp.gmail.com ESMTP f38sm1619954edd.10 - gsmtp<EOL>
+17.05.27 15:44:58 >> EHLO aa-PC<EOL>
+17.05.27 15:44:58 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 15:44:58 ** Authenticating as beuthportal@gmail.com
+17.05.27 15:44:58 >> STARTTLS<EOL>
+17.05.27 15:44:58 << 220 2.0.0 Ready to start TLS<EOL>
+17.05.27 15:44:58 >> EHLO aa-PC<EOL>
+17.05.27 15:44:58 << 250-smtp.gmail.com at your service, [188.102.192.180]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.05.27 15:44:58 >> AUTH LOGIN<EOL>
+17.05.27 15:44:58 << 334 VXNlcm5hbWU6<EOL>
+17.05.27 15:44:58 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.05.27 15:44:58 << 334 UGFzc3dvcmQ6<EOL>
+17.05.27 15:44:58 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.05.27 15:44:58 << 235 2.7.0 Accepted<EOL>
+17.05.27 15:44:58 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.05.27 15:44:58 << 250 2.1.0 OK f38sm1619954edd.10 - gsmtp<EOL>
+17.05.27 15:44:58 >> RCPT TO: <alex.tr1@web.de><EOL>
+17.05.27 15:44:58 << 250 2.1.5 OK f38sm1619954edd.10 - gsmtp<EOL>
+17.05.27 15:44:58 >> DATA<EOL>
+17.05.27 15:44:58 << 354  Go ahead f38sm1619954edd.10 - gsmtp<EOL>
+17.05.27 15:44:58 >> Date: Sat, 27 May 2017 15:44:58 +0200<EOL>
+17.05.27 15:44:58 >> To: alex.tr1@web.de<EOL>
+17.05.27 15:44:58 >> Subject: Passwort zurücksetzen (beuthportal.de)<EOL>
+17.05.27 15:44:58 >> <EOL>
+17.05.27 15:44:58 >> <EOL>
+17.05.27 15:44:58 >>         Hallo Alex,<EOL>
+17.05.27 15:44:58 >> <EOL>
+17.05.27 15:44:58 >> 		mit einem Klick auf den folgenden Link setzt du dein Passwort zurueck:<EOL>
+17.05.27 15:44:58 >> <EOL>
+17.05.27 15:44:58 >>         http://localhost/login/reset.php?email=alex.tr1@web.de&hash=9461cce28ebe3e76fb4b931c35a169b0<EOL>
+17.05.27 15:44:58 >> .<EOL>
+17.05.27 15:44:59 << 250 2.0.0 OK 1495892691 f38sm1619954edd.10 - gsmtp<EOL>
+17.05.27 15:44:59 >> QUIT<EOL>
+17.05.27 15:44:59 << 221 2.0.0 closing connection f38sm1619954edd.10 - gsmtp<EOL>
+17.05.27 15:44:59 ** Disconnecting from smtp.gmail.com:25
+17.05.27 15:44:59 ** Disconnected.
+17.05.27 15:44:59 ** Disconnected.
