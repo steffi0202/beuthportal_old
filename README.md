@@ -2,6 +2,14 @@
 # XAMPP installation
 - Apache, MySQL, PHP, phpMyAdmin ausreichend
 
+# XAMPP anpassen
+- in der Datei "C:\xampp\apache\conf\httpd.conf" die Einträge DocumentRoot und <Directory anpassen:
+
+DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
+<Directory "C:\xampp\beuthportal_old\xampp\htdocs">
+
+-> Die Github Repo kann nun nach "C:\xampp\" gecloned werden. 
+
 # XAMPP Control Panel starten
 - Apache starten
 - MySQL starten
