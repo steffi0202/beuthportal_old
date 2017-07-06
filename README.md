@@ -22,4 +22,4 @@ DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 # für die Datenbank:
 - http://localhost/phpmyadmin/
 
-# HTML/CSS Dateien leigen unter C:\xampp\htdocs  
+# HTML/CSS Dateien leigen unter C:\xampp\beuthportal_old\xampp\htdocs 
