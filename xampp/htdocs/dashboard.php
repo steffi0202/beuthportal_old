@@ -1,3 +1,16 @@
+<?php
+session_start();
+require_once("register/inc/config.inc.php");
+require_once("register/inc/functions.inc.php");
+
+//Überprüfe, dass der User eingeloggt ist
+//Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
+$user = check_user();
+
+include("register/templates/header.inc.php");
+?>
+
+<div class="container main-container">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +22,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Dashboard</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +48,8 @@
 </head>
 
 <body id="page-top">
+
+<div class="container main-container">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -78,10 +93,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Studentenportal Beuth Hochschule Berlin</h1>
-                <hr>
-                <p>Registriere dich jetzt um Dozenten und Module zu bewerten .... Text folgt....</p>
-                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Registrieren</a>
+                <h1 id="homeHeading">Studentenportal Beuth Hochschule Berlin - Dashboard</h1>
+                Hallo <?php echo htmlentities($user['vorname']); ?>,<br>
+Herzlich Willkommen im internen Bereich!<br><br>
             </div>
         </div>
     </header>
