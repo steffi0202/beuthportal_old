@@ -343,6 +343,7 @@ fieldset[disabled] .btn-default.active {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -383,6 +384,7 @@ fieldset[disabled] .btn-primary.active {
   color: #F05F40;
   background-color: white;
 }
+
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;

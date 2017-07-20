@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Studentenportal der Beuth Hochschule Berlin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,16 +49,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    
-<!-- Auskommentiert
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-
---> 
-                    <li>
-                        <a class="page-scroll" href="#upload">upload</a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
@@ -82,45 +72,10 @@
                 <hr>
                 <p>Registriere dich jetzt um Dozenten und Module zu bewerten .... Text folgt....</p>
                 <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Registrieren</a>
+                <a class="btn btn-primary btn-xl page-scroll" href="register/login.php">Login</a>
             </div>
         </div>
     </header>
-
-<!-- 	Auskommentiert
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
--->
-
-
-	<section class="bg-primary" id="upload">
-
-        <div class="container">
-            <div class="row">
-	
-	<div class="call-to-action">
-	<div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Lade hier deinen tollen Content hoch !</h2>
-                    <hr class="light">
-                    <p class="text-faded">Hilf anderen Studenten und teile deinen Content und Erfahrungen zum Studium hier!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Upload</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <section id="services">
         <div class="container">
             <div class="row">
@@ -135,22 +90,22 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Studiengang bewerten</h3>
+                        <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>Teile Content</h3>
+                        <p class="text-muted">Tausche dich mit anderen Studenten aus</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
                         <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <p class="text-muted">Sei immer über die neuesten Aktivitäten informiert</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
