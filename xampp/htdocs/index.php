@@ -71,8 +71,7 @@
                 <h1 id="homeHeading">Studentenportal Beuth Hochschule Berlin</h1>
                 <hr>
                 <p>Registriere dich jetzt um Dozenten und Module zu bewerten .... Text folgt....</p>
-                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Registrieren</a>
-                <a class="btn btn-primary btn-xl page-scroll" href="register/login.php">Login</a>
+                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Registrieren / Login</a>
             </div>
         </div>
     </header>
@@ -215,16 +214,6 @@
             </div>
         </div>
     </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>
-
     <section id="contact">
         <div class="container">
             <div class="row">

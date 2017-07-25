@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 //require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
@@ -20,7 +20,7 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 		if(isset($_POST['angemeldet_bleiben'])) {
 			$identifier = random_string();
 			$securitytoken = random_string();
-				
+
 			$insert = $pdo->prepare("INSERT INTO securitytokens (user_id, identifier, securitytoken) VALUES (:user_id, :identifier, :securitytoken)");
 			$insert->execute(array('user_id' => $user['id'], 'identifier' => $identifier, 'securitytoken' => sha1($securitytoken)));
 			setcookie("identifier",$identifier,time()+(3600*24*365)); //Valid for 1 year
@@ -37,7 +37,7 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 
 $email_value = "";
 if(isset($_POST['email']))
-	$email_value = htmlentities($_POST['email']); 
+	$email_value = htmlentities($_POST['email']);
 
 
 include("templates/header.inc.php");
@@ -45,8 +45,8 @@ include("templates/header.inc.php");
  <div class="container small-container-330 form-signin">
   <form action="login.php" method="post">
 	<h2 class="form-signin-heading">Login</h2>
-	
-<?php 
+
+<?php
 if(isset($error_msg) && !empty($error_msg)) {
 	echo $error_msg;
 }
@@ -66,8 +66,8 @@ if(isset($error_msg) && !empty($error_msg)) {
   </form>
 
 </div> <!-- /container -->
- 
 
-<?php 
+
+<?php
 include("templates/footer.inc.php")
 ?>
