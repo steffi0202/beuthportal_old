@@ -23,3 +23,7 @@ DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 - http://localhost/phpmyadmin/
 
 # HTML/CSS Dateien leigen unter C:\xampp\beuthportal_old\xampp\htdocs 
+
+# Testuser
+E-Mail: test@test.de
+Passwort: test
