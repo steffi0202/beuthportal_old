@@ -58,6 +58,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a  href="register/login.php">Login</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -68,7 +71,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Studentenportal Beuth Hochschule Berlin</h1>
+                <h1 id="homeHeading">Studentenportal der Beuth Hochschule Berlin</h1>
                 <hr>
                 <p>Registriere dich jetzt um Dozenten und Module zu bewerten .... Text folgt....</p>
                 <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Registrieren / Login</a>
@@ -220,13 +223,13 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Du hast Fragen oder Anregungen? Super! Sende uns eine Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+              <!--<div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
                     <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
+                </div>-->
+                <div class="col-lg-4  text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                     <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
                 </div>
