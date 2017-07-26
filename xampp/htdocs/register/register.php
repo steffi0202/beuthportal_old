@@ -7,6 +7,7 @@ include("templates/header.inc.php")
 ?>
 <div class="container main-container registration-form">
 <h1>Registrierung</h1>
+<!--Diese Registrierung ist Studenten mit einer Beuth-Email-Adresse vorbehalten.-->
 <?php
 $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
 
