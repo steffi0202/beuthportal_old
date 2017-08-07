@@ -1,55 +1,20 @@
+<?php
+session_start();
+require_once("register/inc/config.inc.php");
+require_once("register/inc/functions.inc.php");
+include("templates/header.inc.php");
+
+//Überprüfe, dass der User eingeloggt ist
+//Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
+$user = check_user();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Bewertung</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- Star Rating -->
-  
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="../css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
-    <!--suppress JSUnresolvedLibraryURL -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../js/star-rating.js" type="text/javascript"></script>
-
-</head>
-
 <body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">Start</a>
-            </div>
-
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+          <!--/.container-fluid-->
+     </nav>
 
     <header>
         <div class="header-content">
@@ -65,7 +30,7 @@
 
         <div class="container">
             <div class="row">
-    
+
     <div class="call-to-action">
     <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Bewerte jetzt deinen Studiengang!</h2>
@@ -142,13 +107,13 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Du hast Fragen oder Anregungen? Super! Sende uns eine Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+            <!--  <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
                     <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
+                </div>-->
+                <div class="col-lg-12 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                     <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
                 </div>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Loginscript</title>
+    <title>Beuthportal</title>
 
     <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,14 +92,16 @@
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
          	<li><a href="../dashboard.php">Interner Bereich</a></li>
-            <li><a href="register/settings.php">Einstellungen</a></li>
             <li><a href="upload.php">Upload</a></li>
+            <li><a href="bewertung.php">Bewertungsportal</a></li>
+            <li><a href="register/settings.php">Einstellungen</a></li>
             <li><a class="page-scroll" href="#contact">Contact</a></li>
             <li><a href="register/logout.php">Logout</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
         <?php endif; ?>
       </div>
+        <!--/.container-fluid-->
     </nav>
 
   <!-- jQuery -->
