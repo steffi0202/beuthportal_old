@@ -1,16 +1,25 @@
 <?php
 session_start();
-require_once("register/inc/config.inc.php");
+//require_once("inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
-include("templates/header.inc.php");
+$pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
+include("templates/header.inc.php")
 
 //Überprüfe, dass der User eingeloggt ist
 //Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
+
+?>
+<?php
 $user = check_user();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<!-- default styles -->
+<link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
 
+</head>
 <body id="page-top">
         </div>
           <!--/.container-fluid-->
@@ -36,7 +45,37 @@ $user = check_user();
                     <h2 class="section-heading">Bewerte jetzt deinen Studiengang!</h2>
                     <hr class="light">
                     <p class="text-faded">Hilf anderen Studenten und teile deinen Content und deine Erfahrungen zum Studium hier!</p>
-                    <form method="post" action="database.php">
+<?php
+                    $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
+
+                    if(isset($_GET['bewertung'])) {
+                    	$error = false;
+                    	$studiengang = trim($_POST['Studiengang']);
+                    	$modul = trim($_POST['Modul']);
+                    	$zeit = trim($_POST['Zeitaufwand']);
+                      $modul_des = trim($_POST['Textarea-Modul']);
+                    	$dozent = trim($_POST['Dozent']);
+                      $dozent_des = trim($_POST['Textarea-Dozent']);
+                      $sterne = trim($_POST['Sterne']);
+
+                      //Keine Fehler, wir können den Nutzer registrieren
+                      if(!$error) {
+
+                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Zeitaufwand, Dozent) VALUES (:Studiengang, :Modul, :Zeitaufwand, :Dozent)");
+                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent));
+
+                        if($result) {
+                          echo 'Die Daten wurden erfolgreich übertragen.';
+                          $showFormular = false;
+                        } else {
+                          echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+                        }
+                      }
+                    }
+
+                     if($showFormular) {
+?>
+                    <form method="post" action="?bewertung=1">
                     <div class="form-group">
                         <label for="Studiengang">Wähle deinen Studiengang:</label>
                             <select class="form-control" name="Studiengang">
@@ -74,6 +113,7 @@ $user = check_user();
                             <textarea class="form-control" name="Textarea-Modul" rows="3"></textarea>
                          </div>
                       <div class="form-group">
+
                         <label for="Dozent">Wer hat das Modul unterrrichtet:</label>
                             <select class="form-control" name="Dozent">
                                  <option>Prof. Dr. Peter Weimann</option>
@@ -87,6 +127,7 @@ $user = check_user();
                         <label for="Textarea-Dozent">Was ist dir zu deinem Dozenten besondern im Gedächtnis geblieben?</label>
                             <textarea class="form-control" name="Textarea-Dozent" rows="3"></textarea>
                          </div>
+
                          <div>
                          <label for="star-rating">Wie viele Sterne bekommt das Modul und der Dozent von dir?</label>
                         <input name="Sterne" id="input-21b" value="4" type="text" class="rating" data-min=0 data-max=5 data-step=0.2 data-size="lg"
@@ -100,6 +141,11 @@ $user = check_user();
             </div>
         </div>
     </section>
+    <?php
+    } //Ende von if($showFormular)
+
+
+    ?>
 
     <section id="contact">
         <div class="container">
