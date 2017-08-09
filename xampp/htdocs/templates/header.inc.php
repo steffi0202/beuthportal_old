@@ -33,6 +33,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<!-- CSS und JS für Star Rating im Bewertungsportal -->
+    <link href="../css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    <script src="../js/star-rating.js" type="text/javascript"></script>
+
+    <link href="../css/search.css" rel="stylesheet">
 </head>
 <body>
 <body id="page-top">
@@ -93,7 +99,7 @@
          <ul class="nav navbar-nav navbar-right">
          	<li><a href="../dashboard.php">Interner Bereich</a></li>
             <li><a href="upload.php">Upload</a></li>
-            <li><a href="bewertung.php">Bewertungsportal</a></li>
+            <li><a href="bewertung.php">Bewerten!</a></li>
             <li><a href="register/settings.php">Einstellungen</a></li>
             <li><a class="page-scroll" href="#contact">Contact</a></li>
             <li><a href="register/logout.php">Logout</a></li>

@@ -15,11 +15,7 @@ $user = check_user();
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- default styles -->
-<link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
 
-</head>
 <body id="page-top">
         </div>
           <!--/.container-fluid-->
@@ -46,36 +42,38 @@ $user = check_user();
                     <hr class="light">
                     <p class="text-faded">Hilf anderen Studenten und teile deinen Content und deine Erfahrungen zum Studium hier!</p>
 <?php
-                    $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
+                    $showFormular = true; //Variable ob das Bewertungsformular anezeigt werden soll
 
-                    if(isset($_GET['bewertung'])) {
+                    if(isset($_GET['bewertung']))
+                    {
                     	$error = false;
                     	$studiengang = trim($_POST['Studiengang']);
                     	$modul = trim($_POST['Modul']);
                     	$zeit = trim($_POST['Zeitaufwand']);
-                      $modul_des = trim($_POST['Textarea-Modul']);
+                      $modul_des = trim($_POST['TextareaModul']);
                     	$dozent = trim($_POST['Dozent']);
-                      $dozent_des = trim($_POST['Textarea-Dozent']);
+                      $dozent_des = trim($_POST['TextareaDozent']);
                       $sterne = trim($_POST['Sterne']);
 
-                      //Keine Fehler, wir können den Nutzer registrieren
+                      //Keine Fehler, wir können die Daten in die DB schreiben
                       if(!$error) {
 
-                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Zeitaufwand, Dozent) VALUES (:Studiengang, :Modul, :Zeitaufwand, :Dozent)");
-                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent));
+                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Zeitaufwand, Dozent, Modul_des, Dozent_des, Sterne) VALUES (:Studiengang, :Modul, :Zeitaufwand, :Dozent, :TextareaModul, :TextareaDozent, :Sterne)");
+                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent, 'TextareaModul' => $modul_des, 'TextareaDozent' => $dozent_des, 'Sterne' => $sterne));
 
                         if($result) {
-                          echo 'Die Daten wurden erfolgreich übertragen.';
+                          echo "<script type='text/javascript'>alert('Die Daten wurden erfolgreich übertragen!')</script>";
                           $showFormular = false;
+                          echo "<meta http-equiv='refresh' content='1; URL=dashboard.php'>";
                         } else {
-                          echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+                          echo "<script type='text/javascript'>alert('Beim Abspeichern ist leider ein Fehler aufgetreten!')</script>";
                         }
                       }
                     }
 
                      if($showFormular) {
 ?>
-                    <form method="post" action="?bewertung=1">
+                    <form method="post" action="?bewertung">
                     <div class="form-group">
                         <label for="Studiengang">Wähle deinen Studiengang:</label>
                             <select class="form-control" name="Studiengang">
@@ -109,8 +107,8 @@ $user = check_user();
                      </div>
 
                       <div class="form-group">
-                        <label for="Textarea-Modul">Beschreibe das Modul</label>
-                            <textarea class="form-control" name="Textarea-Modul" rows="3"></textarea>
+                        <label for="TextareaModul">Beschreibe das Modul</label>
+                            <textarea class="form-control" name="TextareaModul" rows="3"></textarea>
                          </div>
                       <div class="form-group">
 
@@ -124,8 +122,8 @@ $user = check_user();
                             </select>
                      </div>
                      <div class="form-group">
-                        <label for="Textarea-Dozent">Was ist dir zu deinem Dozenten besondern im Gedächtnis geblieben?</label>
-                            <textarea class="form-control" name="Textarea-Dozent" rows="3"></textarea>
+                        <label for="TextareaDozent">Was ist dir zu deinem Dozenten besondern im Gedächtnis geblieben?</label>
+                            <textarea class="form-control" name="TextareaDozent" rows="3"></textarea>
                          </div>
 
                          <div>
@@ -142,8 +140,7 @@ $user = check_user();
         </div>
     </section>
     <?php
-    } //Ende von if($showFormular)
-
+  } //Ende von if($showFormular)
 
     ?>
 
@@ -166,20 +163,6 @@ $user = check_user();
             </div>
         </div>
     </section>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
 
 </body>
 

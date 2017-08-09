@@ -13,33 +13,62 @@ $user = check_user();
 </div>
   <!--/.container-fluid-->
 </nav>
-
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Dashboard</h1>
-                Hallo <?php echo htmlentities($user['vorname']); ?>,<br>
-Herzlich Willkommen im internen Bereich!<br><br>
+                <h1 id="homeHeading">Dein Dashboard</h1>
+                <hr>
+                <p>Hallo <?php echo htmlentities($user['vorname']); ?>,<br>
+                  Herzlich Willkommen im internen Bereich!</p>
+                <a class="btn btn-primary btn-xl page-scroll" href="#suche">Suchen</a>
             </div>
         </div>
     </header>
-	<section class="bg-primary" id="upload">
+    <section class="bg-primary" id="suche">
 
-        <div class="container">
+          <div class="container">
+              <div class="row">
+                <div class="call-to-action">
+  	               <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <h2 class="section-heading">Suche nach Studiengängen, Dozenten und Modulen</h2>
+                    <!--  <hr class="light">
+                      <p class="text-faded">Hilf anderen Studenten und teile deinen Content und Erfahrungen zum Studium hier!</p>-->
+                      <div class="container" style="margin-top: 8%;">
+                        <form id="search" method="get" action="search.php">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" type="text" name="search" placeholder="Search..." required/>
+                              <span class="input-group-btn">
+                                <button class="btn btn-success" type="submit">
+                                  <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+	<!--<section class="bg-primary" id="upload">
+    <div class="container">
             <div class="row">
-
-	<div class="call-to-action">
-	<div class="col-lg-8 col-lg-offset-2 text-center">
+              <div class="call-to-action">
+	               <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Lade hier deinen tollen Content hoch !</h2>
                     <hr class="light">
                     <p class="text-faded">Hilf anderen Studenten und teile deinen Content und Erfahrungen zum Studium hier!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Upload</a>
+                    <a href="#upload" class="page-scroll btn btn-default btn-xl sr-button">Upload</a>
                 </div>
             </div>
         </div>
     </section>
 
-
+-->
     <section id="services">
         <div class="container">
             <div class="row">
