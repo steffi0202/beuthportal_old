@@ -37,8 +37,6 @@
     <link href="../css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
     <script src="../js/star-rating.js" type="text/javascript"></script>
-
-    <link href="../css/search.css" rel="stylesheet">
 </head>
 <body>
 <body id="page-top">
