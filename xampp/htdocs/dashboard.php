@@ -27,7 +27,7 @@ $user = check_user();
                             <!--  <hr class="light">
                               <p class="text-faded">Hilf anderen Studenten und teile deinen Content und Erfahrungen zum Studium hier!</p>-->
                               <div class="container" style="margin-top: 8%;">
-                                <form id="search" method="post" action="?search">
+                                <form id="search" method="post" action="?search#searchOutput">
                                   <div class="form-group">
                                     <div class="input-group">
                                       <input style="width: 650px" class="form-control"  type="text" name="search" placeholder="Search..." required/>
@@ -51,7 +51,6 @@ $user = check_user();
     <?php
     if(isset($_GET['search']))
     {
-      //$pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
       //* Datenbankverbindung aufbauen (START)
 
       $verbindung = mysql_connect ("localhost", "root", "")
@@ -61,14 +60,13 @@ $user = check_user();
 
       //* Datenbankverbindung aufbauen (ENDE)
       $suchbegriff = $_POST['search'];
-      //print_r($_POST); //fuer Fehleranalyse, prüfen ob Wert in Variable steht
+    //  print_r($_POST); //fuer Fehleranalyse, prüfen ob Wert in Variable steht
 
       //* Überprüfung der Eingabe
-          $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%'";
+          $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%'";
           $ergebnis = mysql_query($abfrage) or die(mysql_error());
-
       ?>
-    <section class="bg-primary" id="seearchOutput">
+    <section class="bg-primary" id="searchOutput">
       <div class="container">
               <div class="row">
                 <div class="call-to-action">
@@ -77,8 +75,8 @@ $user = check_user();
                     while($ausgabe = mysql_fetch_assoc($ergebnis)){
                     echo "".$ausgabe['Dozent']."/".$ausgabe['Modul']."<br>" ;
                      } //* Wenn was gefunden wurde, wird es hier ausgegeben.
-                     /*else
-                     { echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
+                     if (mysql_num_rows($ergebnis) == 0) {
+                     echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
                        Bitte versuche es mit einem anderen Begriff.<br />
                        <a href='dashboard.php'>Zur&uuml;ck!</a>";
                      }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
@@ -91,21 +89,6 @@ $user = check_user();
        <?php
      }
       ?>
-	<!--<section class="bg-primary" id="upload">
-    <div class="container">
-            <div class="row">
-              <div class="call-to-action">
-	               <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Lade hier deinen tollen Content hoch !</h2>
-                    <hr class="light">
-                    <p class="text-faded">Hilf anderen Studenten und teile deinen Content und Erfahrungen zum Studium hier!</p>
-                    <a href="#upload" class="page-scroll btn btn-default btn-xl sr-button">Upload</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
--->
     <section id="services">
         <div class="container">
             <div class="row">
