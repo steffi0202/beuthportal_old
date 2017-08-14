@@ -3,7 +3,6 @@ session_start();
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 include("templates/header.inc.php");
-
 //Überprüfe, dass der User eingeloggt ist
 //Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
 $user = check_user();
@@ -52,43 +51,44 @@ $user = check_user();
     if(isset($_GET['search']))
     {
       //* Datenbankverbindung aufbauen (START)
-
       $verbindung = mysql_connect ("localhost", "root", "")
       or die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
-
       mysql_select_db("beuthportal") or die ("Die Datenbank existiert nicht.");
-
       //* Datenbankverbindung aufbauen (ENDE)
-      $suchbegriff = $_POST['search'];
-    //  print_r($_POST); //fuer Fehleranalyse, prüfen ob Wert in Variable steht
-
+      $suchbegriff = $_POST["search"];
       //* Überprüfung der Eingabe
           $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%'";
           $ergebnis = mysql_query($abfrage) or die(mysql_error());
       ?>
     <section class="bg-primary" id="searchOutput">
       <div class="container">
-              <div class="row">
-                <div class="call-to-action">
-  	               <div class="col-lg-8 col-lg-offset-2 text-center">
-                     <?php
-                    while($ausgabe = mysql_fetch_assoc($ergebnis)){
-                    echo "".$ausgabe['Dozent']."/".$ausgabe['Modul']."<br>" ;
-                     } //* Wenn was gefunden wurde, wird es hier ausgegeben.
-                     if (mysql_num_rows($ergebnis) == 0) {
-                     echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
-                       Bitte versuche es mit einem anderen Begriff.<br />
-                       <a href='dashboard.php'>Zur&uuml;ck!</a>";
-                     }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
-                     ?>
-
-                   </div>
-               </div>
-           </div>
-       </section>
-       <?php
+        <div class="span4 plan text-center">
+            <div class="plan-name-silver text-center ">
+              <h2>Output</h2>
+            </div>
+              <?php
+             while($ausgabe = mysql_fetch_assoc($ergebnis)){
+               ?>
+            <ul>
+              <li class="plan-feature"><?php echo "Dozent: ".$ausgabe['Dozent'].""?></li>
+              <li class="plan-feature"><?php echo "Modul: ".$ausgabe['Modul'].""?></li>
+            </ul>
+            <?php
+          } ?>
+          </div>
+        </div>
+        <?php
+         if (mysql_num_rows($ergebnis) == 0) {
+          echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
+                Bitte versuche es mit einem anderen Begriff.<br />
+                <a href='dashboard.php'>Zur&uuml;ck!</a>";
+         }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
+         ?>
+     </section>
+    <?php
      }
       ?>
+
     <section id="services">
         <div class="container">
             <div class="row">
