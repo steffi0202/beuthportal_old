@@ -59,41 +59,107 @@ $user = check_user();
       //* Überprüfung der Eingabe
           $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%'";
           $ergebnis = mysql_query($abfrage) or die(mysql_error());
-      ?>
-    <section class="bg-primary" id="searchOutput">
-      <div class="container">
-        <div class="span4 plan text-center">
-            <div class="plan-name-silver text-center ">
-              <h2>Output</h2>
-            </div>
-              <?php
-             while($ausgabe = mysql_fetch_assoc($ergebnis)){
-               ?>
-            <ul>
-              <li class="plan-feature"><?php echo "Dozent: ".$ausgabe['Dozent'].""?></li>
-              <li class="plan-feature"><?php echo "Modul: ".$ausgabe['Modul'].""?></li>
-            </ul>
-            <?php
-          } ?>
-          </div>
-        </div>
-        <?php
-         if (mysql_num_rows($ergebnis) == 0) {
-          echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
-                Bitte versuche es mit einem anderen Begriff.<br />
-                <a href='dashboard.php'>Zur&uuml;ck!</a>";
-         }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
-         ?>
-     </section>
-    <?php
-     }
-      ?>
 
-    <section id="services">
+         while($ausgabe = mysql_fetch_assoc($ergebnis)){
+           ?>
+          <h1><?php echo "".$ausgabe['created_at'].""?></h1>
+       </div>
+       <section class="text-center" id="searchOutput">
+       <div class="col-sm-3 col-md-3 col-xs-12">
+         <div class="box-1 center">
+           <div class="panel panel-success panel-pricing">
+             <div class="panel-heading">
+               <h3>Dozent</h3>
+             </div>
+             <div class="panel-body text-center">
+               <p><strong><?php echo "".$ausgabe['Dozent'].""?></strong></p>
+             </div>
+             </div>
+       </div>
+      </div>
+
+      <div class="col-sm-3 col-md-3 col-xs-12">
+        <div class="box-1 center">
+          <div class="panel panel-success panel-pricing">
+            <div class="panel-heading">
+              <h3>Modul</h3>
+            </div>
+            <div class="panel-body text-center">
+              <p><strong><?php echo "".$ausgabe['Modul'].""?></strong></p>
+            </div>
+            </div>
+      </div>
+     </div>
+
+     <div class="col-sm-3 col-md-3 col-xs-12">
+       <div class="box-1 center">
+         <div class="panel panel-success panel-pricing">
+           <div class="panel-heading">
+             <h3>Zeit</h3>
+           </div>
+           <div class="panel-body text-center">
+             <p><strong><?php echo "".$ausgabe['Zeitaufwand'].""?></strong></p>
+           </div>
+           </div>
+     </div>
+    </div>
+
+    <div class="col-sm-3 col-md-3 col-xs-12">
+      <div class="box-1 center">
+        <div class="panel panel-success panel-pricing">
+          <div class="panel-heading">
+            <h3>Beschreibung des Dozenten</h3>
+          </div>
+          <div class="panel-body text-center">
+            <p><strong><?php echo "".$ausgabe['Dozent_des'].""?></strong></p>
+          </div>
+          </div>
+    </div>
+   </div>
+
+   <div class="col-sm-3 col-md-3 col-xs-12">
+     <div class="box-1 center">
+       <div class="panel panel-success panel-pricing">
+         <div class="panel-heading">
+           <h3>Beschreibung des Moduls</h3>
+         </div>
+         <div class="panel-body text-center">
+           <p><strong><?php echo "".$ausgabe['Modul_des'].""?></strong></p>
+         </div>
+         </div>
+   </div>
+  </div>
+
+  <div class="col-sm-3 col-md-3 col-xs-12">
+    <div class="box-1 center">
+      <div class="panel panel-success panel-pricing">
+        <div class="panel-heading">
+          <h3>Gesamtwertung</h3>
+        </div>
+        <div class="panel-body text-center">
+          <p><strong><?php echo "".$ausgabe['Sterne']." von 5"?></strong></p>
+        </div>
+        </div>
+  </div>
+ </div>
+ </section>
+      <?php
+    }
+  }
+  if (mysql_num_rows($ergebnis) == 0) {
+                     echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
+                       Bitte versuche es mit einem anderen Begriff.<br />
+                       <a href='dashboard.php'>Zur&uuml;ck!</a>";
+                     }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
+
+   ?>
+
+
+  <section id="upload">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">Lade hier was hoch</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -132,7 +198,7 @@ $user = check_user();
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+  <!--  <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -228,26 +294,7 @@ $user = check_user();
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+-->
     <!-- jQuery -->
   <!--  <script src="vendor/jquery/jquery.min.js"></script>-->
 
@@ -263,5 +310,8 @@ $user = check_user();
     <!--<script src="js/creative.min.js"></script>-->
 
 </body>
+<?php
+include("templates/footer.inc.php")
+?>
 
 </html>

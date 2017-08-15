@@ -98,10 +98,10 @@
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
          	<li><a href="../dashboard.php">Interner Bereich</a></li>
-            <li><a href="upload.php">Upload</a></li>
+            <li><a href="#upload">Upload</a></li>
             <li><a href="bewertung.php">Bewerten!</a></li>
             <li><a href="register/settings.php">Einstellungen</a></li>
-            <li><a class="page-scroll" href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="register/logout.php">Logout</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
