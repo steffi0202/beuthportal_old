@@ -59,6 +59,14 @@ if(isset($_GET['register'])) {
 			$error = true;
 		}
 	}	
+	
+	//Das Passwort muss bestimmte Richtlinien befolgen
+	if(!$error) {
+		if (!preg_match('/[A-Z]/', $passwort) OR !preg_match('/[a-z]/', $passwort) OR !preg_match('/[0-9]/', $passwort)  OR strlen($passwort) < 8) {
+			echo 'Das Passwort muss mindestens 8 Zeichen lang sein und aus Zahlen, Klein- und Grossbuchstaben bestehen<br>';
+			$error = true;
+		}
+	}	
 
 	//Keine Fehler, wir können den Nutzer registrieren
 	if(!$error) {
