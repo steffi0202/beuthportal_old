@@ -3,7 +3,7 @@
 - Apache, MySQL, PHP, phpMyAdmin ausreichend
 
 # XAMPP anpassen
-- in der Datei "C:\xampp\apache\conf\httpd.conf" die Einträge DocumentRoot und <Directory anpassen:
+- in der Datei "C:\xampp\apache\conf\httpd.conf" (und oder "C:\xampp\beuthportal_old\xampp\apache\conf\httpd.conf") die Einträge DocumentRoot und <Directory anpassen:
 
 DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 
@@ -24,7 +24,4 @@ DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 
 # HTML/CSS Dateien leigen unter C:\xampp\beuthportal_old\xampp\htdocs 
 
-# Testuser
-E-Mail: test@test.de
-
-Passwort: test
+#Einzig zulässige E-Mail-Domain: "@beuth-hochschule.de"

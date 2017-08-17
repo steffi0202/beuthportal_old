@@ -28,6 +28,7 @@ if(isset($_GET['register'])) {
 		echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
 		$error = true;
 	}
+	
 	if(strlen($passwort) == 0) {
 		echo 'Bitte ein Passwort angeben<br>';
 		$error = true;
@@ -48,6 +49,16 @@ if(isset($_GET['register'])) {
 			$error = true;
 		}
 	}
+	
+	//Überprüfe, dass die E-Mail-Adresse eine Beuth-Adresse ist
+	if(!$error) {
+		list ($user, $domain) = explode('@', $email);
+
+		if($domain !== 'beuth-hochschule.de'){
+			echo 'Deine E-Mail-Adresse ist keine gültige Beuth-Email-Adresse!<br>';
+			$error = true;
+		}
+	}	
 
 	//Keine Fehler, wir können den Nutzer registrieren
 	if(!$error) {
