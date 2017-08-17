@@ -24,4 +24,4 @@ DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 
 # HTML/CSS Dateien leigen unter C:\xampp\beuthportal_old\xampp\htdocs 
 
-#Einzig zulässige E-Mail-Domain: "@beuth-hochschule.de"
+# Einzig zulässige E-Mail-Domain: "@beuth-hochschule.de"
