@@ -35,7 +35,6 @@
 
 </head>
 
-
 <?php
 session_start();
 //require_once("inc/config.inc.php");
@@ -80,7 +79,7 @@ if(isset($_POST['email']))
 
 //include("templates/header.inc.php");
 ?>
- <div class="container small-container-330 form-signin"  style="width:25%;">
+ <div class="container small-container-330 form-signin"  style="max-width:300px;">
   <form action="login.php" method="post">
 	<h2 class="form-signin-heading">Login</h2>
 

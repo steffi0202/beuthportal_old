@@ -40,7 +40,8 @@ function check_user() {
 	}
 
 	if(!isset($_SESSION['userid'])) {
-		die('Bitte zuerst <a href="register/login.php"> einloggen</a>');
+		die('Bitte zuerst einloggen');
+		//header('Location:login.php'); 
 	}
 
 	$statement = $pdo->prepare("SELECT * FROM users WHERE id = :id");

@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.php"></i> StartREGISTER</a>
+          <a class="navbar-brand" href="../index.php"></i> Start</a>
         </div>
         <?php if(!is_checked_in()): ?>
         <div id="navbar" class="navbar-collapse collapse">

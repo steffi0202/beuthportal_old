@@ -89,20 +89,20 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
                         <h3>Studiengang bewerten</h3>
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                </div></a>
+                <a href="#upload.php"><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Teile Content</h3>
-                        <p class="text-muted">Tausche dich mit anderen Studenten aus</p>
+                        <h3>Dokument-Area</h3>
+                        <p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
                     </div>
-                </div>
+                </div></a>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>

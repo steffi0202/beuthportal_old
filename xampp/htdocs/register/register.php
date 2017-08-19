@@ -5,7 +5,7 @@ require_once("inc/functions.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 include("templates/header.inc.php")
 ?>
-<div class="container main-container registration-form">
+<div class="container main-container registration-form" style="max-width:500px;">
 <h1>Registrierung</h1>
 <!--Diese Registrierung ist Studenten mit einer Beuth-Email-Adresse vorbehalten.-->
 <?php
