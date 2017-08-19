@@ -20,21 +20,21 @@ if(isset($_GET['register'])) {
 	$passwort2 = $_POST['passwort2'];
 
 	if(empty($vorname) || empty($nachname) || empty($email)) {
-		echo 'Bitte alle Felder ausfüllen<br>';
+		echo "<font color='#FF0000'>Bitte alle Felder ausfüllen<br></font>";
 		$error = true;
 	}
 
 	if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
+		echo "<font color='#FF0000'>Bitte eine gültige E-Mail-Adresse eingeben<br></font>";
 		$error = true;
 	}
 	
 	if(strlen($passwort) == 0) {
-		echo 'Bitte ein Passwort angeben<br>';
+		echo "<font color='#FF0000'>Bitte ein Passwort angeben<br></font>";
 		$error = true;
 	}
 	if($passwort != $passwort2) {
-		echo 'Die Passwörter müssen übereinstimmen<br>';
+		echo "<font color='#FF0000'>Die Passwörter müssen übereinstimmen<br></font>";
 		$error = true;
 	}
 
@@ -45,7 +45,7 @@ if(isset($_GET['register'])) {
 		$user = $statement->fetch();
 
 		if($user !== false) {
-			echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+			echo "<font color='#FF0000'>Diese E-Mail-Adresse ist bereits vergeben<br></font>";
 			$error = true;
 		}
 	}
@@ -55,7 +55,7 @@ if(isset($_GET['register'])) {
 		list ($user, $domain) = explode('@', $email);
 
 		if($domain !== 'beuth-hochschule.de'){
-			echo 'Deine E-Mail-Adresse ist keine gültige Beuth-Email-Adresse!<br>';
+			echo "<font color='#FF0000'>Deine E-Mail-Adresse ist keine gültige Beuth-Email-Adresse!<br></font>";
 			$error = true;
 		}
 	}	
@@ -63,7 +63,7 @@ if(isset($_GET['register'])) {
 	//Das Passwort muss bestimmte Richtlinien befolgen
 	if(!$error) {
 		if (!preg_match('/[A-Z]/', $passwort) OR !preg_match('/[a-z]/', $passwort) OR !preg_match('/[0-9]/', $passwort)  OR strlen($passwort) < 8) {
-			echo 'Das Passwort muss mindestens 8 Zeichen lang sein und aus Zahlen, Klein- und Grossbuchstaben bestehen<br>';
+			echo "<font color='#FF0000'>Das Passwort muss mindestens 8 Zeichen lang sein und aus Zahlen, Klein- und Grossbuchstaben bestehen<br></font>";
 			$error = true;
 		}
 	}	
@@ -76,10 +76,11 @@ if(isset($_GET['register'])) {
 		$result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vorname, 'nachname' => $nachname));
 
 		if($result) {
-			echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
+			echo "<font color='#008000'>Du wurdest erfolgreich registriert.</font>"; 
+			echo "<font color='#000000'><a href='login.php'><br /> <br />Zum Login</a></font>";
 			$showFormular = false;
 		} else {
-			echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+			echo "<font color='#FF0000'>Beim Abspeichern ist ein Fehler aufgetreten<br></font>";
 		}
 	}
 }

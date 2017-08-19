@@ -30,17 +30,18 @@ if(isset($_GET['send']) ) {
 			$result = $statement->execute(array('passwortcode' => sha1($passwortcode), 'userid' => $user['id']));
 
 			$empfaenger = $user['email'];
-			$betreff = "Neues Passwort für deinen Beuth Portal Account; //Ersetzt hier den Domain-Namen
+			$betreff = "Neues Passwort für deinen Beuth Portal Account"; //Ersetzt hier den Domain-Namen
 			$from = "From: Vorname Nachname <absender@domain.de>"; //Ersetzt hier euren Name und E-Mail-Adresse
 			$url_passwortcode = getSiteURL().'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode; //Setzt hier eure richtige Domain ein
 			$text = 'Hallo '.$user['vorname'].',
-für deinen Account des Stundentenportals der Beuth Hochschule wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der nächsten 24 Stunden die folgende Website auf:
+für deinen Account des Stundentenportals der Beuth Hochschule wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der 
+nächsten 24 Stunden die folgende Website auf:
 '.$url_passwortcode.'
 
 Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.
 
 Viele Grüße,
-dein Studenportal-Team;
+dein Studenportal-Team';
 
 			//echo $text;
 
