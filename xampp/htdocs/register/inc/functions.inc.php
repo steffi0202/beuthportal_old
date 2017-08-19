@@ -39,11 +39,9 @@ function check_user() {
 		}
 	}
 
-
 	if(!isset($_SESSION['userid'])) {
-		die('Bitte zuerst <a href="login.php"> einloggen</a>');
+		die('Bitte zuerst <a href="register/login.php"> einloggen</a>');
 	}
-
 
 	$statement = $pdo->prepare("SELECT * FROM users WHERE id = :id");
 	$result = $statement->execute(array('id' => $_SESSION['userid']));
@@ -92,3 +90,4 @@ function error($error_msg) {
 	include("templates/footer.inc.php");
 	exit();
 }
+

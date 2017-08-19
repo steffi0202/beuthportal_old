@@ -48,17 +48,20 @@ $user = check_user();
         </div>
     </header>
     <?php
+	
+	$ergebnis = 0;
+	$suchbegriff = '';
     if(isset($_GET['search']))
     {
       //* Datenbankverbindung aufbauen (START)
-      $verbindung = mysql_connect ("localhost", "root", "")
+      $verbindung = mysqli_connect ("localhost", "root", "")
       or die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
-      mysql_select_db("beuthportal") or die ("Die Datenbank existiert nicht.");
+      mysqli_select_db($verbindung, "beuthportal") or die ("Die Datenbank existiert nicht.");
       //* Datenbankverbindung aufbauen (ENDE)
       $suchbegriff = $_POST["search"];
       //* Überprüfung der Eingabe
           $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%'";
-          $ergebnis = mysql_query($abfrage) or die(mysql_error());
+          $ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
 
          while($ausgabe = mysql_fetch_assoc($ergebnis)){
            ?>
@@ -146,7 +149,7 @@ $user = check_user();
       <?php
     }
   }
-  if (mysql_num_rows($ergebnis) == 0) {
+  if ( !$ergebnis || mysqli_num_rows($ergebnis) == 0) {
                      echo "Es wurde kein Ergebnis unter den Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
                        Bitte versuche es mit einem anderen Begriff.<br />
                        <a href='dashboard.php'>Zur&uuml;ck!</a>";
