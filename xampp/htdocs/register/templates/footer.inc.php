@@ -4,7 +4,7 @@
  */
 ?>
  <hr>
-  <div class="container">
+  <div class="container"  style="text-align:center;">
   	<footer>
         <p>Powered by Beuth Hochschule and Github</p>
       </footer>

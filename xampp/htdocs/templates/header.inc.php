@@ -12,25 +12,24 @@
     <title>Beuthportal</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
-    <link href="../css/style.css" rel="stylesheet">
+  
 	 <link href="css/style.css" rel="stylesheet">
     <!-- Plugin CSS -->
-    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    
 	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="../css/creative.min.css" rel="stylesheet">
-    <link href="../css/table.css" rel="stylesheet">
+
 	 <link href="css/creative.min.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
 
@@ -44,10 +43,8 @@
     <![endif]-->
 
 <!-- CSS und JS für Star Rating im Bewertungsportal -->
-    <link href="../css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
 	  <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-    <script src="../js/star-rating.js" type="text/javascript"></script>
 	  <script src="js/star-rating.js" type="text/javascript"></script>
 </head>
 <body>
