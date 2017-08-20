@@ -21,8 +21,8 @@ DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 
 # für die Datenbank:
 - http://localhost/phpmyadmin/
-
-# HTML/CSS Dateien leigen unter C:\xampp\beuthportal_old\xampp\htdocs 
-
-- Einzig zulässige E-Mail-Domain: "@beuth-hochschule.de"
 - Datenbankstruktur für 'users' siehe SQL-Datei 'users.sql' unter htdocs
+
+#Sonstige Infos
+- HTML/CSS Dateien liegen unter C:\xampp\beuthportal_old\xampp\htdocs 
+- Einzig zulässige E-Mail-Domain bei Registrierung: "@beuth-hochschule.de"
