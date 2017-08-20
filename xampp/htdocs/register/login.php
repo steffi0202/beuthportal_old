@@ -45,31 +45,41 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 	$email = $_POST['email'];
 	$passwort = $_POST['passwort'];
 
-	$statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
-	$result = $statement->execute(array('email' => $email));
-	$user = $statement->fetch();
 
-	//Überprüfung des Passworts
-	if ($user !== false && password_verify($passwort, $user['passwort'])) {
-		$_SESSION['userid'] = $user['id'];
-
-		//Möchte der Nutzer angemeldet beleiben?
-		if(isset($_POST['angemeldet_bleiben'])) {
-			$identifier = random_string();
-			$securitytoken = random_string();
-
-			$insert = $pdo->prepare("INSERT INTO securitytokens (user_id, identifier, securitytoken) VALUES (:user_id, :identifier, :securitytoken)");
-			$insert->execute(array('user_id' => $user['id'], 'identifier' => $identifier, 'securitytoken' => sha1($securitytoken)));
-			setcookie("identifier",$identifier,time()+(3600*24*365)); //Valid for 1 year
-			setcookie("securitytoken",$securitytoken,time()+(3600*24*365)); //Valid for 1 year
-		}
-
-		header("location: ../dashboard.php");
-		exit;
-	} else {
-		$error_msg = "<font color='#FF0000'><br />E-Mail oder Passwort war ungültig<br /><br /></font>";
+		$statement = $pdo->prepare("SELECT * FROM users WHERE email = :email AND active = 0");
+		$result = $statement->execute(array('email' => $email));
+		$user = $statement->fetch();
+		
+	if($user !== false){
+		echo "<font color='#FF0000'><br />Bitte aktiviere zuerst deinen Account, indem du den Link bestätigst,
+		den wir an <span>$email</span> geschickt haben.<br /><br /></font>";	
 	}
+	else{
+		$statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
+		$result = $statement->execute(array('email' => $email));
+		$user = $statement->fetch();
 
+		//Überprüfung des Passworts
+		if ($user !== false && password_verify($passwort, $user['passwort'])) {
+			$_SESSION['userid'] = $user['id'];
+
+			//Möchte der Nutzer angemeldet beleiben?
+			if(isset($_POST['angemeldet_bleiben'])) {
+				$identifier = random_string();
+				$securitytoken = random_string();
+
+				$insert = $pdo->prepare("INSERT INTO securitytokens (user_id, identifier, securitytoken) VALUES (:user_id, :identifier, :securitytoken)");
+				$insert->execute(array('user_id' => $user['id'], 'identifier' => $identifier, 'securitytoken' => sha1($securitytoken)));
+				setcookie("identifier",$identifier,time()+(3600*24*365)); //Valid for 1 year
+				setcookie("securitytoken",$securitytoken,time()+(3600*24*365)); //Valid for 1 year
+			}
+
+			header("location: ../dashboard.php");
+			exit;
+		} else {
+			$error_msg = "<font color='#FF0000'><br />E-Mail oder Passwort war ungültig<br /><br /></font>";
+		}
+	}
 }
 
 $email_value = "";

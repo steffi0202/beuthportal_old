@@ -536,3 +536,725 @@
 17.08.20 14:09:54 ** Disconnecting from smtp.gmail.com:465
 17.08.20 14:09:54 ** Disconnected.
 17.08.20 14:09:54 ** Disconnected.
+17.08.20 14:27:38 ** --- MESSAGE BEGIN ---
+17.08.20 14:27:38 ** To: s49317@beuth-hochschule.de
+17.08.20 14:27:38 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 14:27:38 ** 
+17.08.20 14:27:38 ** 
+17.08.20 14:27:38 ** 			Hallo ,
+17.08.20 14:27:38 ** 
+17.08.20 14:27:38 ** 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 14:27:38 ** 
+17.08.20 14:27:38 ** 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 14:27:38 ** 
+17.08.20 14:27:38 ** 			http://localhost/login-system/verify.php?email=s49317@beuth-hochschule.de&hash=fe131d7f5a6b38b23cc967316c13dae2
+17.08.20 14:27:38 ** --- MESSAGE END ---
+17.08.20 14:27:39 ** Connecting to smtp.gmail.com:465
+17.08.20 14:27:40 ** Connected.
+17.08.20 14:27:40 << 220 smtp.gmail.com ESMTP f80sm4620850wmh.16 - gsmtp<EOL>
+17.08.20 14:27:40 >> EHLO aa-PC<EOL>
+17.08.20 14:27:40 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 14:27:40 ** Authenticating as beuthportal@gmail.com
+17.08.20 14:27:40 >> AUTH LOGIN<EOL>
+17.08.20 14:27:40 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 14:27:40 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 14:27:40 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 14:27:40 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 14:27:40 << 235 2.7.0 Accepted<EOL>
+17.08.20 14:27:40 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 14:27:41 << 250 2.1.0 OK f80sm4620850wmh.16 - gsmtp<EOL>
+17.08.20 14:27:41 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 14:27:41 << 250 2.1.5 OK f80sm4620850wmh.16 - gsmtp<EOL>
+17.08.20 14:27:41 >> DATA<EOL>
+17.08.20 14:27:41 << 354  Go ahead f80sm4620850wmh.16 - gsmtp<EOL>
+17.08.20 14:27:41 >> Date: Sun, 20 Aug 2017 14:27:41 +0200<EOL>
+17.08.20 14:27:41 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 14:27:41 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 14:27:41 >> <EOL>
+17.08.20 14:27:41 >> <EOL>
+17.08.20 14:27:41 >> 			Hallo ,<EOL>
+17.08.20 14:27:41 >> <EOL>
+17.08.20 14:27:41 >> 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 14:27:41 >> <EOL>
+17.08.20 14:27:41 >> 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 14:27:41 >> <EOL>
+17.08.20 14:27:41 >> 			http://localhost/login-system/verify.php?email=s49317@beuth-hochschule.de&hash=fe131d7f5a6b38b23cc967316c13dae2<EOL>
+17.08.20 14:27:41 >> .<EOL>
+17.08.20 14:27:42 << 250 2.0.0 OK 1503232060 f80sm4620850wmh.16 - gsmtp<EOL>
+17.08.20 14:27:42 >> QUIT<EOL>
+17.08.20 14:27:42 << 221 2.0.0 closing connection f80sm4620850wmh.16 - gsmtp<EOL>
+17.08.20 14:27:42 ** Disconnecting from smtp.gmail.com:465
+17.08.20 14:27:42 ** Disconnected.
+17.08.20 14:27:42 ** Disconnected.
+17.08.20 14:46:37 ** --- MESSAGE BEGIN ---
+17.08.20 14:46:37 ** To: s49317@beuth-hochschule.de
+17.08.20 14:46:37 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 14:46:37 ** 
+17.08.20 14:46:37 ** 
+17.08.20 14:46:37 ** 			Hallo Alex,
+17.08.20 14:46:37 ** 
+17.08.20 14:46:37 ** 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 14:46:37 ** 
+17.08.20 14:46:37 ** 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 14:46:37 ** 
+17.08.20 14:46:37 ** 			http://localhost/register/verify.php?userid=s
+17.08.20 14:46:37 ** 			Viele Gruesse,
+17.08.20 14:46:37 ** 			
+17.08.20 14:46:37 ** 			dein Studentenportal-Team
+17.08.20 14:46:37 ** --- MESSAGE END ---
+17.08.20 14:46:39 ** Connecting to smtp.gmail.com:465
+17.08.20 14:46:39 ** Connected.
+17.08.20 14:46:39 << 220 smtp.gmail.com ESMTP v185sm5343623wmd.25 - gsmtp<EOL>
+17.08.20 14:46:39 >> EHLO aa-PC<EOL>
+17.08.20 14:46:39 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 14:46:39 ** Authenticating as beuthportal@gmail.com
+17.08.20 14:46:39 >> AUTH LOGIN<EOL>
+17.08.20 14:46:39 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 14:46:39 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 14:46:40 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 14:46:40 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 14:46:40 << 235 2.7.0 Accepted<EOL>
+17.08.20 14:46:40 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 14:46:40 << 250 2.1.0 OK v185sm5343623wmd.25 - gsmtp<EOL>
+17.08.20 14:46:40 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 14:46:40 << 250 2.1.5 OK v185sm5343623wmd.25 - gsmtp<EOL>
+17.08.20 14:46:40 >> DATA<EOL>
+17.08.20 14:46:40 << 354  Go ahead v185sm5343623wmd.25 - gsmtp<EOL>
+17.08.20 14:46:40 >> Date: Sun, 20 Aug 2017 14:46:40 +0200<EOL>
+17.08.20 14:46:40 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 14:46:40 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 14:46:40 >> <EOL>
+17.08.20 14:46:40 >> <EOL>
+17.08.20 14:46:40 >> 			Hallo Alex,<EOL>
+17.08.20 14:46:40 >> <EOL>
+17.08.20 14:46:40 >> 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 14:46:40 >> <EOL>
+17.08.20 14:46:40 >> 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 14:46:40 >> <EOL>
+17.08.20 14:46:40 >> 			http://localhost/register/verify.php?userid=s<EOL>
+17.08.20 14:46:40 >> 			Viele Gruesse,<EOL>
+17.08.20 14:46:40 >> 			<EOL>
+17.08.20 14:46:40 >> 			dein Studentenportal-Team<EOL>
+17.08.20 14:46:40 >> .<EOL>
+17.08.20 14:46:41 << 250 2.0.0 OK 1503233199 v185sm5343623wmd.25 - gsmtp<EOL>
+17.08.20 14:46:41 >> QUIT<EOL>
+17.08.20 14:46:41 << 221 2.0.0 closing connection v185sm5343623wmd.25 - gsmtp<EOL>
+17.08.20 14:46:41 ** Disconnecting from smtp.gmail.com:465
+17.08.20 14:46:41 ** Disconnected.
+17.08.20 14:46:41 ** Disconnected.
+17.08.20 15:04:25 ** --- MESSAGE BEGIN ---
+17.08.20 15:04:25 ** To: s49317@beuth-hochschule.de
+17.08.20 15:04:26 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 15:04:26 ** 
+17.08.20 15:04:26 ** 
+17.08.20 15:04:26 ** 			Hallo Alexander,
+17.08.20 15:04:26 ** 
+17.08.20 15:04:26 ** 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 15:04:26 ** 
+17.08.20 15:04:26 ** 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 15:04:26 ** 
+17.08.20 15:04:26 ** 			http://localhost/register/verify.php
+17.08.20 15:04:26 ** 			Viele Gruesse,
+17.08.20 15:04:26 ** 			
+17.08.20 15:04:26 ** 			dein Studentenportal-Team
+17.08.20 15:04:26 ** --- MESSAGE END ---
+17.08.20 15:04:27 ** Connecting to smtp.gmail.com:465
+17.08.20 15:04:28 ** Connected.
+17.08.20 15:04:28 << 220 smtp.gmail.com ESMTP e137sm7279940wma.29 - gsmtp<EOL>
+17.08.20 15:04:28 >> EHLO aa-PC<EOL>
+17.08.20 15:04:28 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 15:04:28 ** Authenticating as beuthportal@gmail.com
+17.08.20 15:04:28 >> AUTH LOGIN<EOL>
+17.08.20 15:04:28 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 15:04:28 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 15:04:28 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 15:04:28 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 15:04:28 << 235 2.7.0 Accepted<EOL>
+17.08.20 15:04:28 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 15:04:28 << 250 2.1.0 OK e137sm7279940wma.29 - gsmtp<EOL>
+17.08.20 15:04:28 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 15:04:28 << 250 2.1.5 OK e137sm7279940wma.29 - gsmtp<EOL>
+17.08.20 15:04:28 >> DATA<EOL>
+17.08.20 15:04:29 << 354  Go ahead e137sm7279940wma.29 - gsmtp<EOL>
+17.08.20 15:04:29 >> Date: Sun, 20 Aug 2017 15:04:29 +0200<EOL>
+17.08.20 15:04:29 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 15:04:29 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 15:04:29 >> <EOL>
+17.08.20 15:04:29 >> <EOL>
+17.08.20 15:04:29 >> 			Hallo Alexander,<EOL>
+17.08.20 15:04:29 >> <EOL>
+17.08.20 15:04:29 >> 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 15:04:29 >> <EOL>
+17.08.20 15:04:29 >> 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 15:04:29 >> <EOL>
+17.08.20 15:04:29 >> 			http://localhost/register/verify.php<EOL>
+17.08.20 15:04:29 >> 			Viele Gruesse,<EOL>
+17.08.20 15:04:29 >> 			<EOL>
+17.08.20 15:04:29 >> 			dein Studentenportal-Team<EOL>
+17.08.20 15:04:29 >> .<EOL>
+17.08.20 15:04:29 << 250 2.0.0 OK 1503234268 e137sm7279940wma.29 - gsmtp<EOL>
+17.08.20 15:04:29 >> QUIT<EOL>
+17.08.20 15:04:29 << 221 2.0.0 closing connection e137sm7279940wma.29 - gsmtp<EOL>
+17.08.20 15:04:29 ** Disconnecting from smtp.gmail.com:465
+17.08.20 15:04:29 ** Disconnected.
+17.08.20 15:04:29 ** Disconnected.
+17.08.20 15:06:49 ** --- MESSAGE BEGIN ---
+17.08.20 15:06:49 ** To: s49317@beuth-hochschule.de
+17.08.20 15:06:49 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 15:06:49 ** 
+17.08.20 15:06:49 ** 
+17.08.20 15:06:49 ** 			Hallo Alexander,
+17.08.20 15:06:49 ** 
+17.08.20 15:06:49 ** 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 15:06:49 ** 
+17.08.20 15:06:49 ** 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 15:06:49 ** 
+17.08.20 15:06:49 ** 			http://localhost/register/verify.php
+17.08.20 15:06:49 ** 			Viele Gruesse,
+17.08.20 15:06:49 ** 			
+17.08.20 15:06:49 ** 			dein Studentenportal-Team
+17.08.20 15:06:49 ** --- MESSAGE END ---
+17.08.20 15:06:50 ** Connecting to smtp.gmail.com:465
+17.08.20 15:06:51 ** Connected.
+17.08.20 15:06:51 << 220 smtp.gmail.com ESMTP z66sm5460031wme.34 - gsmtp<EOL>
+17.08.20 15:06:51 >> EHLO aa-PC<EOL>
+17.08.20 15:06:51 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 15:06:51 ** Authenticating as beuthportal@gmail.com
+17.08.20 15:06:51 >> AUTH LOGIN<EOL>
+17.08.20 15:06:51 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 15:06:51 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 15:06:51 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 15:06:51 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 15:06:52 << 235 2.7.0 Accepted<EOL>
+17.08.20 15:06:52 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 15:06:52 << 250 2.1.0 OK z66sm5460031wme.34 - gsmtp<EOL>
+17.08.20 15:06:52 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 15:06:52 << 250 2.1.5 OK z66sm5460031wme.34 - gsmtp<EOL>
+17.08.20 15:06:52 >> DATA<EOL>
+17.08.20 15:06:52 << 354  Go ahead z66sm5460031wme.34 - gsmtp<EOL>
+17.08.20 15:06:52 >> Date: Sun, 20 Aug 2017 15:06:52 +0200<EOL>
+17.08.20 15:06:52 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 15:06:52 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 15:06:52 >> <EOL>
+17.08.20 15:06:52 >> <EOL>
+17.08.20 15:06:52 >> 			Hallo Alexander,<EOL>
+17.08.20 15:06:52 >> <EOL>
+17.08.20 15:06:52 >> 			danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 15:06:52 >> <EOL>
+17.08.20 15:06:52 >> 			Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 15:06:52 >> <EOL>
+17.08.20 15:06:52 >> 			http://localhost/register/verify.php<EOL>
+17.08.20 15:06:52 >> 			Viele Gruesse,<EOL>
+17.08.20 15:06:52 >> 			<EOL>
+17.08.20 15:06:52 >> 			dein Studentenportal-Team<EOL>
+17.08.20 15:06:52 >> .<EOL>
+17.08.20 15:06:53 << 250 2.0.0 OK 1503234411 z66sm5460031wme.34 - gsmtp<EOL>
+17.08.20 15:06:53 >> QUIT<EOL>
+17.08.20 15:06:53 << 221 2.0.0 closing connection z66sm5460031wme.34 - gsmtp<EOL>
+17.08.20 15:06:53 ** Disconnecting from smtp.gmail.com:465
+17.08.20 15:06:53 ** Disconnected.
+17.08.20 15:06:53 ** Disconnected.
+17.08.20 15:32:20 ** --- MESSAGE BEGIN ---
+17.08.20 15:32:20 ** To: s49317@beuth-hochschule.de
+17.08.20 15:32:20 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 15:32:20 ** 
+17.08.20 15:32:20 ** 
+17.08.20 15:32:20 ** 				Hallo Alexander,
+17.08.20 15:32:20 ** 
+17.08.20 15:32:20 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 15:32:20 ** 
+17.08.20 15:32:20 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 15:32:20 ** 
+17.08.20 15:32:20 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=d4c2e4a3297fe25a71d030b67eb83bfc
+17.08.20 15:32:20 ** 				Viele Gruesse,
+17.08.20 15:32:20 ** 				
+17.08.20 15:32:20 ** 				dein Studentenportal-Team
+17.08.20 15:32:20 ** --- MESSAGE END ---
+17.08.20 15:32:22 ** Connecting to smtp.gmail.com:465
+17.08.20 15:32:22 ** Connected.
+17.08.20 15:32:22 << 220 smtp.gmail.com ESMTP q16sm7387366wmg.30 - gsmtp<EOL>
+17.08.20 15:32:22 >> EHLO aa-PC<EOL>
+17.08.20 15:32:22 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 15:32:22 ** Authenticating as beuthportal@gmail.com
+17.08.20 15:32:22 >> AUTH LOGIN<EOL>
+17.08.20 15:32:22 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 15:32:22 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 15:32:22 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 15:32:22 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 15:32:23 << 235 2.7.0 Accepted<EOL>
+17.08.20 15:32:23 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 15:32:23 << 250 2.1.0 OK q16sm7387366wmg.30 - gsmtp<EOL>
+17.08.20 15:32:23 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 15:32:23 << 250 2.1.5 OK q16sm7387366wmg.30 - gsmtp<EOL>
+17.08.20 15:32:23 >> DATA<EOL>
+17.08.20 15:32:24 << 354  Go ahead q16sm7387366wmg.30 - gsmtp<EOL>
+17.08.20 15:32:24 >> Date: Sun, 20 Aug 2017 15:32:24 +0200<EOL>
+17.08.20 15:32:24 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 15:32:24 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 15:32:24 >> <EOL>
+17.08.20 15:32:24 >> <EOL>
+17.08.20 15:32:24 >> 				Hallo Alexander,<EOL>
+17.08.20 15:32:24 >> <EOL>
+17.08.20 15:32:24 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 15:32:24 >> <EOL>
+17.08.20 15:32:24 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 15:32:24 >> <EOL>
+17.08.20 15:32:24 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=d4c2e4a3297fe25a71d030b67eb83bfc<EOL>
+17.08.20 15:32:24 >> 				Viele Gruesse,<EOL>
+17.08.20 15:32:24 >> 				<EOL>
+17.08.20 15:32:24 >> 				dein Studentenportal-Team<EOL>
+17.08.20 15:32:24 >> .<EOL>
+17.08.20 15:32:24 << 250 2.0.0 OK 1503235943 q16sm7387366wmg.30 - gsmtp<EOL>
+17.08.20 15:32:24 >> QUIT<EOL>
+17.08.20 15:32:24 << 221 2.0.0 closing connection q16sm7387366wmg.30 - gsmtp<EOL>
+17.08.20 15:32:24 ** Disconnected.
+17.08.20 15:32:24 ** Disconnected.
+17.08.20 15:32:24 ** Disconnected.
+17.08.20 15:51:09 ** --- MESSAGE BEGIN ---
+17.08.20 15:51:09 ** To: s49317@beuth-hochschule.de
+17.08.20 15:51:09 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 15:51:09 ** 
+17.08.20 15:51:09 ** 
+17.08.20 15:51:09 ** 				Hallo Alexander,
+17.08.20 15:51:09 ** 
+17.08.20 15:51:09 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 15:51:09 ** 
+17.08.20 15:51:09 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 15:51:09 ** 
+17.08.20 15:51:09 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=5dd9db5e033da9c6fb5ba83c7a7ebea9&active=0
+17.08.20 15:51:09 ** 				Viele Gruesse,
+17.08.20 15:51:09 ** 				
+17.08.20 15:51:09 ** 				dein Studentenportal-Team
+17.08.20 15:51:09 ** --- MESSAGE END ---
+17.08.20 15:51:10 ** Connecting to smtp.gmail.com:465
+17.08.20 15:51:11 ** Connected.
+17.08.20 15:51:11 << 220 smtp.gmail.com ESMTP r79sm8743448wmd.42 - gsmtp<EOL>
+17.08.20 15:51:11 >> EHLO aa-PC<EOL>
+17.08.20 15:51:11 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 15:51:11 ** Authenticating as beuthportal@gmail.com
+17.08.20 15:51:11 >> AUTH LOGIN<EOL>
+17.08.20 15:51:11 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 15:51:11 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 15:51:11 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 15:51:11 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 15:51:11 << 235 2.7.0 Accepted<EOL>
+17.08.20 15:51:11 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 15:51:11 << 250 2.1.0 OK r79sm8743448wmd.42 - gsmtp<EOL>
+17.08.20 15:51:11 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 15:51:11 << 250 2.1.5 OK r79sm8743448wmd.42 - gsmtp<EOL>
+17.08.20 15:51:11 >> DATA<EOL>
+17.08.20 15:51:11 << 354  Go ahead r79sm8743448wmd.42 - gsmtp<EOL>
+17.08.20 15:51:11 >> Date: Sun, 20 Aug 2017 15:51:11 +0200<EOL>
+17.08.20 15:51:11 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 15:51:11 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 15:51:11 >> <EOL>
+17.08.20 15:51:11 >> <EOL>
+17.08.20 15:51:11 >> 				Hallo Alexander,<EOL>
+17.08.20 15:51:11 >> <EOL>
+17.08.20 15:51:11 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 15:51:11 >> <EOL>
+17.08.20 15:51:11 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 15:51:11 >> <EOL>
+17.08.20 15:51:11 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=5dd9db5e033da9c6fb5ba83c7a7ebea9&active=0<EOL>
+17.08.20 15:51:11 >> 				Viele Gruesse,<EOL>
+17.08.20 15:51:11 >> 				<EOL>
+17.08.20 15:51:11 >> 				dein Studentenportal-Team<EOL>
+17.08.20 15:51:11 >> .<EOL>
+17.08.20 15:51:12 << 250 2.0.0 OK 1503237071 r79sm8743448wmd.42 - gsmtp<EOL>
+17.08.20 15:51:12 >> QUIT<EOL>
+17.08.20 15:51:13 << 221 2.0.0 closing connection r79sm8743448wmd.42 - gsmtp<EOL>
+17.08.20 15:51:13 ** Disconnected.
+17.08.20 15:51:13 ** Disconnected.
+17.08.20 15:51:13 ** Disconnected.
+17.08.20 15:55:21 ** --- MESSAGE BEGIN ---
+17.08.20 15:55:21 ** To: s49317@beuth-hochschule.de
+17.08.20 15:55:21 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 15:55:21 ** 
+17.08.20 15:55:21 ** 
+17.08.20 15:55:21 ** 				Hallo Alexander,
+17.08.20 15:55:21 ** 
+17.08.20 15:55:21 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 15:55:21 ** 
+17.08.20 15:55:21 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 15:55:21 ** 
+17.08.20 15:55:21 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=301ad0e3bd5cb1627a2044908a42fdc2&active=0
+17.08.20 15:55:21 ** 				Viele Gruesse,
+17.08.20 15:55:21 ** 				
+17.08.20 15:55:21 ** 				dein Studentenportal-Team
+17.08.20 15:55:21 ** --- MESSAGE END ---
+17.08.20 15:55:22 ** Connecting to smtp.gmail.com:465
+17.08.20 15:55:23 ** Connected.
+17.08.20 15:55:23 << 220 smtp.gmail.com ESMTP c68sm4279112wmh.21 - gsmtp<EOL>
+17.08.20 15:55:23 >> EHLO aa-PC<EOL>
+17.08.20 15:55:23 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 15:55:23 ** Authenticating as beuthportal@gmail.com
+17.08.20 15:55:23 >> AUTH LOGIN<EOL>
+17.08.20 15:55:23 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 15:55:23 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 15:55:23 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 15:55:23 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 15:55:24 << 235 2.7.0 Accepted<EOL>
+17.08.20 15:55:24 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 15:55:24 << 250 2.1.0 OK c68sm4279112wmh.21 - gsmtp<EOL>
+17.08.20 15:55:24 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 15:55:24 << 250 2.1.5 OK c68sm4279112wmh.21 - gsmtp<EOL>
+17.08.20 15:55:24 >> DATA<EOL>
+17.08.20 15:55:24 << 354  Go ahead c68sm4279112wmh.21 - gsmtp<EOL>
+17.08.20 15:55:24 >> Date: Sun, 20 Aug 2017 15:55:24 +0200<EOL>
+17.08.20 15:55:24 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 15:55:24 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 15:55:24 >> <EOL>
+17.08.20 15:55:24 >> <EOL>
+17.08.20 15:55:24 >> 				Hallo Alexander,<EOL>
+17.08.20 15:55:24 >> <EOL>
+17.08.20 15:55:24 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 15:55:24 >> <EOL>
+17.08.20 15:55:24 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 15:55:24 >> <EOL>
+17.08.20 15:55:24 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=301ad0e3bd5cb1627a2044908a42fdc2&active=0<EOL>
+17.08.20 15:55:24 >> 				Viele Gruesse,<EOL>
+17.08.20 15:55:24 >> 				<EOL>
+17.08.20 15:55:24 >> 				dein Studentenportal-Team<EOL>
+17.08.20 15:55:24 >> .<EOL>
+17.08.20 15:55:25 << 250 2.0.0 OK 1503237323 c68sm4279112wmh.21 - gsmtp<EOL>
+17.08.20 15:55:25 >> QUIT<EOL>
+17.08.20 15:55:25 << 221 2.0.0 closing connection c68sm4279112wmh.21 - gsmtp<EOL>
+17.08.20 15:55:25 ** Disconnecting from smtp.gmail.com:465
+17.08.20 15:55:25 ** Disconnected.
+17.08.20 15:55:25 ** Disconnected.
+17.08.20 16:04:26 ** --- MESSAGE BEGIN ---
+17.08.20 16:04:26 ** To: s49317@beuth-hochschule.de
+17.08.20 16:04:26 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 16:04:26 ** 
+17.08.20 16:04:26 ** 
+17.08.20 16:04:26 ** 				Hallo Alexander,
+17.08.20 16:04:26 ** 
+17.08.20 16:04:26 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 16:04:26 ** 
+17.08.20 16:04:26 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 16:04:26 ** 
+17.08.20 16:04:26 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=63dc7ed1010d3c3b8269faf0ba7491d4&active=0
+17.08.20 16:04:26 ** 				Viele Gruesse,
+17.08.20 16:04:26 ** 				
+17.08.20 16:04:26 ** 				dein Studentenportal-Team
+17.08.20 16:04:26 ** --- MESSAGE END ---
+17.08.20 16:04:27 ** Connecting to smtp.gmail.com:465
+17.08.20 16:04:28 ** Connected.
+17.08.20 16:04:28 << 220 smtp.gmail.com ESMTP p7sm1323818wrg.9 - gsmtp<EOL>
+17.08.20 16:04:28 >> EHLO aa-PC<EOL>
+17.08.20 16:04:28 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 16:04:28 ** Authenticating as beuthportal@gmail.com
+17.08.20 16:04:28 >> AUTH LOGIN<EOL>
+17.08.20 16:04:28 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 16:04:28 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 16:04:28 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 16:04:28 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 16:04:29 << 235 2.7.0 Accepted<EOL>
+17.08.20 16:04:29 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 16:04:29 << 250 2.1.0 OK p7sm1323818wrg.9 - gsmtp<EOL>
+17.08.20 16:04:29 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 16:04:29 << 250 2.1.5 OK p7sm1323818wrg.9 - gsmtp<EOL>
+17.08.20 16:04:29 >> DATA<EOL>
+17.08.20 16:04:29 << 354  Go ahead p7sm1323818wrg.9 - gsmtp<EOL>
+17.08.20 16:04:29 >> Date: Sun, 20 Aug 2017 16:04:29 +0200<EOL>
+17.08.20 16:04:29 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 16:04:29 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 16:04:29 >> <EOL>
+17.08.20 16:04:29 >> <EOL>
+17.08.20 16:04:29 >> 				Hallo Alexander,<EOL>
+17.08.20 16:04:29 >> <EOL>
+17.08.20 16:04:29 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 16:04:29 >> <EOL>
+17.08.20 16:04:29 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 16:04:29 >> <EOL>
+17.08.20 16:04:29 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=63dc7ed1010d3c3b8269faf0ba7491d4&active=0<EOL>
+17.08.20 16:04:29 >> 				Viele Gruesse,<EOL>
+17.08.20 16:04:29 >> 				<EOL>
+17.08.20 16:04:29 >> 				dein Studentenportal-Team<EOL>
+17.08.20 16:04:29 >> .<EOL>
+17.08.20 16:04:29 << 250 2.0.0 OK 1503237868 p7sm1323818wrg.9 - gsmtp<EOL>
+17.08.20 16:04:29 >> QUIT<EOL>
+17.08.20 16:04:29 << 221 2.0.0 closing connection p7sm1323818wrg.9 - gsmtp<EOL>
+17.08.20 16:04:29 ** Disconnecting from smtp.gmail.com:465
+17.08.20 16:04:29 ** Disconnected.
+17.08.20 16:04:29 ** Disconnected.
+17.08.20 16:13:17 ** --- MESSAGE BEGIN ---
+17.08.20 16:13:17 ** To: s49317@beuth-hochschule.de
+17.08.20 16:13:17 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 16:13:17 ** 
+17.08.20 16:13:17 ** 
+17.08.20 16:13:17 ** 				Hallo Alexander,
+17.08.20 16:13:17 ** 
+17.08.20 16:13:17 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 16:13:17 ** 
+17.08.20 16:13:17 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 16:13:17 ** 
+17.08.20 16:13:17 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=13fe9d84310e77f13a6d184dbf1232f3&active=0
+17.08.20 16:13:17 ** 				Viele Gruesse,
+17.08.20 16:13:17 ** 				
+17.08.20 16:13:17 ** 				dein Studentenportal-Team
+17.08.20 16:13:17 ** --- MESSAGE END ---
+17.08.20 16:13:18 ** Connecting to smtp.gmail.com:465
+17.08.20 16:13:19 ** Connected.
+17.08.20 16:13:19 << 220 smtp.gmail.com ESMTP q45sm601164wrb.3 - gsmtp<EOL>
+17.08.20 16:13:19 >> EHLO aa-PC<EOL>
+17.08.20 16:13:19 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 16:13:19 ** Authenticating as beuthportal@gmail.com
+17.08.20 16:13:19 >> AUTH LOGIN<EOL>
+17.08.20 16:13:19 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 16:13:19 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 16:13:19 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 16:13:19 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 16:13:19 << 235 2.7.0 Accepted<EOL>
+17.08.20 16:13:19 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 16:13:19 << 250 2.1.0 OK q45sm601164wrb.3 - gsmtp<EOL>
+17.08.20 16:13:19 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 16:13:20 << 250 2.1.5 OK q45sm601164wrb.3 - gsmtp<EOL>
+17.08.20 16:13:20 >> DATA<EOL>
+17.08.20 16:13:20 << 354  Go ahead q45sm601164wrb.3 - gsmtp<EOL>
+17.08.20 16:13:20 >> Date: Sun, 20 Aug 2017 16:13:20 +0200<EOL>
+17.08.20 16:13:20 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 16:13:20 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 16:13:20 >> <EOL>
+17.08.20 16:13:20 >> <EOL>
+17.08.20 16:13:20 >> 				Hallo Alexander,<EOL>
+17.08.20 16:13:20 >> <EOL>
+17.08.20 16:13:20 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 16:13:20 >> <EOL>
+17.08.20 16:13:20 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 16:13:20 >> <EOL>
+17.08.20 16:13:20 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=13fe9d84310e77f13a6d184dbf1232f3&active=0<EOL>
+17.08.20 16:13:20 >> 				Viele Gruesse,<EOL>
+17.08.20 16:13:20 >> 				<EOL>
+17.08.20 16:13:20 >> 				dein Studentenportal-Team<EOL>
+17.08.20 16:13:20 >> .<EOL>
+17.08.20 16:13:20 << 250 2.0.0 OK 1503238399 q45sm601164wrb.3 - gsmtp<EOL>
+17.08.20 16:13:20 >> QUIT<EOL>
+17.08.20 16:13:20 << 221 2.0.0 closing connection q45sm601164wrb.3 - gsmtp<EOL>
+17.08.20 16:13:20 ** Disconnecting from smtp.gmail.com:465
+17.08.20 16:13:20 ** Disconnected.
+17.08.20 16:13:20 ** Disconnected.
+17.08.20 16:26:08 ** --- MESSAGE BEGIN ---
+17.08.20 16:26:08 ** To: s49317@beuth-hochschule.de
+17.08.20 16:26:08 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 16:26:08 ** 
+17.08.20 16:26:08 ** 
+17.08.20 16:26:08 ** 				Hallo Alexander,
+17.08.20 16:26:08 ** 
+17.08.20 16:26:08 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 16:26:08 ** 
+17.08.20 16:26:08 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 16:26:08 ** 
+17.08.20 16:26:08 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=9de6d14fff9806d4bcd1ef555be766cd&active=0
+17.08.20 16:26:08 ** 				Viele Gruesse,
+17.08.20 16:26:09 ** 				
+17.08.20 16:26:09 ** 				dein Studentenportal-Team
+17.08.20 16:26:09 ** --- MESSAGE END ---
+17.08.20 16:26:10 ** Connecting to smtp.gmail.com:465
+17.08.20 16:26:11 ** Connected.
+17.08.20 16:26:11 << 220 smtp.gmail.com ESMTP i80sm597162wmh.40 - gsmtp<EOL>
+17.08.20 16:26:11 >> EHLO aa-PC<EOL>
+17.08.20 16:26:11 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 16:26:11 ** Authenticating as beuthportal@gmail.com
+17.08.20 16:26:11 >> AUTH LOGIN<EOL>
+17.08.20 16:26:11 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 16:26:11 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 16:26:11 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 16:26:11 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 16:26:11 << 235 2.7.0 Accepted<EOL>
+17.08.20 16:26:11 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 16:26:11 << 250 2.1.0 OK i80sm597162wmh.40 - gsmtp<EOL>
+17.08.20 16:26:11 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 16:26:11 << 250 2.1.5 OK i80sm597162wmh.40 - gsmtp<EOL>
+17.08.20 16:26:11 >> DATA<EOL>
+17.08.20 16:26:12 << 354  Go ahead i80sm597162wmh.40 - gsmtp<EOL>
+17.08.20 16:26:12 >> Date: Sun, 20 Aug 2017 16:26:12 +0200<EOL>
+17.08.20 16:26:12 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 16:26:12 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 16:26:12 >> <EOL>
+17.08.20 16:26:12 >> <EOL>
+17.08.20 16:26:12 >> 				Hallo Alexander,<EOL>
+17.08.20 16:26:12 >> <EOL>
+17.08.20 16:26:12 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 16:26:12 >> <EOL>
+17.08.20 16:26:12 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 16:26:12 >> <EOL>
+17.08.20 16:26:12 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=9de6d14fff9806d4bcd1ef555be766cd&active=0<EOL>
+17.08.20 16:26:12 >> 				Viele Gruesse,<EOL>
+17.08.20 16:26:12 >> 				<EOL>
+17.08.20 16:26:12 >> 				dein Studentenportal-Team<EOL>
+17.08.20 16:26:12 >> .<EOL>
+17.08.20 16:26:12 << 250 2.0.0 OK 1503239171 i80sm597162wmh.40 - gsmtp<EOL>
+17.08.20 16:26:12 >> QUIT<EOL>
+17.08.20 16:26:12 << 221 2.0.0 closing connection i80sm597162wmh.40 - gsmtp<EOL>
+17.08.20 16:26:12 ** Disconnected.
+17.08.20 16:26:12 ** Disconnected.
+17.08.20 16:26:12 ** Disconnected.
+17.08.20 16:54:59 ** --- MESSAGE BEGIN ---
+17.08.20 16:54:59 ** To: s49317@beuth-hochschule.de
+17.08.20 16:54:59 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 16:54:59 ** 
+17.08.20 16:54:59 ** 
+17.08.20 16:54:59 ** 				Hallo Alexander,
+17.08.20 16:54:59 ** 
+17.08.20 16:54:59 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 16:54:59 ** 
+17.08.20 16:54:59 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 16:54:59 ** 
+17.08.20 16:54:59 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=64223ccf70bbb65a3a4aceac37e21016&active=0
+17.08.20 16:54:59 ** 				Viele Gruesse,
+17.08.20 16:54:59 ** 				
+17.08.20 16:54:59 ** 				dein Studentenportal-Team
+17.08.20 16:54:59 ** --- MESSAGE END ---
+17.08.20 16:55:00 ** Connecting to smtp.gmail.com:465
+17.08.20 16:55:01 ** Connected.
+17.08.20 16:55:01 << 220 smtp.gmail.com ESMTP u46sm21773357wrf.15 - gsmtp<EOL>
+17.08.20 16:55:01 >> EHLO aa-PC<EOL>
+17.08.20 16:55:01 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 16:55:01 ** Authenticating as beuthportal@gmail.com
+17.08.20 16:55:01 >> AUTH LOGIN<EOL>
+17.08.20 16:55:01 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 16:55:01 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 16:55:01 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 16:55:01 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 16:55:02 << 235 2.7.0 Accepted<EOL>
+17.08.20 16:55:02 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 16:55:02 << 250 2.1.0 OK u46sm21773357wrf.15 - gsmtp<EOL>
+17.08.20 16:55:02 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 16:55:02 << 250 2.1.5 OK u46sm21773357wrf.15 - gsmtp<EOL>
+17.08.20 16:55:02 >> DATA<EOL>
+17.08.20 16:55:02 << 354  Go ahead u46sm21773357wrf.15 - gsmtp<EOL>
+17.08.20 16:55:02 >> Date: Sun, 20 Aug 2017 16:55:02 +0200<EOL>
+17.08.20 16:55:02 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 16:55:02 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 16:55:02 >> <EOL>
+17.08.20 16:55:02 >> <EOL>
+17.08.20 16:55:02 >> 				Hallo Alexander,<EOL>
+17.08.20 16:55:02 >> <EOL>
+17.08.20 16:55:02 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 16:55:02 >> <EOL>
+17.08.20 16:55:02 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 16:55:02 >> <EOL>
+17.08.20 16:55:02 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=64223ccf70bbb65a3a4aceac37e21016&active=0<EOL>
+17.08.20 16:55:02 >> 				Viele Gruesse,<EOL>
+17.08.20 16:55:02 >> 				<EOL>
+17.08.20 16:55:02 >> 				dein Studentenportal-Team<EOL>
+17.08.20 16:55:02 >> .<EOL>
+17.08.20 16:55:03 << 250 2.0.0 OK 1503240902 u46sm21773357wrf.15 - gsmtp<EOL>
+17.08.20 16:55:03 >> QUIT<EOL>
+17.08.20 16:55:03 << 221 2.0.0 closing connection u46sm21773357wrf.15 - gsmtp<EOL>
+17.08.20 16:55:03 ** Disconnecting from smtp.gmail.com:465
+17.08.20 16:55:03 ** Disconnected.
+17.08.20 16:55:03 ** Disconnected.
+17.08.20 17:07:13 ** --- MESSAGE BEGIN ---
+17.08.20 17:07:13 ** To: s49317@beuth-hochschule.de
+17.08.20 17:07:13 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 17:07:13 ** 
+17.08.20 17:07:13 ** 
+17.08.20 17:07:13 ** 				Hallo Alexander,
+17.08.20 17:07:13 ** 
+17.08.20 17:07:13 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 17:07:13 ** 
+17.08.20 17:07:13 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 17:07:13 ** 
+17.08.20 17:07:13 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=0a09c8844ba8f0936c20bd791130d6b6&active=0
+17.08.20 17:07:13 ** 				Viele Gruesse,
+17.08.20 17:07:13 ** 				
+17.08.20 17:07:13 ** 				dein Studentenportal-Team
+17.08.20 17:07:13 ** --- MESSAGE END ---
+17.08.20 17:07:15 ** Connecting to smtp.gmail.com:465
+17.08.20 17:07:15 ** Connected.
+17.08.20 17:07:15 << 220 smtp.gmail.com ESMTP u30sm9944157wru.88 - gsmtp<EOL>
+17.08.20 17:07:15 >> EHLO aa-PC<EOL>
+17.08.20 17:07:15 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 17:07:15 ** Authenticating as beuthportal@gmail.com
+17.08.20 17:07:15 >> AUTH LOGIN<EOL>
+17.08.20 17:07:15 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 17:07:15 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 17:07:15 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 17:07:15 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 17:07:15 << 235 2.7.0 Accepted<EOL>
+17.08.20 17:07:15 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 17:07:16 << 250 2.1.0 OK u30sm9944157wru.88 - gsmtp<EOL>
+17.08.20 17:07:16 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 17:07:16 << 250 2.1.5 OK u30sm9944157wru.88 - gsmtp<EOL>
+17.08.20 17:07:16 >> DATA<EOL>
+17.08.20 17:07:16 << 354  Go ahead u30sm9944157wru.88 - gsmtp<EOL>
+17.08.20 17:07:16 >> Date: Sun, 20 Aug 2017 17:07:16 +0200<EOL>
+17.08.20 17:07:16 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 17:07:16 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 17:07:16 >> <EOL>
+17.08.20 17:07:16 >> <EOL>
+17.08.20 17:07:16 >> 				Hallo Alexander,<EOL>
+17.08.20 17:07:16 >> <EOL>
+17.08.20 17:07:16 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 17:07:16 >> <EOL>
+17.08.20 17:07:16 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 17:07:16 >> <EOL>
+17.08.20 17:07:16 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=0a09c8844ba8f0936c20bd791130d6b6&active=0<EOL>
+17.08.20 17:07:16 >> 				Viele Gruesse,<EOL>
+17.08.20 17:07:16 >> 				<EOL>
+17.08.20 17:07:16 >> 				dein Studentenportal-Team<EOL>
+17.08.20 17:07:16 >> .<EOL>
+17.08.20 17:07:16 << 250 2.0.0 OK 1503241635 u30sm9944157wru.88 - gsmtp<EOL>
+17.08.20 17:07:16 >> QUIT<EOL>
+17.08.20 17:07:16 << 221 2.0.0 closing connection u30sm9944157wru.88 - gsmtp<EOL>
+17.08.20 17:07:16 ** Disconnecting from smtp.gmail.com:465
+17.08.20 17:07:16 ** Disconnected.
+17.08.20 17:07:16 ** Disconnected.
+17.08.20 17:09:10 ** --- MESSAGE BEGIN ---
+17.08.20 17:09:10 ** To: s49317@beuth-hochschule.de
+17.08.20 17:09:10 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.08.20 17:09:10 ** 
+17.08.20 17:09:10 ** 
+17.08.20 17:09:10 ** 				Hallo Alexander,
+17.08.20 17:09:10 ** 
+17.08.20 17:09:10 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.08.20 17:09:10 ** 
+17.08.20 17:09:10 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.08.20 17:09:10 ** 
+17.08.20 17:09:10 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=084b6fbb10729ed4da8c3d3f5a3ae7c9&active=0
+17.08.20 17:09:10 ** 				Viele Gruesse,
+17.08.20 17:09:10 ** 				
+17.08.20 17:09:10 ** 				dein Studentenportal-Team
+17.08.20 17:09:10 ** --- MESSAGE END ---
+17.08.20 17:09:12 ** Connecting to smtp.gmail.com:465
+17.08.20 17:09:13 ** Connected.
+17.08.20 17:09:13 << 220 smtp.gmail.com ESMTP 77sm4993881wmt.39 - gsmtp<EOL>
+17.08.20 17:09:13 >> EHLO aa-PC<EOL>
+17.08.20 17:09:13 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 17:09:13 ** Authenticating as beuthportal@gmail.com
+17.08.20 17:09:13 >> AUTH LOGIN<EOL>
+17.08.20 17:09:13 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 17:09:13 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 17:09:13 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 17:09:13 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 17:09:13 << 235 2.7.0 Accepted<EOL>
+17.08.20 17:09:13 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 17:09:13 << 250 2.1.0 OK 77sm4993881wmt.39 - gsmtp<EOL>
+17.08.20 17:09:13 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 17:09:13 << 250 2.1.5 OK 77sm4993881wmt.39 - gsmtp<EOL>
+17.08.20 17:09:13 >> DATA<EOL>
+17.08.20 17:09:13 << 354  Go ahead 77sm4993881wmt.39 - gsmtp<EOL>
+17.08.20 17:09:13 >> Date: Sun, 20 Aug 2017 17:09:13 +0200<EOL>
+17.08.20 17:09:13 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 17:09:13 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.08.20 17:09:13 >> <EOL>
+17.08.20 17:09:13 >> <EOL>
+17.08.20 17:09:13 >> 				Hallo Alexander,<EOL>
+17.08.20 17:09:13 >> <EOL>
+17.08.20 17:09:13 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.08.20 17:09:13 >> <EOL>
+17.08.20 17:09:13 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.08.20 17:09:13 >> <EOL>
+17.08.20 17:09:13 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=084b6fbb10729ed4da8c3d3f5a3ae7c9&active=0<EOL>
+17.08.20 17:09:13 >> 				Viele Gruesse,<EOL>
+17.08.20 17:09:13 >> 				<EOL>
+17.08.20 17:09:13 >> 				dein Studentenportal-Team<EOL>
+17.08.20 17:09:13 >> .<EOL>
+17.08.20 17:09:14 << 250 2.0.0 OK 1503241753 77sm4993881wmt.39 - gsmtp<EOL>
+17.08.20 17:09:14 >> QUIT<EOL>
+17.08.20 17:09:14 << 221 2.0.0 closing connection 77sm4993881wmt.39 - gsmtp<EOL>
+17.08.20 17:09:14 ** Disconnecting from smtp.gmail.com:465
+17.08.20 17:09:14 ** Disconnected.
+17.08.20 17:09:14 ** Disconnected.

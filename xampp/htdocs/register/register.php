@@ -18,6 +18,9 @@ if(isset($_GET['register'])) {
 	$email = trim($_POST['email']);
 	$passwort = $_POST['passwort'];
 	$passwort2 = $_POST['passwort2'];
+	//neu
+	$hash = md5(rand(0,1000));
+	$active = 0;
 
 	if(empty($vorname) || empty($nachname) || empty($email)) {
 		echo "<font color='#FF0000'>Bitte alle Felder ausfüllen<br></font>";
@@ -72,12 +75,43 @@ if(isset($_GET['register'])) {
 	if(!$error) {
 		$passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
 
-		$statement = $pdo->prepare("INSERT INTO users (email, passwort, vorname, nachname) VALUES (:email, :passwort, :vorname, :nachname)");
-		$result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vorname, 'nachname' => $nachname));
+		$statement = $pdo->prepare("INSERT INTO users (email, passwort, vorname, nachname, hash, active) VALUES (:email, :passwort, :vorname, :nachname, :hash, :active)");
+		$result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vorname, 'nachname' => $nachname, 'hash' => $hash, 'active' => $active));
 
 		if($result) {
-			echo "<font color='#008000'>Du wurdest erfolgreich registriert.</font>"; 
-			echo "<font color='#000000'><a href='login.php'><br /> <br />Zum Login</a></font>";
+			
+			
+			//start neu
+	
+				$_SESSION['active'] = 0; //solange 0 bis User aktiviert -> verify.php
+				$_SESSION['logged_in'] = true; // User ist eingeloggt
+				$_SESSION['message'] =
+						
+						 "Ein Bestätigungslink wurde an $email verschickt,
+						 bitte bestätige deine Registrierung durch einen Klick auf den Bestätigungslink!";
+				$to      = $email;
+		
+				$url_registrierungsverfikation = getSiteURL().'verify.php?email='.$email.'&hash='.$hash.'&active='.$active;  
+				$subject = 'Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)';
+				$message_body = '
+				Hallo '.$vorname.',
+
+				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+
+				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+
+				'.$url_registrierungsverfikation.'
+				Viele Gruesse,
+				
+				dein Studentenportal-Team';
+				mail( $to, $subject, $message_body );
+			
+			//ende neu
+			
+			
+			echo "<font color='#008000'>Du wurdest erfolgreich registriert.<br /> <br />
+			Bitte bestaetige die E-Mail, die wir an $to gesendet haben, bevor du dich anmelden kannst.</font>"; 
+			
 			$showFormular = false;
 		} else {
 			echo "<font color='#FF0000'>Beim Abspeichern ist ein Fehler aufgetreten<br></font>";

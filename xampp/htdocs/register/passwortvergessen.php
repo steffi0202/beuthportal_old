@@ -32,7 +32,7 @@ if(isset($_GET['send']) ) {
 			$empfaenger = $user['email'];
 			$betreff = "Neues Passwort fuer deinen Beuth-Portal-Account"; 
 			$from = "From: Studentenportal der Beuth Hochschule Berlin <beuthportal@gmail.com>"; 
-			$url_passwortcode = getSiteURL().'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode; //Setzt hier eure richtige Domain ein
+			$url_passwortcode = getSiteURL().'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode; 
 			$text = 'Hallo '.$user['vorname'].',
 fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
 Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
