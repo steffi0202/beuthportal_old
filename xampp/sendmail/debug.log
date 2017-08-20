@@ -210,3 +210,329 @@
 17.05.27 15:44:59 ** Disconnecting from smtp.gmail.com:25
 17.05.27 15:44:59 ** Disconnected.
 17.05.27 15:44:59 ** Disconnected.
+17.08.20 13:33:12 ** --- MESSAGE BEGIN ---
+17.08.20 13:33:12 ** To: s49317@beuth-hochschule.de
+17.08.20 13:33:12 ** Subject: Neues Passwort für deinen Beuth-Portal-Account
+17.08.20 13:33:12 ** From: Beuth-Portal <beuthportal@gmail.com>
+17.08.20 13:33:12 ** 
+17.08.20 13:33:12 ** Hallo Alex,
+17.08.20 13:33:12 ** für deinen Account des Stundentenportals der Beuth Hochschule wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der 
+17.08.20 13:33:12 ** nächsten 24 Stunden die folgende Website auf:
+17.08.20 13:33:12 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=322eb9ba7b7e749280f97e8d5405911b
+17.08.20 13:33:12 ** 
+17.08.20 13:33:12 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.
+17.08.20 13:33:12 ** 
+17.08.20 13:33:12 ** Viele Grüße,
+17.08.20 13:33:12 ** dein Studenportal-Team
+17.08.20 13:33:12 ** --- MESSAGE END ---
+17.08.20 13:33:13 ** Connecting to smtp-relay.gmail.com:465
+17.08.20 13:33:14 ** Connected.
+17.08.20 13:33:14 << 220 smtp-relay.gmail.com ESMTP s21sm559394wmb.3 - gsmtp<EOL>
+17.08.20 13:33:14 >> EHLO aa-PC<EOL>
+17.08.20 13:33:14 << 250-smtp-relay.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 157286400<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 13:33:14 ** Authenticating as beuthportal@gmail.com
+17.08.20 13:33:14 >> AUTH LOGIN<EOL>
+17.08.20 13:33:14 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 13:33:14 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 13:33:14 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 13:33:14 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 13:33:15 << 235 2.7.0 Accepted<EOL>
+17.08.20 13:33:15 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 13:33:16 << 550-5.7.0 Mail relay denied [178.12.57.177]. Invalid credentials for relay for<EOL>550-5.7.0 one of the domains in:  (as obtained from HELO and MAIL FROM).<EOL>550-5.7.0 Email is being sent from a domain or IP address which isn't registered<EOL>550-5.7.0 in your G Suite account. Please login to your G Suite account and<EOL>550-5.7.0 verify that your sending device IP address has been registered within<EOL>550-5.7.0 the G Suite SMTP Relay Settings. For more information, please visit<EOL>550 5.7.0  https://support.google.com/a/answer/6140680#maildenied s21sm559394wmb.3 - gsmtp<EOL>
+17.08.20 13:33:16 ** Disconnected.
+17.08.20 13:33:16 ** Disconnected.
+17.08.20 13:33:16 ** Disconnected.
+17.08.20 13:33:16 ** Mail relay denied [178.12.57.177]. Invalid credentials for relay for<EOL>one of the domains in:  (as obtained from HELO and MAIL FROM).<EOL>Email is being sent from a domain or IP address which isn't registered<EOL>in your G Suite account. Please login to your G Suite account and<EOL>verify that your sending device IP address has been registered within<EOL>the G Suite SMTP Relay Settings. For more information, please visit<EOL> https://support.google.com/a/answer/6140680#maildenied s21sm559394wmb.3 - gsmtp<EOL>
+17.08.20 13:35:16 ** --- MESSAGE BEGIN ---
+17.08.20 13:35:16 ** To: s49317@beuth-hochschule.de
+17.08.20 13:35:16 ** Subject: Neues Passwort für deinen Beuth-Portal-Account
+17.08.20 13:35:16 ** From: Beuth-Portal <beuthportal@gmail.com>
+17.08.20 13:35:16 ** 
+17.08.20 13:35:16 ** Hallo Alex,
+17.08.20 13:35:16 ** für deinen Account des Stundentenportals der Beuth Hochschule wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der 
+17.08.20 13:35:16 ** nächsten 24 Stunden die folgende Website auf:
+17.08.20 13:35:16 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=722cc221b78e5e3aa726320c8f21faa0
+17.08.20 13:35:16 ** 
+17.08.20 13:35:16 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.
+17.08.20 13:35:16 ** 
+17.08.20 13:35:16 ** Viele Grüße,
+17.08.20 13:35:16 ** dein Studenportal-Team
+17.08.20 13:35:16 ** --- MESSAGE END ---
+17.08.20 13:35:17 ** Connecting to smtp-relay.gmail.com:465
+17.08.20 13:35:18 ** Connected.
+17.08.20 13:35:18 << 220 smtp-relay.gmail.com ESMTP c12sm925725wmh.1 - gsmtp<EOL>
+17.08.20 13:35:18 >> EHLO aa-PC<EOL>
+17.08.20 13:35:18 << 250-smtp-relay.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 157286400<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 13:35:18 ** Authenticating as beuthportal@gmail.com
+17.08.20 13:35:18 >> AUTH LOGIN<EOL>
+17.08.20 13:35:18 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 13:35:18 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 13:35:18 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 13:35:18 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 13:35:18 << 235 2.7.0 Accepted<EOL>
+17.08.20 13:35:18 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 13:35:18 << 550-5.7.0 Mail relay denied [178.12.57.177]. Invalid credentials for relay for<EOL>550-5.7.0 one of the domains in:  (as obtained from HELO and MAIL FROM).<EOL>550-5.7.0 Email is being sent from a domain or IP address which isn't registered<EOL>550-5.7.0 in your G Suite account. Please login to your G Suite account and<EOL>550-5.7.0 verify that your sending device IP address has been registered within<EOL>550-5.7.0 the G Suite SMTP Relay Settings. For more information, please visit<EOL>550 5.7.0  https://support.google.com/a/answer/6140680#maildenied c12sm925725wmh.1 - gsmtp<EOL>
+17.08.20 13:35:18 ** Disconnecting from smtp-relay.gmail.com:465
+17.08.20 13:35:18 ** Disconnected.
+17.08.20 13:35:18 ** Disconnected.
+17.08.20 13:35:18 ** Mail relay denied [178.12.57.177]. Invalid credentials for relay for<EOL>one of the domains in:  (as obtained from HELO and MAIL FROM).<EOL>Email is being sent from a domain or IP address which isn't registered<EOL>in your G Suite account. Please login to your G Suite account and<EOL>verify that your sending device IP address has been registered within<EOL>the G Suite SMTP Relay Settings. For more information, please visit<EOL> https://support.google.com/a/answer/6140680#maildenied c12sm925725wmh.1 - gsmtp<EOL>
+17.08.20 13:42:25 ** --- MESSAGE BEGIN ---
+17.08.20 13:42:25 ** To: s49317@beuth-hochschule.de
+17.08.20 13:42:25 ** Subject: Neues Passwort für deinen Beuth-Portal-Account
+17.08.20 13:42:25 ** 
+17.08.20 13:42:25 ** Hallo Alex,
+17.08.20 13:42:25 ** für deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.08.20 13:42:25 ** Um ein neues Passwort zu vergeben, rufe innerhalb der nächsten 24 Stunden die folgende Website auf:
+17.08.20 13:42:25 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=daf424961ba2feb30523c1a111e597cf
+17.08.20 13:42:25 ** 
+17.08.20 13:42:25 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.
+17.08.20 13:42:25 ** 
+17.08.20 13:42:25 ** Viele Gruesse,
+17.08.20 13:42:25 ** dein Studentenportal-Team
+17.08.20 13:42:25 ** --- MESSAGE END ---
+17.08.20 13:42:27 ** Connecting to smtp.gmail.com:465
+17.08.20 13:42:27 ** Connected.
+17.08.20 13:42:27 << 220 smtp.gmail.com ESMTP b13sm7169057wmi.7 - gsmtp<EOL>
+17.08.20 13:42:27 >> EHLO aa-PC<EOL>
+17.08.20 13:42:27 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 13:42:27 ** Authenticating as beuthportal@gmail.com
+17.08.20 13:42:27 >> AUTH LOGIN<EOL>
+17.08.20 13:42:27 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 13:42:27 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 13:42:28 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 13:42:28 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 13:42:28 << 235 2.7.0 Accepted<EOL>
+17.08.20 13:42:28 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 13:42:28 << 250 2.1.0 OK b13sm7169057wmi.7 - gsmtp<EOL>
+17.08.20 13:42:28 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 13:42:28 << 250 2.1.5 OK b13sm7169057wmi.7 - gsmtp<EOL>
+17.08.20 13:42:28 >> DATA<EOL>
+17.08.20 13:42:28 << 354  Go ahead b13sm7169057wmi.7 - gsmtp<EOL>
+17.08.20 13:42:28 >> Date: Sun, 20 Aug 2017 13:42:28 +0200<EOL>
+17.08.20 13:42:28 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 13:42:28 >> Subject: Neues Passwort für deinen Beuth-Portal-Account<EOL>
+17.08.20 13:42:28 >> <EOL>
+17.08.20 13:42:28 >> Hallo Alex,<EOL>
+17.08.20 13:42:28 >> für deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.08.20 13:42:28 >> Um ein neues Passwort zu vergeben, rufe innerhalb der nächsten 24 Stunden die folgende Website auf:<EOL>
+17.08.20 13:42:28 >> http://localhost/register/passwortzuruecksetzen.php?userid=14&code=daf424961ba2feb30523c1a111e597cf<EOL>
+17.08.20 13:42:28 >> <EOL>
+17.08.20 13:42:28 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.<EOL>
+17.08.20 13:42:28 >> <EOL>
+17.08.20 13:42:28 >> Viele Gruesse,<EOL>
+17.08.20 13:42:28 >> dein Studentenportal-Team<EOL>
+17.08.20 13:42:28 >> .<EOL>
+17.08.20 13:42:29 << 250 2.0.0 OK 1503229347 b13sm7169057wmi.7 - gsmtp<EOL>
+17.08.20 13:42:29 >> QUIT<EOL>
+17.08.20 13:42:29 << 221 2.0.0 closing connection b13sm7169057wmi.7 - gsmtp<EOL>
+17.08.20 13:42:29 ** Disconnecting from smtp.gmail.com:465
+17.08.20 13:42:29 ** Disconnected.
+17.08.20 13:42:29 ** Disconnected.
+17.08.20 13:48:05 ** --- MESSAGE BEGIN ---
+17.08.20 13:48:05 ** To: s49317@beuth-hochschule.de
+17.08.20 13:48:05 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.08.20 13:48:05 ** 
+17.08.20 13:48:05 ** Hallo Alex,
+17.08.20 13:48:05 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.08.20 13:48:05 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden die folgende Website auf:
+17.08.20 13:48:05 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=0c79a0af77dfc685cc9f39072920a36d
+17.08.20 13:48:05 ** 
+17.08.20 13:48:05 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.
+17.08.20 13:48:05 ** 
+17.08.20 13:48:05 ** Viele Gruesse,
+17.08.20 13:48:05 ** dein Studentenportal-Team
+17.08.20 13:48:05 ** --- MESSAGE END ---
+17.08.20 13:48:06 ** Connecting to smtp.gmail.com:465
+17.08.20 13:48:07 ** Connected.
+17.08.20 13:48:07 << 220 smtp.gmail.com ESMTP q7sm1775938wrd.89 - gsmtp<EOL>
+17.08.20 13:48:07 >> EHLO aa-PC<EOL>
+17.08.20 13:48:07 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 13:48:07 ** Authenticating as beuthportal@gmail.com
+17.08.20 13:48:07 >> AUTH LOGIN<EOL>
+17.08.20 13:48:07 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 13:48:07 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 13:48:07 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 13:48:07 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 13:48:08 << 235 2.7.0 Accepted<EOL>
+17.08.20 13:48:08 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 13:48:08 << 250 2.1.0 OK q7sm1775938wrd.89 - gsmtp<EOL>
+17.08.20 13:48:08 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 13:48:08 << 250 2.1.5 OK q7sm1775938wrd.89 - gsmtp<EOL>
+17.08.20 13:48:08 >> DATA<EOL>
+17.08.20 13:48:08 << 354  Go ahead q7sm1775938wrd.89 - gsmtp<EOL>
+17.08.20 13:48:08 >> Date: Sun, 20 Aug 2017 13:48:08 +0200<EOL>
+17.08.20 13:48:08 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 13:48:08 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.08.20 13:48:08 >> <EOL>
+17.08.20 13:48:08 >> Hallo Alex,<EOL>
+17.08.20 13:48:08 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.08.20 13:48:08 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden die folgende Website auf:<EOL>
+17.08.20 13:48:08 >> http://localhost/register/passwortzuruecksetzen.php?userid=14&code=0c79a0af77dfc685cc9f39072920a36d<EOL>
+17.08.20 13:48:08 >> <EOL>
+17.08.20 13:48:08 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.<EOL>
+17.08.20 13:48:08 >> <EOL>
+17.08.20 13:48:08 >> Viele Gruesse,<EOL>
+17.08.20 13:48:08 >> dein Studentenportal-Team<EOL>
+17.08.20 13:48:08 >> .<EOL>
+17.08.20 13:48:09 << 250 2.0.0 OK 1503229687 q7sm1775938wrd.89 - gsmtp<EOL>
+17.08.20 13:48:09 >> QUIT<EOL>
+17.08.20 13:48:09 << 221 2.0.0 closing connection q7sm1775938wrd.89 - gsmtp<EOL>
+17.08.20 13:48:09 ** Disconnected.
+17.08.20 13:48:09 ** Disconnected.
+17.08.20 13:48:09 ** Disconnected.
+17.08.20 13:50:57 ** --- MESSAGE BEGIN ---
+17.08.20 13:50:57 ** To: s49317@beuth-hochschule.de
+17.08.20 13:50:57 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.08.20 13:50:57 ** 
+17.08.20 13:50:57 ** Hallo Alex,
+17.08.20 13:50:57 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.08.20 13:50:57 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.08.20 13:50:57 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=5cf405ce386b0a9f1c515be5528754da
+17.08.20 13:50:57 ** 
+17.08.20 13:50:57 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.08.20 13:50:57 ** 
+17.08.20 13:50:57 ** Viele Gruesse,
+17.08.20 13:50:57 ** dein Studentenportal-Team
+17.08.20 13:50:57 ** --- MESSAGE END ---
+17.08.20 13:50:59 ** Connecting to smtp.gmail.com:465
+17.08.20 13:50:59 ** Connected.
+17.08.20 13:50:59 << 220 smtp.gmail.com ESMTP o6sm8341207wrc.48 - gsmtp<EOL>
+17.08.20 13:50:59 >> EHLO aa-PC<EOL>
+17.08.20 13:50:59 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 13:50:59 ** Authenticating as beuthportal@gmail.com
+17.08.20 13:50:59 >> AUTH LOGIN<EOL>
+17.08.20 13:50:59 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 13:50:59 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 13:51:00 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 13:51:00 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 13:51:00 << 235 2.7.0 Accepted<EOL>
+17.08.20 13:51:00 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 13:51:00 << 250 2.1.0 OK o6sm8341207wrc.48 - gsmtp<EOL>
+17.08.20 13:51:00 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 13:51:00 << 250 2.1.5 OK o6sm8341207wrc.48 - gsmtp<EOL>
+17.08.20 13:51:00 >> DATA<EOL>
+17.08.20 13:51:00 << 354  Go ahead o6sm8341207wrc.48 - gsmtp<EOL>
+17.08.20 13:51:00 >> Date: Sun, 20 Aug 2017 13:51:00 +0200<EOL>
+17.08.20 13:51:00 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 13:51:00 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.08.20 13:51:00 >> <EOL>
+17.08.20 13:51:00 >> Hallo Alex,<EOL>
+17.08.20 13:51:00 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.08.20 13:51:00 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.08.20 13:51:00 >> http://localhost/register/passwortzuruecksetzen.php?userid=14&code=5cf405ce386b0a9f1c515be5528754da<EOL>
+17.08.20 13:51:00 >> <EOL>
+17.08.20 13:51:00 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.08.20 13:51:00 >> <EOL>
+17.08.20 13:51:00 >> Viele Gruesse,<EOL>
+17.08.20 13:51:00 >> dein Studentenportal-Team<EOL>
+17.08.20 13:51:00 >> .<EOL>
+17.08.20 13:51:01 << 250 2.0.0 OK 1503229859 o6sm8341207wrc.48 - gsmtp<EOL>
+17.08.20 13:51:01 >> QUIT<EOL>
+17.08.20 13:51:01 << 221 2.0.0 closing connection o6sm8341207wrc.48 - gsmtp<EOL>
+17.08.20 13:51:01 ** Disconnecting from smtp.gmail.com:465
+17.08.20 13:51:01 ** Disconnected.
+17.08.20 13:51:01 ** Disconnected.
+17.08.20 14:00:38 ** --- MESSAGE BEGIN ---
+17.08.20 14:00:38 ** To: s49317@beuth-hochschule.de
+17.08.20 14:00:38 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.08.20 14:00:38 ** 
+17.08.20 14:00:38 ** Hallo Alex,
+17.08.20 14:00:38 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.08.20 14:00:38 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.08.20 14:00:38 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=eb889ebaf22625239f8cc26af68366e3
+17.08.20 14:00:38 ** 
+17.08.20 14:00:38 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.08.20 14:00:38 ** 
+17.08.20 14:00:38 ** Viele Gruesse,
+17.08.20 14:00:38 ** dein Studentenportal-Team
+17.08.20 14:00:38 ** --- MESSAGE END ---
+17.08.20 14:00:39 ** Connecting to smtp.gmail.com:465
+17.08.20 14:00:40 ** Connected.
+17.08.20 14:00:40 << 220 smtp.gmail.com ESMTP j137sm12057798wmd.0 - gsmtp<EOL>
+17.08.20 14:00:40 >> EHLO aa-PC<EOL>
+17.08.20 14:00:40 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 14:00:40 ** Authenticating as beuthportal@gmail.com
+17.08.20 14:00:40 >> AUTH LOGIN<EOL>
+17.08.20 14:00:40 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 14:00:40 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 14:00:40 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 14:00:40 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 14:00:40 << 235 2.7.0 Accepted<EOL>
+17.08.20 14:00:40 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 14:00:40 << 250 2.1.0 OK j137sm12057798wmd.0 - gsmtp<EOL>
+17.08.20 14:00:40 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 14:00:40 << 250 2.1.5 OK j137sm12057798wmd.0 - gsmtp<EOL>
+17.08.20 14:00:40 >> DATA<EOL>
+17.08.20 14:00:41 << 354  Go ahead j137sm12057798wmd.0 - gsmtp<EOL>
+17.08.20 14:00:41 >> Date: Sun, 20 Aug 2017 14:00:41 +0200<EOL>
+17.08.20 14:00:41 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 14:00:41 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.08.20 14:00:41 >> <EOL>
+17.08.20 14:00:41 >> Hallo Alex,<EOL>
+17.08.20 14:00:41 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.08.20 14:00:41 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.08.20 14:00:41 >> http://localhost/register/passwortzuruecksetzen.php?userid=14&code=eb889ebaf22625239f8cc26af68366e3<EOL>
+17.08.20 14:00:41 >> <EOL>
+17.08.20 14:00:41 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.08.20 14:00:41 >> <EOL>
+17.08.20 14:00:41 >> Viele Gruesse,<EOL>
+17.08.20 14:00:41 >> dein Studentenportal-Team<EOL>
+17.08.20 14:00:41 >> .<EOL>
+17.08.20 14:00:41 << 250 2.0.0 OK 1503230440 j137sm12057798wmd.0 - gsmtp<EOL>
+17.08.20 14:00:41 >> QUIT<EOL>
+17.08.20 14:00:41 << 221 2.0.0 closing connection j137sm12057798wmd.0 - gsmtp<EOL>
+17.08.20 14:00:41 ** Disconnecting from smtp.gmail.com:465
+17.08.20 14:00:41 ** Disconnected.
+17.08.20 14:00:41 ** Disconnected.
+17.08.20 14:09:50 ** --- MESSAGE BEGIN ---
+17.08.20 14:09:50 ** To: s49317@beuth-hochschule.de
+17.08.20 14:09:50 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.08.20 14:09:50 ** 
+17.08.20 14:09:50 ** Hallo Alex,
+17.08.20 14:09:50 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.08.20 14:09:50 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.08.20 14:09:50 ** http://localhost/register/passwortzuruecksetzen.php?userid=14&code=21e961021c93e45782d4b3e14df01aab
+17.08.20 14:09:50 ** 
+17.08.20 14:09:50 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.08.20 14:09:50 ** 
+17.08.20 14:09:50 ** Viele Gruesse,
+17.08.20 14:09:50 ** dein Studentenportal-Team
+17.08.20 14:09:50 ** --- MESSAGE END ---
+17.08.20 14:09:51 ** Connecting to smtp.gmail.com:465
+17.08.20 14:09:52 ** Connected.
+17.08.20 14:09:52 << 220 smtp.gmail.com ESMTP o30sm10872136wrb.76 - gsmtp<EOL>
+17.08.20 14:09:52 >> EHLO aa-PC<EOL>
+17.08.20 14:09:52 << 250-smtp.gmail.com at your service, [178.12.57.177]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+17.08.20 14:09:52 ** Authenticating as beuthportal@gmail.com
+17.08.20 14:09:52 >> AUTH LOGIN<EOL>
+17.08.20 14:09:53 << 334 VXNlcm5hbWU6<EOL>
+17.08.20 14:09:53 >> YmV1dGhwb3J0YWxAZ21haWwuY29t<EOL>
+17.08.20 14:09:53 << 334 UGFzc3dvcmQ6<EOL>
+17.08.20 14:09:53 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.08.20 14:09:53 << 235 2.7.0 Accepted<EOL>
+17.08.20 14:09:53 >> MAIL FROM: <beuthportal@gmail.com><EOL>
+17.08.20 14:09:53 << 250 2.1.0 OK o30sm10872136wrb.76 - gsmtp<EOL>
+17.08.20 14:09:53 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.08.20 14:09:53 << 250 2.1.5 OK o30sm10872136wrb.76 - gsmtp<EOL>
+17.08.20 14:09:53 >> DATA<EOL>
+17.08.20 14:09:53 << 354  Go ahead o30sm10872136wrb.76 - gsmtp<EOL>
+17.08.20 14:09:53 >> Date: Sun, 20 Aug 2017 14:09:53 +0200<EOL>
+17.08.20 14:09:53 >> To: s49317@beuth-hochschule.de<EOL>
+17.08.20 14:09:53 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.08.20 14:09:53 >> <EOL>
+17.08.20 14:09:53 >> Hallo Alex,<EOL>
+17.08.20 14:09:53 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.08.20 14:09:53 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.08.20 14:09:53 >> http://localhost/register/passwortzuruecksetzen.php?userid=14&code=21e961021c93e45782d4b3e14df01aab<EOL>
+17.08.20 14:09:53 >> <EOL>
+17.08.20 14:09:53 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.08.20 14:09:53 >> <EOL>
+17.08.20 14:09:53 >> Viele Gruesse,<EOL>
+17.08.20 14:09:53 >> dein Studentenportal-Team<EOL>
+17.08.20 14:09:53 >> .<EOL>
+17.08.20 14:09:54 << 250 2.0.0 OK 1503230992 o30sm10872136wrb.76 - gsmtp<EOL>
+17.08.20 14:09:54 >> QUIT<EOL>
+17.08.20 14:09:54 << 221 2.0.0 closing connection o30sm10872136wrb.76 - gsmtp<EOL>
+17.08.20 14:09:54 ** Disconnecting from smtp.gmail.com:465
+17.08.20 14:09:54 ** Disconnected.
+17.08.20 14:09:54 ** Disconnected.

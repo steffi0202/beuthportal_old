@@ -6,7 +6,7 @@ require_once("inc/functions.inc.php");
 
 include("templates/header.inc.php");
 ?>
- <div class="container small-container-330">
+ <div class="container small-container-330" style="max-width:400px; align-items: center; justify-content: center;">
 	<h2 >Passwort vergessen</h2>
 
 
@@ -30,24 +30,23 @@ if(isset($_GET['send']) ) {
 			$result = $statement->execute(array('passwortcode' => sha1($passwortcode), 'userid' => $user['id']));
 
 			$empfaenger = $user['email'];
-			$betreff = "Neues Passwort für deinen Beuth Portal Account"; //Ersetzt hier den Domain-Namen
-			$from = "From: Vorname Nachname <absender@domain.de>"; //Ersetzt hier euren Name und E-Mail-Adresse
+			$betreff = "Neues Passwort fuer deinen Beuth-Portal-Account"; 
+			$from = "From: Studentenportal der Beuth Hochschule Berlin <beuthportal@gmail.com>"; 
 			$url_passwortcode = getSiteURL().'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode; //Setzt hier eure richtige Domain ein
 			$text = 'Hallo '.$user['vorname'].',
-für deinen Account des Stundentenportals der Beuth Hochschule wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der 
-nächsten 24 Stunden die folgende Website auf:
+fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
 '.$url_passwortcode.'
 
-Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.
+Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
 
-Viele Grüße,
-dein Studenportal-Team';
-
+Viele Gruesse,
+dein Studentenportal-Team';
 			//echo $text;
+			//mail($empfaenger, $betreff, $text, $from);
+			mail($empfaenger, $betreff, $text);
 
-			mail($empfaenger, $betreff, $text, $from);
-
-			echo "Ein Link um dein Passwort zurückzusetzen wurde an deine E-Mail-Adresse gesendet.";
+			echo "Ein Link zum Zurücksetzen deines Passworts wurde an <span>$empfaenger</span> gesendet.";
 			$showForm = false;
 		}
 	}
@@ -55,7 +54,7 @@ dein Studenportal-Team';
 
 if($showForm):
 ?>
-	Gib hier deine E-Mail-Adresse ein, um ein neues Passwort anzufordern.<br><br>
+	<div>Gib deine E-Mail-Adresse ein, um dein Passwort zu ändern.</div><br /><br />
 
 	<?php
 	if(isset($error) && !empty($error)) {
@@ -65,7 +64,8 @@ if($showForm):
 	?>
 	<form action="?send=1" method="post">
 		<label for="inputEmail">E-Mail</label>
-		<input class="form-control" placeholder="E-Mail" name="email" type="email" value="<?php echo isset($_POST['email']) ? htmlentities($_POST['email']) : ''; ?>" required>
+		<input class="form-control" placeholder="E-Mail" name="email" type="email" value="
+		<?php echo isset($_POST['email']) ? htmlentities($_POST['email']) : ''; ?>" required>
 		<br>
 		<input  class="btn btn-lg btn-primary btn-block" type="submit" value="Neues Passwort">
 	</form>

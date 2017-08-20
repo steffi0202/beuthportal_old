@@ -73,8 +73,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Studentenportal der Beuth Hochschule Berlin</h1>
                 <hr>
-                <p>Registriere dich jetzt um Dozenten und Module zu bewerten .... Text folgt....</p>
-                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Registrieren / Login</a>
+                <p>Registriere dich um Dozenten und Module zu bewerten oder um Dokumente hoch- und runterzuladen.</p>
+                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Jetzt registrieren</a>
             </div>
         </div>
     </header>

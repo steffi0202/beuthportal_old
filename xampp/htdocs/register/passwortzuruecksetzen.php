@@ -3,10 +3,8 @@ session_start();
 require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
 if(!isset($_GET['userid']) || !isset($_GET['code'])) {
-	error("Leider wurde beim Aufruf dieser Website kein Code zum Zurücksetzen deines Passworts übermittelt");
+	error("<font color='#FF0000'><br />Leider wurde beim Aufruf dieser Website kein Code zum Zurücksetzen deines Passworts übermittelt<br /></font>");
 }
-
-
 
 $showForm = true; 
 $userid = $_GET['userid'];
@@ -19,17 +17,18 @@ $user = $statement->fetch();
  
 //Überprüfe dass ein Nutzer gefunden wurde und dieser auch ein Passwortcode hat
 if($user === null || $user['passwortcode'] === null) {
-	error("Der Benutzer wurde nicht gefunden oder hat kein neues Passwort angefordert.");
+	error("<font color='#FF0000'><br />Der Benutzer wurde nicht gefunden oder hat kein neues Passwort angefordert.<br /></font>");
 }
  
 if($user['passwortcode_time'] === null || strtotime($user['passwortcode_time']) < (time()-24*3600) ) {
-	error("Dein Code ist leider abgelaufen. Bitte benutze die Passwort vergessen Funktion erneut.");
+	error("<font color='#FF0000'><br />Dein Code ist leider abgelaufen. Bitte benutze die Passwort-Vergessen-Funktion erneut.<br /></font>");
 }
  
  
 //Überprüfe den Passwortcode
 if(sha1($code) != $user['passwortcode']) {
-	error("Der übergebene Code war ungültig. Stell sicher, dass du den genauen Link in der URL aufgerufen hast. Solltest du mehrmals die Passwort-vergessen Funktion genutzt haben, so ruf den Link in der neuesten E-Mail auf.");
+	error("<font color='#FF0000'><br />Der übergebene Code war ungültig. Stelle bitte sicher, dass du den genauen Link in der URL aufgerufen hast.<br /><br />
+	Solltest du mehrmals die Passwort-Vergessen-Funktion genutzt haben, rufe den Link der neuesten E-Mail auf.<br /></font>");
 }
  
 //Der Code war korrekt, der Nutzer darf ein neues Passwort eingeben
@@ -38,15 +37,20 @@ if(isset($_GET['send'])) {
 	$passwort = $_POST['passwort'];
 	$passwort2 = $_POST['passwort2'];
 	
-	if($passwort != $passwort2) {
-		$msg =  "Bitte identische Passwörter eingeben";
+		//Das Passwort muss bestimmte Richtlinien befolgen
+	if (!preg_match('/[A-Z]/', $passwort) OR !preg_match('/[a-z]/', $passwort) OR !preg_match('/[0-9]/', $passwort)  OR strlen($passwort) < 8) {
+			$msg = "<font color='#FF0000'><br />Das Passwort muss mindestens 8 Zeichen lang sein und aus Zahlen, Klein- und Grossbuchstaben bestehen<br /></font>";
+	}
+	else if($passwort != $passwort2) {
+		$msg =  "<font color='#FF0000'><br />Bitte identische Passwörter eingeben<br /></font>";
 	} else { //Speichere neues Passwort und lösche den Code
 		$passworthash = password_hash($passwort, PASSWORD_DEFAULT);
 		$statement = $pdo->prepare("UPDATE users SET passwort = :passworthash, passwortcode = NULL, passwortcode_time = NULL WHERE id = :userid");
 		$result = $statement->execute(array('passworthash' => $passworthash, 'userid'=> $userid ));
 		
 		if($result) {
-			$msg = "Dein Passwort wurde erfolgreich geändert";
+			$msg = "<font color='#008000'><br />Dein Passwort wurde erfolgreich geändert.<br /><br />
+			Du kannst dich jetzt mit dem neuen Passwort anmelden.<br /></font>";
 			$showForm = false;
 		}
 	}
@@ -55,7 +59,7 @@ if(isset($_GET['send'])) {
 include("templates/header.inc.php");
 ?>
 
- <div class="container small-container-500">
+ <div class="container small-container-500" style="max-width:400px; align-items: center; justify-content: center;">
  
 <h1>Neues Passwort vergeben</h1>
 <?php 

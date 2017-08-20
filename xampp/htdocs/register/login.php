@@ -67,7 +67,7 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 		header("location: ../dashboard.php");
 		exit;
 	} else {
-		$error_msg =  "E-Mail oder Passwort war ungültig<br><br>";
+		$error_msg = "<font color='#FF0000'><br />E-Mail oder Passwort war ungültig<br /><br /></font>";
 	}
 
 }
