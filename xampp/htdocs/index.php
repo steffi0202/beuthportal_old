@@ -98,7 +98,7 @@
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div></a>
-                <a href="#upload.php"><div class="col-lg-3 col-md-6 text-center">
+                <a href="filecontent.php"><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
                         <h3>Dokument-Area</h3>
