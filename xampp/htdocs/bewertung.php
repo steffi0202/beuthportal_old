@@ -7,6 +7,9 @@ require_once("register/inc/functions.inc.php");
 include("templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 
+print_r($_COOKIE);
+			print_r($_POST);
+			print_r($_SESSION);
 //Überprüfe, dass der User eingeloggt ist
 //Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
 

@@ -1,2 +1,5 @@
 
 *.log
+xampp/sendmail/debug.log
+xampp/xampp-control.log
+*.log

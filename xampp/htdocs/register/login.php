@@ -39,7 +39,9 @@
 session_start();
 //require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
+
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
+
 $error_msg = "";
 if(isset($_POST['email']) && isset($_POST['passwort'])) {
 	$email = $_POST['email'];
@@ -70,11 +72,11 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 
 				$insert = $pdo->prepare("INSERT INTO securitytokens (user_id, identifier, securitytoken) VALUES (:user_id, :identifier, :securitytoken)");
 				$insert->execute(array('user_id' => $user['id'], 'identifier' => $identifier, 'securitytoken' => sha1($securitytoken)));
-				setcookie("identifier",$identifier,time()+(3600*24*365)); //Valid for 1 year
-				setcookie("securitytoken",$securitytoken,time()+(3600*24*365)); //Valid for 1 year
+				setcookie("identifier", $identifier, time()+(3600*24*365)); //Valid for 1 year
+				setcookie("securitytoken", $securitytoken, time()+(3600*24*365)); //Valid for 1 year
+				
 			}
-
-			header("location: ../dashboard.php");
+			header("location:dashboard.php");
 			exit;
 		} else {
 			$error_msg = "<font color='#FF0000'><br />E-Mail oder Passwort war ungültig<br /><br /></font>";
@@ -104,7 +106,7 @@ if(isset($error_msg) && !empty($error_msg)) {
 	<input type="password" name="passwort" id="inputPassword" class="form-control" placeholder="Passwort" required>
 	<div class="checkbox">
 	  <label>
-		<input type="checkbox" value="remember-me" name="angemeldet_bleiben" value="1" checked> Angemeldet bleiben
+		<input type="checkbox" name="angemeldet_bleiben" title="Angemeldet bleiben" value="1" checked="checked"> Angemeldet bleiben
 	  </label>
 	</div>
 	<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>

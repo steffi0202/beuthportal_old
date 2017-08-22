@@ -91,8 +91,8 @@
 						<td><button type="submit" class="btn btn-success">Login</button></td>
 					</tr>
 					<tr>
-						<td><label style="margin-bottom: 0px; font-weight: normal;"><input type="checkbox" name="angemeldet_bleiben" 
-						value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" /> 
+						<td><label style="margin-bottom: 0px; font-weight: normal;">
+							<input type="checkbox" name="angemeldet_bleiben" value="remember-me" title="Angemeldet bleiben" value="1" checked="checked" style="margin: 0; vertical-align: middle;" /> 
 						<small>Angemeldet bleiben</small></label></td>
 						<td><small><a style="color: white;" href="passwortvergessen.php">Passwort vergessen</a></small></td>
 						<td></td>

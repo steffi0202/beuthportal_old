@@ -5,8 +5,11 @@
  * @author: Nils Reimers / http://www.php-einfach.de/experte/php-codebeispiele/loginscript/
  * @license: GNU GPLv3
  */
-include_once("password.inc.php");
 
+include_once("password.inc.php");
+//	print_r($_COOKIE);
+//	print_r($_POST);
+//	print_r($_SESSION);
 /**
  * Checks that the user is logged in.
  * @return Returns the row of the logged in user
@@ -31,13 +34,14 @@ function check_user() {
 			$neuer_securitytoken = random_string();
 			$insert = $pdo->prepare("UPDATE securitytokens SET securitytoken = :securitytoken WHERE identifier = :identifier");
 			$insert->execute(array('securitytoken' => sha1($neuer_securitytoken), 'identifier' => $identifier));
-			setcookie("identifier",$identifier,time()+(3600*24*365)); //1 Jahr Gültigkeit
-			setcookie("securitytoken",$neuer_securitytoken,time()+(3600*24*365)); //1 Jahr Gültigkeit
+			setcookie("identifier", $identifier ,time()+(3600*24*365)); //1 Jahr Gültigkeit
+			setcookie("securitytoken", $neuer_securitytoken, time()+(3600*24*365)); //1 Jahr Gültigkeit
 
 			//Logge den Benutzer ein
 			$_SESSION['userid'] = $securitytoken_row['user_id'];
 		}
 	}
+
 
 	if(!isset($_SESSION['userid'])) {
 		die('Bitte zuerst einloggen');
