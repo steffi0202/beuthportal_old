@@ -52,7 +52,7 @@
         </div>
         <?php if(!is_checked_in()): ?>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" action="login.php" method="post">
+          <form class="navbar-form navbar-right" action="register/login.php" method="post">
 			<table class="login" role="presentation">
 				<tbody>
 					<tr>
