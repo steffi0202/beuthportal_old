@@ -27,7 +27,7 @@ DocumentRoot "C:\xampp\beuthportal_old\xampp\htdocs"
 - HTML/CSS Dateien liegen unter C:\xampp\beuthportal_old\xampp\htdocs 
 - Einzig zulässige E-Mail-Domain bei Registrierung: "@beuth-hochschule.de"
 
-# Automatisiertes Unit-Testing mit PHPUni
+# Automatisiertes Unit-Testing mit PHPUnit
 Folgende Schritte sind nötig:
 - Von https://phpunit.de/ die aktuelle Version (6.3.0) downloaden
 - Die Installationsanleitung unter https://phpunit.de/manual/current/en/installation.html#installation.phar.windows befolgen und bei Schritt 5 statt "phpunit.phar" "phpunit-6.3.0.phar" eingeben

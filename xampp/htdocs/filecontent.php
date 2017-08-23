@@ -4,7 +4,7 @@ session_start();
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 
-include("templates/header.inc.php");
+include("register/templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 
 //Überprüfe, dass der User eingeloggt ist
@@ -37,14 +37,17 @@ $user = check_user();
 
     <form action="upload.php" method="post" enctype="multipart/form-data">
 
-    <label class="btn btn-primary">Browse ... <input type="file" name="fileToUpload" id="fileToUpload" style="display: none;"></label>
+    <label class="btn btn-primary">Browse ... 
+	<!--input type="hidden" name="MAX_FILE_SIZE" value="8388608"-->
+	<input type="file" name="fileToUpload" id="fileToUpload" style="display:none;"></label>
     <p></p>
+	
     <input type="submit" value="Upload" class="btn btn-success">
 
     </form>
     <br/>
     
-    <span id=message></span>
+    <span id="message"></span>
 
     <br/>
     
@@ -59,7 +62,7 @@ $user = check_user();
         </thead>
         <tbody>
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="/js/global.js">   </script>
+          <script src="js/global.js">   </script>
         </tbody>
       </table>
 

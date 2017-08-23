@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Loginscript</title>
+    <title>Studentenportal Beuth Hochschule</title>
 
     <!-- Bootstrap Core CSS -->
 	 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.php"></i> Start</a>
+          <a class="navbar-brand" href="../index.php"></i>Start</a>
         </div>
         <?php if(!is_checked_in()): ?>
         <div id="navbar" class="navbar-collapse collapse">
@@ -79,8 +79,9 @@
         <?php else: ?>
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
-         	<li><a href="../../dashboard.php">Interner Bereich</a></li>
-            <li><a href="settings.php">Einstellungen</a></li>
+			<li><a href="../../dashboard.php">Dasboard</a></li>
+         	<li><a href="../../filecontent.php">Datei hochladen</a></li>
+            <li><a href="../register/settings.php">Persoenliche Daten</a></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
