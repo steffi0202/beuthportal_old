@@ -4,6 +4,7 @@ session_start();
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 include("register/templates/header.inc.php");
+$user = check_user();
 $target_dir = "uploads/";
 
 /***********Hier könnte und sollte noch (mit PHPUnit) umfangreich auf z.B. zulässige Dateigrößen und -formate getestet werden***********/
