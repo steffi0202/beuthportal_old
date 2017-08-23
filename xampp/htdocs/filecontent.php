@@ -4,7 +4,7 @@ session_start();
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 
-include("register/templates/header.inc.php");
+include("templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 
 //Überprüfe, dass der User eingeloggt ist

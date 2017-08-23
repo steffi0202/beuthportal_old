@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+session_start();
+//require_once("inc/config.inc.php");
+require_once("register/inc/config.inc.php");
+require_once("register/inc/functions.inc.php");
+
+//include("templates/header.inc.php");
+$pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
+
+?>
 <html lang="en">
 <head>
 
@@ -48,9 +58,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+					<?php if(is_checked_in()): ?>	
 					<li>
                         <a class="page-scroll" href="dashboard.php">Dashboard</a>
                     </li>
+					 <?php else: ?><?php endif; ?>
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
@@ -60,9 +72,15 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+					 <?php if(!is_checked_in()): ?>					
                     <li>
                         <a  href="register/login.php">Login</a>
                     </li>
+					 <?php else: ?>
+					 <li>
+                        <a  href="register/logout.php">Logout</a>
+                    </li>
+					<?php endif; ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -91,20 +109,20 @@
         </div>
         <div class="container">
             <div class="row">
-                <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
+                <!--a href="bewertung.php"--><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
                         <h3>Studiengang bewerten</h3>
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
-                </div></a>
-                <a href="filecontent.php"><div class="col-lg-3 col-md-6 text-center">
+                </div><!--/a-->
+                <!--a href="filecontent.php"--><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
                         <h3>Dokument-Area</h3>
                         <p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
                     </div>
-                </div></a>
+                </div><!--/a-->
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
