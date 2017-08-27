@@ -44,7 +44,12 @@ Viele Gruesse,
 dein Studentenportal-Team';
 			//echo $text;
 			//mail($empfaenger, $betreff, $text, $from);
-			mail($empfaenger, $betreff, $text);
+			//mail($empfaenger, $betreff, $text);
+			
+			$headers =  'MIME-Version: 1.0' . "\r\n"; 
+			$headers .= 'From: Beuth-Portal <beuthportal@gmail.com>' . "\r\n";
+			//$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+			mail( $to, $subject, $message_body, $headers );
 
 			echo "Ein Link zum Zurücksetzen deines Passworts wurde an <span>$empfaenger</span> gesendet.";
 			$showForm = false;
