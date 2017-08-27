@@ -28,7 +28,7 @@ $user = check_user();
             <div class="header-content-inner">
                 <h1 id="homeHeading">Bewerte deinen Studiengang!</h1>
                 <hr>
-                <p>Bewerte deine Module und Dozenten und erfahre, wie andere Studenten bewertet haben .... Text folgt....</p>
+                <p>Bewerte deine Module und Dozenten und erfahre, wie andere Studenten bewertet haben</p>
                 <a class="btn btn-primary btn-xl page-scroll" href="#bewerten">Bewerten</a>
             </div>
         </div>
@@ -51,6 +51,7 @@ $user = check_user();
                     	$error = false;
                     	$studiengang = trim($_POST['Studiengang']);
                     	$modul = trim($_POST['Modul']);
+                    	$semester = trim($_POST['Semester']);
                     	$zeit = trim($_POST['Zeitaufwand']);
                       $modul_des = trim($_POST['TextareaModul']);
                     	$dozent = trim($_POST['Dozent']);
@@ -60,8 +61,8 @@ $user = check_user();
                       //Keine Fehler, wir können die Daten in die DB schreiben
                       if(!$error) {
 
-                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Zeitaufwand, Dozent, Modul_des, Dozent_des, Sterne) VALUES (:Studiengang, :Modul, :Zeitaufwand, :Dozent, :TextareaModul, :TextareaDozent, :Sterne)");
-                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent, 'TextareaModul' => $modul_des, 'TextareaDozent' => $dozent_des, 'Sterne' => $sterne));
+                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Semester, Zeitaufwand, Dozent, Modul_des, Dozent_des, Sterne) VALUES (:Studiengang, :Modul, :Semester, :Zeitaufwand, :Dozent, :TextareaModul, :TextareaDozent, :Sterne)");
+                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Semester' => $semester, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent, 'TextareaModul' => $modul_des, 'TextareaDozent' => $dozent_des, 'Sterne' => $sterne));
 
                         if($result) {
                           echo "<script type='text/javascript'>alert('Die Daten wurden erfolgreich übertragen!')</script>";
@@ -75,20 +76,37 @@ $user = check_user();
 
                      if($showFormular) {
 ?>
+                  <script type="text/javascript">
+
+                     function doit() {
+                      var selectBox = document.getElementById("Studiengang");
+                      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                      //alert(selectedValue);
+                      if(selectedValue == 1) {
+                        document.getElementById('v1').style.display='block';
+                        document.getElementById('v2').style.display='none';
+                      } else {
+                        document.getElementById('v1').style.display='none';
+                        document.getElementById('v2').style.display='block';
+                      }
+
+                     }
+
+
+
+                    </script>
                     <form method="post" action="?bewertung">
                     <div class="form-group">
                         <label for="Studiengang">Wähle deinen Studiengang:</label>
-                            <select class="form-control" name="Studiengang">
-                                 <option>Wirtschaftsinformatik - Online</option>
-                                 <option>Medieninformatik - Online</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
-                            </select>
+                          <select onChange="doit();" id="Studiengang" class="form-control" name="Studiengang">
+                                <option >Bitte Studiengang auswählen</option>
+                                 <option value="1" >Wirtschaftsinformatik - Online</option>
+                                 <option value="2">Medieninformatik - Online</option>
+                     </select>
                      </div>
-                     <div class="form-group">
+                     <div id="v1" style="display:none;" class="form-group">
                         <label for="Modul">Wähle dein Modul:</label>
-                            <select class="form-control" name="Modul">
+                            <select class="form-control" name="Modul" >
                                  <option>Business Engineering</option>
                                  <option>Operations Research</option>
                                  <option>3</option>
@@ -96,6 +114,17 @@ $user = check_user();
                                  <option>5</option>
                             </select>
                      </div>
+                     <div id="v2" style="display:none;" class="form-group">
+                        <label for="Modul">Wähle dein Modul:</label>
+                            <select class="form-control" name="Modul">
+                                 <option>Medieninfo1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                            </select>
+                     </div>
+
                      <div class="form-group">
                         <label for="Zeitaufwand">Wieviel Stunden hast du pro Woche für das Modul benötigt?</label>
                             <select class="form-control" name="Zeitaufwand">
@@ -112,22 +141,22 @@ $user = check_user();
                         <label for="TextareaModul">Beschreibe das Modul</label>
                             <textarea class="form-control" name="TextareaModul" rows="3"></textarea>
                          </div>
-                      <div class="form-group">
 
-                        <label for="Dozent">Wer hat das Modul unterrrichtet:</label>
-                            <select class="form-control" name="Dozent">
-                                 <option>Prof. Dr. Peter Weimann</option>
-                                 <option>Jane Brosnan</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
-                            </select>
-                     </div>
+                         <div class="form-group">
+                            <label for="Dozent">Wähle deinen Dozenten</label>
+                                <select class="form-control" name="Dozent">
+                                     <option>Prof. Dr. Peter Weimann</option>
+                                     <option>Agathe Merceron</option>
+                                     <option>Jane Brosnan</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                </select>
+                         </div>
+
                      <div class="form-group">
                         <label for="TextareaDozent">Was ist dir zu deinem Dozenten besondern im Gedächtnis geblieben?</label>
                             <textarea class="form-control" name="TextareaDozent" rows="3"></textarea>
                          </div>
-
                          <div>
                          <label for="star-rating">Wie viele Sterne bekommt das Modul und der Dozent von dir?</label>
                         <input name="Sterne" id="input-21b" value="4" type="text" class="rating" data-min=0 data-max=5 data-step=0.2 data-size="lg"
@@ -146,26 +175,10 @@ $user = check_user();
 
     ?>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Du hast Fragen oder Anregungen? Super! Sende uns eine Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
-                </div>
-            <!--  <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>-->
-                <div class="col-lg-12 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 </body>
+<?php
+include("templates/footer.inc.php")
+?>
 
 </html>

@@ -7,6 +7,9 @@ require_once("register/inc/functions.inc.php");
 
 //include("templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
+if(is_checked_in()){
+	header("location:dashboard.php");
+}
 ?>
 <html lang="en">
 <head>
@@ -63,14 +66,14 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                     </li>
 					 <?php else: ?>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Deine Möglichkeiten</a>
                     </li>
-                    <li>
+                    <!--li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
+                    </li-->
 					<?php endif; ?>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
 					 <?php if(!is_checked_in()): ?>					
                     <li>
@@ -196,7 +199,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <!--section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -291,7 +294,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
 	
 	<?php else: ?>
 

@@ -40,7 +40,7 @@ session_start();
 //require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
 if(is_checked_in()){
-	header("location:../index.php");
+	header("location:../dashboard.php");
 }
 else{
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
@@ -79,7 +79,7 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 				setcookie("securitytoken", $securitytoken, time()+(3600*24*365)); //Valid for 1 year
 				
 			}
-			header("location:../index.php");
+			header("location:../dashboard.php");
 			exit;
 		} else {
 			$error_msg = "<font color='#FF0000'><br />E-Mail oder Passwort war ungültig<br /><br /></font>";
