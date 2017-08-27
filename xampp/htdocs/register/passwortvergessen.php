@@ -67,7 +67,7 @@ if($showForm):
 		<input class="form-control" placeholder="E-Mail" name="email" type="email" value="
 		<?php echo isset($_POST['email']) ? htmlentities($_POST['email']) : ''; ?>" required>
 		<br>
-		<input  class="btn btn-lg btn-primary btn-block" type="submit" value="Neues Passwort">
+		<input  class="btn btn-lg btn-primary btn-block" type="submit" value="Neues Passwort anfordern">
 	</form>
 <?php
 endif; //Endif von if($showForm)

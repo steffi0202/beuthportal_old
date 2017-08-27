@@ -26,25 +26,25 @@
   <![endif]-->
 
 </head>
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
-                <hr class="primary">
-                <p>Du hast Fragen oder Anregungen? Super! Sende uns eine Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
-            </div>
-        <!--  <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-phone fa-3x sr-contact"></i>
-                <p>123-456-6789</p>
-            </div>-->
-            <div class="col-lg-12 text-center">
-                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="mailto:your-email@your-domain.com">feedback@xy.com</a></p>
+ <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Fragen, Wünsche, Anregungen?</h2>
+                    <hr class="primary">
+                    <p>Sende uns eine E-Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
+                </div>
+            <!--  <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>123-456-6789</p>
+                </div>-->
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:beuthportal@gmail.com">beuthportal@gmail.com</a></p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Bootstrap core JavaScript
