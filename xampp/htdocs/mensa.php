@@ -19,9 +19,12 @@ $user = check_user();
 ﻿<!DOCTYPE html>
 <html lang="en">
 
+<body id="page-top">
+</div>
+  <!--/.container-fluid-->
+</nav>
 
 <header>
-
     <div class="header-content">
         <div class="header-content-inner">
             <h1 id="homeHeading">MM - Euer Mensa Menue!</h1>
@@ -29,9 +32,7 @@ $user = check_user();
             <hr>
         </div>
     </div>
-
 </header>
-
 
 <body id="page-top">
 
@@ -40,10 +41,10 @@ $user = check_user();
     <p>Guten Hunger!</p>
 
     <div class="jumbotron">
-        <a class="btn btn-primary btn-xl page-scroll" href="Menue1.pdf">Menue 09.10.-13.10.2017</a>
+        <a class="btn btn-primary btn-xl page-scroll" href="Menue1.pdf" target="_blank" rel="noopener">Menue 09.10.-13.10.2017</a>
         <!--button type="button" class="btn btn-default">Menue 17.07.-21.07.2017</button-->
         <p></p>
-        <a class="btn btn-primary btn-xl page-scroll" href="Menue2.pdf">Menue 16.10.-20.10.2017</a>
+        <a class="btn btn-primary btn-xl page-scroll" href="Menue2.pdf" target="_blank" rel="noopener">Menue 16.10.-20.10.2017</a>
     </div
 
 
