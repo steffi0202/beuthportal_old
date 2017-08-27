@@ -30,7 +30,7 @@
     <link href="../css/table.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via filefile:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -52,7 +52,7 @@
         </div>
         <?php if(!is_checked_in()): ?>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" action="register/login.php" method="post">
+          <form class="navbar-form navbar-right" action="login.php" method="post">
 			<table class="login" role="presentation">
 				<tbody>
 					<tr>
@@ -67,7 +67,8 @@
 					</tr>
 					<tr>
 						<td><label style="margin-bottom: 0px; font-weight: normal;"><input type="checkbox" name="angemeldet_bleiben" 
-						value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" /> <small>Angemeldet bleiben</small></label></td>
+						value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" /> 
+						<small>Angemeldet bleiben</small></label></td>
 						<td><small><a style="color: white;" href="passwortvergessen.php">Passwort vergessen</a></small></td>
 						<td></td>
 					</tr>
@@ -80,7 +81,7 @@
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
 			<li><a href="../../dashboard.php">Dashboard</a></li>
-         	<li><a href="../../filecontent.php">Datei hochladen</a></li>
+         	<li><a href="../../upload.php">Datei hochladen</a></li>
             <li><a href="../../settings.php">Persoenliche Daten</a></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>

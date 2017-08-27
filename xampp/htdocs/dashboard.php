@@ -15,7 +15,7 @@ $user = check_user();
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Hallo <?php echo htmlentities($user['vorname']); ?>,<br></h1>
+                <h1 id="homeHeading">Hallo <?php echo htmlentities($user['vorname']); ?>!<br></h1>
                 <hr>
             </div>
                   <div class="container">
@@ -161,39 +161,42 @@ $user = check_user();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Lade hier was hoch</h2>
+                    <h2 class="section-heading">Oder gehe direkt zum gewünschten Bereich:</h2>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                  <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Studiengang bewerten</h3>
+                        <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                </div></a>
+								
+               <a href="upload.php">
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+							<h3>Dokument-Area</h3>
+							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
+						</div>
+					</div>
+				</a>
+                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>Mensapläne</h3>
+                        <p class="text-muted">Hier folgt evtl. der Mensa-Content</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Forum</h3>
+                        <p class="text-muted">Hier folgt evtl. das Forum</p>
                     </div>
                 </div>
             </div>

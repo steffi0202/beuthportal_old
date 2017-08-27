@@ -7,7 +7,6 @@ require_once("register/inc/functions.inc.php");
 
 //include("templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
-
 ?>
 <html lang="en">
 <head>
@@ -62,13 +61,14 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 					<li>
                         <a class="page-scroll" href="dashboard.php">Dashboard</a>
                     </li>
-					 <?php else: ?><?php endif; ?>
+					 <?php else: ?>
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
+					<?php endif; ?>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -87,22 +87,75 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+	<?php if(!is_checked_in()): ?>	
     <header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Studentenportal der Beuth Hochschule Berlin</h1>
                 <hr>
-                <p>Registriere dich um Dozenten und Module zu bewerten oder um Dokumente hoch- und runterzuladen.</p>
-                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Jetzt registrieren</a>
+                Registriere dich um Dozenten und Module zu bewerten oder um Dokumente hoch- und runterzuladen.<br /><br />
+                <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Jetzt registrieren</a><br />
+				<hr> 
+				Du bist bereits registriert? Dann melde dich jetzt an, um alle Funktionen nutzen zu können.<br/><br />
+				<a class="btn btn-primary btn-xl page-scroll" href="register/login.php">Zum Login</a>
             </div>
         </div>
     </header>
+	 <?php else: ?>
+	    <header>
+			<div class="header-content" style="">
+				<div class="header-content-inner">
+					<h1 id="homeHeading">Hallo <?php $user = check_user(); echo htmlentities($user['vorname']); ?>!<br /></h1>
+			<hr>		
+			<div class="container">
+            <div class="row">
+                <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Studiengang bewerten</h3>
+                        <p class="text-muted">Bewerte Module und Dozenten</p>
+                    </div>
+                </div></a>
+								
+               <a href="upload.php">
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+							<h3>Dokument-Area</h3>
+							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
+						</div>
+					</div>
+				</a>
+      
+              <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Mensapläne</h3>
+                        <p class="text-muted">Hier folgt evtl. der Mensa-Content</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Forum</h3>
+                        <p class="text-muted">Hier folgt evtl. das Forum</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+				</div>
+			</div>
+		</header>
+   
+		<?php endif; ?>
+		
+		<?php if(!is_checked_in()): ?>	
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+					 <h2 class="section-heading">Was dich als angemeldeter Benutzer erwartet</h2>                  
                     <hr class="primary">
                 </div>
             </div>
@@ -116,25 +169,27 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div><!--/a-->
-                <a href="upload.php"><div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Dokument-Area</h3>
-                        <p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
-                    </div>
-                </div><!--/a-->
+              
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+							<h3>Dokument-Area</h3>
+							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
+						</div>
+					</div>
+               
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">Sei immer über die neuesten Aktivitäten informiert</p>
+                        <h3>Mensapläne</h3>
+                        <p class="text-muted">Hier folgt evtl. der Mensa-Content</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Forum</h3>
+                        <p class="text-muted">Hier folgt evtl. das Forum</p>
                     </div>
                 </div>
             </div>
@@ -237,13 +292,18 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
             </div>
         </div>
     </section>
+	
+	<?php else: ?>
+
+<?php endif; ?>
+	
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Fragen, Wünsche, Anregungen?</h2>
                     <hr class="primary">
-                    <p>Du hast Fragen oder Anregungen? Super! Sende uns eine Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
+                    <p>Sende uns eine E-Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
                 </div>
             <!--  <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
@@ -251,7 +311,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                 </div>-->
                 <div class="col-lg-12 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:beuthportal@gmail.com">beuthportal@gmail.com</a></p>
                 </div>
             </div>
         </div>

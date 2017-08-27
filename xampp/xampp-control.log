@@ -541,3 +541,41 @@
 00:23:15  [main] 	Deinitialisiere Module
 00:23:15  [main] 	Deinitialisiere Control Panel
 
+17:02:48  [main] 	Initialisere Control Panel
+17:02:48  [main] 	Windows Version:  Pro  64-bit
+17:02:48  [main] 	XAMPP Version: 5.6.30
+17:02:48  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+17:02:48  [main] 	Dein Benutzerprofil besitzt keine Administratorenrechte! Das reicht aus für die meisten
+17:02:48  [main] 	Anwendungsfunktionen, aber wann immer du etwas mit Windows-Diensten tun möchtest,
+17:02:48  [main] 	wird eine Sicherheitsabfrage erscheinen oder etwas wird garnicht erst funktionieren!
+17:02:48  [main] 	Also denke daran diese Anwendung mit Administratorrechten zu starten!
+17:02:48  [main] 	XAMPP Installationsverzeichnis: "c:\xampp\beuthportal_old\xampp\"
+17:02:48  [main] 	Voraussetzungen werden geprüft
+17:02:49  [main] 	Alle Voraussetzungen sind erfüllt
+17:02:49  [main] 	Initialisiere Module
+17:02:49  [main] 	Das FileZilla Modul ist deaktiviert
+17:02:49  [main] 	Das Mercury Modul ist deaktiviert
+17:02:49  [main] 	Das Tomcat Modul ist deaktiviert
+17:02:49  [main] 	Starte Check-Timer
+17:02:49  [main] 	Control Panel bereit
+17:02:51  [Apache] 	Versuche Apache zu starten...
+17:02:52  [Apache] 	Statusänderung erkannt: gestartet
+17:02:52  [mysql] 	Versuche MySQL zu starten...
+17:02:57  [mysql] 	Statusänderung erkannt: gestartet
+18:47:30  [mysql] 	Versuche MySQL zu beenden...
+18:47:31  [Apache] 	stoppe Modul Apache (PID: 1264)
+18:47:31  [Apache] 	stoppe Modul Apache (PID: 3236)
+18:47:31  [Apache] 	Statusänderung erkannt: gestoppt
+18:47:31  [mysql] 	Statusänderung erkannt: gestoppt
+18:47:32  [Apache] 	Versuche Apache zu starten...
+18:47:32  [Apache] 	Statusänderung erkannt: gestartet
+18:47:34  [mysql] 	Versuche MySQL zu starten...
+18:47:34  [mysql] 	Statusänderung erkannt: gestartet
+20:17:18  [mysql] 	Versuche MySQL zu beenden...
+20:17:18  [mysql] 	Statusänderung erkannt: gestoppt
+20:17:18  [Apache] 	stoppe Modul Apache (PID: 4000)
+20:17:18  [Apache] 	stoppe Modul Apache (PID: 6308)
+20:17:19  [Apache] 	Statusänderung erkannt: gestoppt
+02:13:59  [main] 	Deinitialisiere Module
+02:13:59  [main] 	Deinitialisiere Control Panel
+

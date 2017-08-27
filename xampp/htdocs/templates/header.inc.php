@@ -80,7 +80,7 @@
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
 			<li><a href="../dashboard.php">Dashboard</a></li>
-         	<li><a href="../filecontent.php">Datei hochladen</a></li>
+         	<li><a href="../upload.php">Datei hochladen</a></li>
             <li><a href="../register/settings.php">Persoenliche Daten</a></li>
             <li><a href="../register/logout.php">Logout</a></li>
           </ul>
