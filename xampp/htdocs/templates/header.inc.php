@@ -25,7 +25,7 @@
 
     <!-- Theme CSS -->
 	  <link href="../css/creative.min.css" rel="stylesheet">
-	  
+
 	  	 <link href="../css/creative.min.css" rel="stylesheet">
     <link href="../css/table.css" rel="stylesheet">
 
@@ -66,7 +66,7 @@
 						<td><button type="submit" class="btn btn-success">Login</button></td>
 					</tr>
 					<tr>
-						<td><label style="margin-bottom: 0px; font-weight: normal;"><input type="checkbox" name="angemeldet_bleiben" 
+						<td><label style="margin-bottom: 0px; font-weight: normal;"><input type="checkbox" name="angemeldet_bleiben"
 						value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" /> <small>Angemeldet bleiben</small></label></td>
 						<td><small><a style="color: white;" href="../register/passwortvergessen.php">Passwort vergessen</a></small></td>
 						<td></td>
@@ -79,7 +79,7 @@
         <?php else: ?>
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
-			<li><a href="../dashboard.php">Dashboard</a></li>
+			<li><a href="../index.php">Dashboard</a></li>
          	<li><a href="../upload.php">Datei hochladen</a></li>
             <li><a href="../register/settings.php">Persoenliche Daten</a></li>
             <li><a href="../register/logout.php">Logout</a></li>
