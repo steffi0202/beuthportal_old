@@ -46,7 +46,7 @@ if(is_checked_in()){
 </head>
 
 <body id="page-top">
-  
+
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,7 +60,7 @@ if(is_checked_in()){
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-					<?php if(is_checked_in()): ?>	
+					<?php if(is_checked_in()): ?>
 					<li>
                         <a class="page-scroll" href="dashboard.php">Dashboard</a>
                     </li>
@@ -75,12 +75,12 @@ if(is_checked_in()){
                     <li>
                         <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
-					 <?php if(!is_checked_in()): ?>					
+					 <?php if(!is_checked_in()): ?>
                     <li>
                         <a  href="register/login.php">Login</a>
                     </li>
 					 <?php else: ?>
-					 <li>
+					 					<li>
                         <a  href="register/logout.php">Logout</a>
                     </li>
 					<?php endif; ?>
@@ -90,7 +90,7 @@ if(is_checked_in()){
         </div>
         <!-- /.container-fluid -->
     </nav>
-	<?php if(!is_checked_in()): ?>	
+	<?php if(!is_checked_in()): ?>
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -98,7 +98,7 @@ if(is_checked_in()){
                 <hr>
                 Registriere dich um Dozenten und Module zu bewerten oder um Dokumente hoch- und runterzuladen.<br /><br />
                 <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Jetzt registrieren</a><br />
-				<hr> 
+				<hr>
 				Du bist bereits registriert? Dann melde dich jetzt an, um alle Funktionen nutzen zu können.<br/><br />
 				<a class="btn btn-primary btn-xl page-scroll" href="register/login.php">Zum Login</a>
             </div>
@@ -109,7 +109,7 @@ if(is_checked_in()){
 			<div class="header-content" style="">
 				<div class="header-content-inner">
 					<h1 id="homeHeading">Hallo <?php $user = check_user(); echo htmlentities($user['vorname']); ?>!<br /></h1>
-			<hr>		
+			<hr>
 			<div class="container">
             <div class="row">
                 <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
@@ -119,7 +119,7 @@ if(is_checked_in()){
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div></a>
-								
+
                <a href="upload.php">
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
@@ -129,7 +129,7 @@ if(is_checked_in()){
 						</div>
 					</div>
 				</a>
-      
+
               <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
@@ -150,15 +150,15 @@ if(is_checked_in()){
 				</div>
 			</div>
 		</header>
-   
+
 		<?php endif; ?>
-		
-		<?php if(!is_checked_in()): ?>	
+
+		<?php if(!is_checked_in()): ?>
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-					 <h2 class="section-heading">Was dich als angemeldeter Benutzer erwartet</h2>                  
+					 <h2 class="section-heading">Was dich als angemeldeter Benutzer erwartet</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -172,7 +172,7 @@ if(is_checked_in()){
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div><!--/a-->
-              
+
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
 							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
@@ -180,12 +180,14 @@ if(is_checked_in()){
 							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
 						</div>
 					</div>
-               
+
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
                         <h3>Mensapläne</h3>
-                        <p class="text-muted">Hier folgt evtl. der Mensa-Content</p>
+                        <p class="text-muted">
+													<!--a href="mensa.php" -->Hier folgt evtl. der Mensa-Content</a>
+												</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -295,11 +297,11 @@ if(is_checked_in()){
             </div>
         </div>
     </section-->
-	
+
 	<?php else: ?>
 
 <?php endif; ?>
-	
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -333,7 +335,7 @@ if(is_checked_in()){
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
- 
+
 </body>
 
 </html>
