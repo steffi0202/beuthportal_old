@@ -54,10 +54,10 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 		$statement = $pdo->prepare("SELECT * FROM users WHERE email = :email AND active = 0");
 		$result = $statement->execute(array('email' => $email));
 		$user = $statement->fetch();
-		
+
 	if($user !== false){
 		echo "<font color='#FF0000'><br />Bitte aktiviere zuerst deinen Account, indem du den Link bestätigst,
-		den wir an <span>$email</span> geschickt haben.<br /><br /></font>";	
+		den wir an <span>$email</span> geschickt haben.<br /><br /></font>";
 	}
 	else{
 		$statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
@@ -77,7 +77,7 @@ if(isset($_POST['email']) && isset($_POST['passwort'])) {
 				$insert->execute(array('user_id' => $user['id'], 'identifier' => $identifier, 'securitytoken' => sha1($securitytoken)));
 				setcookie("identifier", $identifier, time()+(3600*24*365)); //Valid for 1 year
 				setcookie("securitytoken", $securitytoken, time()+(3600*24*365)); //Valid for 1 year
-				
+
 			}
 			header("location:../dashboard.php");
 			exit;
@@ -124,5 +124,5 @@ if(isset($error_msg) && !empty($error_msg)) {
 </div> <!-- /container -->
 
 <?php
-include("templates/footer.inc.php")
+include("../templates/footer.inc.php")
 ?>
