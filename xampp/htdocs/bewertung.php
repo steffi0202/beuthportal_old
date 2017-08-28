@@ -51,6 +51,7 @@ $user = check_user();
                     	$error = false;
                     	$studiengang = trim($_POST['Studiengang']);
                     	$modul = trim($_POST['Modul']);
+                    	$semester = trim($_POST['Semester']);
                     	$zeit = trim($_POST['Zeitaufwand']);
                       $modul_des = trim($_POST['TextareaModul']);
                     	$dozent = trim($_POST['Dozent']);
@@ -60,8 +61,8 @@ $user = check_user();
                       //Keine Fehler, wir können die Daten in die DB schreiben
                       if(!$error) {
 
-                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Zeitaufwand, Dozent, Modul_des, Dozent_des, Sterne) VALUES (:Studiengang, :Modul, :Zeitaufwand, :Dozent, :TextareaModul, :TextareaDozent, :Sterne)");
-                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent, 'TextareaModul' => $modul_des, 'TextareaDozent' => $dozent_des, 'Sterne' => $sterne));
+                        $statement = $pdo->prepare("INSERT INTO ranking (Studiengang, Modul, Semester, Zeitaufwand, Dozent, Modul_des, Dozent_des, Sterne) VALUES (:Studiengang, :Modul, :Semester, :Zeitaufwand, :Dozent, :TextareaModul, :TextareaDozent, :Sterne)");
+                        $result = $statement->execute(array('Studiengang' => $studiengang, 'Modul' => $modul, 'Semester' => $semester, 'Zeitaufwand' => $zeit, 'Dozent' => $dozent, 'TextareaModul' => $modul_des, 'TextareaDozent' => $dozent_des, 'Sterne' => $sterne));
 
                         if($result) {
                           echo "<script type='text/javascript'>alert('Die Daten wurden erfolgreich übertragen!')</script>";
@@ -98,7 +99,7 @@ $user = check_user();
                     <div class="form-group">
                         <label for="Studiengang">Wähle deinen Studiengang:</label>
                           <select onChange="doit();" id="Studiengang" class="form-control" name="Studiengang">
-                                <option >Bitte Modul auswählen</option>
+                                <option >Bitte Studiengang auswählen</option>
                                  <option value="1" >Wirtschaftsinformatik - Online</option>
                                  <option value="2">Medieninformatik - Online</option>
                      </select>
@@ -140,17 +141,18 @@ $user = check_user();
                         <label for="TextareaModul">Beschreibe das Modul</label>
                             <textarea class="form-control" name="TextareaModul" rows="3"></textarea>
                          </div>
-                      <div class="form-group">
 
-                        <label for="Dozent">Wer hat das Modul unterrrichtet:</label>
-                            <select class="form-control" name="Dozent">
-                                 <option>Prof. Dr. Peter Weimann</option>
-                                 <option>Jane Brosnan</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
-                            </select>
-                     </div>
+                         <div class="form-group">
+                            <label for="Dozent">Wähle deinen Dozenten</label>
+                                <select class="form-control" name="Dozent">
+                                     <option>Prof. Dr. Peter Weimann</option>
+                                     <option>Agathe Merceron</option>
+                                     <option>Jane Brosnan</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                </select>
+                         </div>
+
                      <div class="form-group">
                         <label for="TextareaDozent">Was ist dir zu deinem Dozenten besondern im Gedächtnis geblieben?</label>
                             <textarea class="form-control" name="TextareaDozent" rows="3"></textarea>
@@ -172,9 +174,11 @@ $user = check_user();
   } //Ende von if($showFormular)
 
     ?>
-    <?php include("templates/footer.inc.php");
-     ?>
+
 
 </body>
+<?php
+include("templates/footer.inc.php")
+?>
 
 </html>

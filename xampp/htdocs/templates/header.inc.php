@@ -2,29 +2,32 @@
 <html lang="en">
 
 <head>
-  <head>
 
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      <title>Studentenportal der Beuth Hochschule Berlin</title>
+    <title>Studentenportal Beuth Hochschule</title>
 
-      <!-- Bootstrap Core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+	 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Custom Fonts -->
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts -->
+	 <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+	 <link href="../css/style.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+	 <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-      <!-- Plugin CSS -->
-      <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Theme CSS -->
+	  <link href="../css/creative.min.css" rel="stylesheet">
 
-      <!-- Theme CSS -->
-      <link href="css/creative.min.css" rel="stylesheet">
+	  	 <link href="../css/creative.min.css" rel="stylesheet">
+    <link href="../css/table.css" rel="stylesheet">
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,8 +49,7 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 
-  </head>
-
+</head>
 <body>
 
 

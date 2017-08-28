@@ -81,6 +81,7 @@
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
 			<li><a href="../../dashboard.php">Dashboard</a></li>
+			<li><a href="../../bewertung.php">Bewertung</a></li>
          	<li><a href="../../upload.php">Datei hochladen</a></li>
             <li><a href="../../settings.php">Persoenliche Daten</a></li>
             <li><a href="logout.php">Logout</a></li>
