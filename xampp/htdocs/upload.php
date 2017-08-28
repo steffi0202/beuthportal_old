@@ -1,6 +1,6 @@
 <?php
 session_start();
-//require_once("inc/config.inc.php");
+
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 include("templates/header.inc.php");
@@ -11,43 +11,59 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 //Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
 $user = check_user();
 
-
-
-// Prepare DB with table upload
-$pdo->exec("CREATE TABLE upload (id INT NOT NULL AUTO_INCREMENT,name VARCHAR(255) NOT NULL,type VARCHAR(50) NOT NULL,size INT NOT NULL,content MEDIUMBLOB NOT NULL,studienfach VARCHAR(50) NOT NULL, PRIMARY KEY(id));");
-
-
 ?>
 
 <!DOCTYPE html>
 <html>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src="js/btn_upload.js"></script>
+
 <body>
 
 <center>
 
 	<h2 >Upload-Area</h2>
 	<br>
+	 		
+	<div class="container" style="width: 40%">	 
 	<form method="post" enctype="multipart/form-data">
-	<table style=" font-family: arial, sans-serif;border-collapse: collapse;">
-	<tr>
-	<td style="border: 0px solid #dddddd; text-align: left; padding: 8px;"">
-	<input type="hidden" name="MAX_FILE_SIZE" value="52428800">
-	<input name="userfile" type="file" id="userfile">  Max. 8 MByte
-	</td>
-	<td style="border: 0px solid #dddddd; text-align: left; padding: 8px; width: 200px;">	
-	<div class="form-group">
-	<label for="Modulup">Für welches Studienfach ist der Upload?</label>
-	    <select class="form-control" name="Modulup">
+		
+		<button class="browse btn btn-primary pull-left" type="button"><i class="glyphicon glyphicon-search"></i> Browse </button>
+		<input style="width: 400px;" type="text" class="form-control pull-left" disabled placeholder="Dein Upload, max. 25 MByte">
+		<input type="file" name="userfile" id="userfile" style="visibility: hidden;" class="click">
+
+  	</div>
+
+	<div class="container" style="width: 40%">
+
+	<label class="pull-left" for="Modulup">Für welches Studienfach ist der Upload?</label>
+	    <select class="form-control pull-left" name="Modulup" style="width: 500px;">
 	         <option></option>
-	         <option>Business Engineering</option>
-	         <option>Operations Research</option>
+	       
+	         <?php 
+
+				$sql = "SELECT studienfach_name FROM studienfach order by 1 ASC";
+
+				foreach ($pdo->query($sql) as $row) {
+   		  		
+  					echo "<option>" .$row['studienfach_name']. "</option>";
+  			
+  				}
+
+	          ?>
+
 	    </select>
 	</div>
-	</td>
-	<td style="border: 0px solid #dddddd; text-align: left; padding: 8px; width:80px";><input name="upload" type="submit" class="box" id="upload" value=" Upload " ></td>
-	</tr>
-	</table>
+
+	<div class="container" style="width: 40%">
+	
+		<input name="upload" type="submit" class="box btn btn-success" id="upload" value=" Upload " style="width: 100px" >
 	</form>
+	
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -56,37 +72,34 @@ $pdo->exec("CREATE TABLE upload (id INT NOT NULL AUTO_INCREMENT,name VARCHAR(255
 
 <h2 >Download-Area</h2>
 <br>
-	
+
+	<div class="container" style="width: 40%">
 	<form method="get" enctype="text/plain">
 	<label style="width: 300px" for="Moduldown">Welches Fach interessiert dich?</label>
-	    <select style="width: 10%" class="form-control" name="Moduldown" onchange="this.form.submit()">
-	         <option> </option>
-	         <option>Business Engineering</option>
-	         <option>Operations Research</option>
+	    <select style="width: 230px" class="form-control" name="Moduldown" onchange="this.form.submit()">
+	         <option></option>
+	         
+	         <?php 
+
+				$sql = "SELECT DISTINCT(studienfach) FROM upload order by 1 ASC";
+
+				foreach ($pdo->query($sql) as $row) {
+   		  		
+  					echo "<option>" .$row['studienfach']. "</option>";
+  			
+  				}
+
+	          ?>
+
 	    </select>
 	</form>
-
+</div>
 </center>
 </body>
 </html>
 
  
 <?php
-
-/*
-
-	Check ob Tabelle vorhanden
-
-*/
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -116,7 +129,30 @@ if(!get_magic_quotes_gpc())
 $statement = $pdo->prepare("INSERT INTO upload (name, size, type, content, studienfach) "."VALUES ('$fileName', '$fileSize', '$fileType', '$content', '$studienfach')");
 $result = $statement->execute(array('name' => $fileName, 'size' => $fileSize, 'type' => $fileType, 'content' => $content , 'studienfach' => $studienfach));
 
+	# Erfolgreicher Upload
+
+	echo '<meta http-equiv="refresh" content="0; url=http://localhost/upload.php">';
+	
 	echo "<script type='text/javascript'>alert('Die Daten wurden erfolgreich übertragen!')</script>";
+
+
+} elseif (isset($_POST['upload']) && $_FILES['userfile']['size'] >= 26214400) {
+
+	# Fehlermeldung für Dateien über 50 MB.
+
+	echo "<script type='text/javascript'>alert('Die Datei ist leider zu groß!')</script>";
+
+} elseif (isset($_POST['upload']) && $_POST['Modulup'] == "") {
+	
+	# Fehlermeldung wenn kein Studienfach für den Upload angegeben wurde.
+
+	echo "<script type='text/javascript'>alert('Du hast vergessen ein Studienfach zu benennen für den Upload!')</script>";
+
+} elseif (isset($_POST['upload']) && $_FILES['userfile']['size'] == 0) {
+
+	# Fehlermeldung wenn keine Datei Ausgewählt wurde!
+
+	echo "<script type='text/javascript'>alert('Du hast vergessen eine Datei zu wählen!')</script>";
 
 }
 

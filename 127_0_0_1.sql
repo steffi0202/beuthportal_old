@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
@@ -114,19 +114,62 @@ INSERT INTO `securitytokens` (`id`, `user_id`, `identifier`, `securitytoken`, `c
 (37, 3, '6ea8462eb07b1623a1889b8c46245fe1', 'ccd302fced3011ffbe7039eff712ea9de55f13bf', '2017-08-28 13:45:45');
 
 -- --------------------------------------------------------
+-- --------------------------------------------------------
+--
+-- Tabellenstruktur für Tabelle `studienfach`
+--
+-- 28.08.17
+
+CREATE TABLE studienfach (id INT NOT NULL AUTO_INCREMENT,studienfach_name VARCHAR(100), PRIMARY KEY(id));
+
+--
+-- Daten für die Tabelle `studienfach`
+--
+INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in die Betriebswirtschaftslehre I");
+INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in die Wirtschaftsinformatik");
+INSERT INTO studienfach (studienfach_name) VALUES ("English for Computer Scientists");
+INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen der Mathematik");
+INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen der Programmierung I");
+INSERT INTO studienfach (studienfach_name) VALUES ("Kommunikation, Fuehrung und Selbstmanagement");
+INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in die Betriebswirtschaftslehre II");
+INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen betrieblicher Anwendungssysteme");
+INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen der Programmierung II");
+INSERT INTO studienfach (studienfach_name) VALUES ("Mensch-Computer-Kommunikation");
+INSERT INTO studienfach (studienfach_name) VALUES ("Organisationslehre");
+INSERT INTO studienfach (studienfach_name) VALUES ("Rechnernetze");
+INSERT INTO studienfach (studienfach_name) VALUES ("Algorithmen und Datenstrukturen");
+INSERT INTO studienfach (studienfach_name) VALUES ("Datenbanken");
+INSERT INTO studienfach (studienfach_name) VALUES ("IT-Recht");
+INSERT INTO studienfach (studienfach_name) VALUES ("Internettechnologie / Client / Server");
+INSERT INTO studienfach (studienfach_name) VALUES ("Projektmanagement");
+INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsstatistik");
+INSERT INTO studienfach (studienfach_name) VALUES ("Business Engineering");
+INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in wissenschaftliche Projektarbeit");
+INSERT INTO studienfach (studienfach_name) VALUES ("Kosten- und Erloesrechnung");
+INSERT INTO studienfach (studienfach_name) VALUES ("Operations Research");
+INSERT INTO studienfach (studienfach_name) VALUES ("Softwaretechnik");
+INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsinformatik-Projekt");
+INSERT INTO studienfach (studienfach_name) VALUES ("Business Intelligence");
+INSERT INTO studienfach (studienfach_name) VALUES ("Informationsmanagement");
+INSERT INTO studienfach (studienfach_name) VALUES ("Softwaretechnik-Projekt");
+INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsinformatik-Workshop");
+INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsrecht");
+INSERT INTO studienfach (studienfach_name) VALUES ("Projektphase");
+INSERT INTO studienfach (studienfach_name) VALUES ("Bachelor-Arbeit und -kolloquium");
+INSERT INTO studienfach (studienfach_name) VALUES ("Business English");
+INSERT INTO studienfach (studienfach_name) VALUES ("Controlling");
+INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen IT-Sicherheit");
+INSERT INTO studienfach (studienfach_name) VALUES ("Kommunikationsnetze");
+
+
+
 
 --
 -- Tabellenstruktur für Tabelle `upload`
 --
+-- 28.08.17
 
-CREATE TABLE `upload` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `type` varchar(50) NOT NULL,
-  `size` int(11) NOT NULL,
-  `content` mediumblob NOT NULL,
-  `studienfach` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `upload` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `type` varchar(50) NOT NULL, `size` int(11) NOT NULL, `content` longblob NOT NULL,`studienfach` varchar(50) NOT NULL,PRIMARY KEY (`id`));
 
 -- --------------------------------------------------------
 
