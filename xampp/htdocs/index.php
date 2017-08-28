@@ -7,6 +7,9 @@ require_once("register/inc/functions.inc.php");
 
 //include("templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
+if(is_checked_in()){
+	header("location:dashboard.php");
+}
 ?>
 <html lang="en">
 <head>
@@ -43,7 +46,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 </head>
 
 <body id="page-top">
-
+  
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,22 +60,22 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-					<?php if(is_checked_in()): ?>
+					<?php if(is_checked_in()): ?>	
 					<li>
                         <a class="page-scroll" href="dashboard.php">Dashboard</a>
                     </li>
 					 <?php else: ?>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Deine Möglichkeiten</a>
                     </li>
-                    <li>
+                    <!--li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
+                    </li-->
 					<?php endif; ?>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
-					 <?php if(!is_checked_in()): ?>
+					 <?php if(!is_checked_in()): ?>					
                     <li>
                         <a  href="register/login.php">Login</a>
                     </li>
@@ -87,7 +90,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
         </div>
         <!-- /.container-fluid -->
     </nav>
-	<?php if(!is_checked_in()): ?>
+	<?php if(!is_checked_in()): ?>	
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -95,7 +98,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                 <hr>
                 Registriere dich um Dozenten und Module zu bewerten oder um Dokumente hoch- und runterzuladen.<br /><br />
                 <a class="btn btn-primary btn-xl page-scroll" href="register/register.php">Jetzt registrieren</a><br />
-				<hr>
+				<hr> 
 				Du bist bereits registriert? Dann melde dich jetzt an, um alle Funktionen nutzen zu können.<br/><br />
 				<a class="btn btn-primary btn-xl page-scroll" href="register/login.php">Zum Login</a>
             </div>
@@ -106,7 +109,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 			<div class="header-content" style="">
 				<div class="header-content-inner">
 					<h1 id="homeHeading">Hallo <?php $user = check_user(); echo htmlentities($user['vorname']); ?>!<br /></h1>
-			<hr>
+			<hr>		
 			<div class="container">
             <div class="row">
                 <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
@@ -116,7 +119,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div></a>
-
+								
                <a href="upload.php">
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
@@ -126,7 +129,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 						</div>
 					</div>
 				</a>
-
+      
               <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
@@ -147,15 +150,15 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 				</div>
 			</div>
 		</header>
-
+   
 		<?php endif; ?>
-
-		<?php if(!is_checked_in()): ?>
+		
+		<?php if(!is_checked_in()): ?>	
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-					 <h2 class="section-heading">Was dich als angemeldeter Benutzer erwartet</h2>
+					 <h2 class="section-heading">Was dich als angemeldeter Benutzer erwartet</h2>                  
                     <hr class="primary">
                 </div>
             </div>
@@ -169,7 +172,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
                 </div><!--/a-->
-
+              
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
 							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
@@ -177,7 +180,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
 						</div>
 					</div>
-
+               
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
@@ -196,7 +199,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <!--section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -291,14 +294,31 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
                 </div>
             </div>
         </div>
-    </section>
-
+    </section-->
+	
 	<?php else: ?>
 
 <?php endif; ?>
-
-  <?php include("templates/footer.inc.php");
-   ?>
+	
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Fragen, Wünsche, Anregungen?</h2>
+                    <hr class="primary">
+                    <p>Sende uns eine E-Mail und wir werden uns so schnell wie möglich bei dir melden!</p>
+                </div>
+            <!--  <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>123-456-6789</p>
+                </div>-->
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:beuthportal@gmail.com">beuthportal@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -313,7 +333,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-
+ 
 </body>
 
 </html>
