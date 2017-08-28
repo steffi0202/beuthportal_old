@@ -25,7 +25,7 @@
 
     <!-- Theme CSS -->
 	  <link href="../css/creative.min.css" rel="stylesheet">
-	  
+
 	  	 <link href="../css/creative.min.css" rel="stylesheet">
     <link href="../css/table.css" rel="stylesheet">
 
@@ -66,8 +66,8 @@
 						<td><button type="submit" class="btn btn-success">Login</button></td>
 					</tr>
 					<tr>
-						<td><label style="margin-bottom: 0px; font-weight: normal;"><input type="checkbox" name="angemeldet_bleiben" 
-						value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" /> 
+						<td><label style="margin-bottom: 0px; font-weight: normal;"><input type="checkbox" name="angemeldet_bleiben"
+						value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" />
 						<small>Angemeldet bleiben</small></label></td>
 						<td><small><a style="color: white;" href="passwortvergessen.php">Passwort vergessen</a></small></td>
 						<td></td>

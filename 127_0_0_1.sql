@@ -169,7 +169,7 @@ INSERT INTO studienfach (studienfach_name) VALUES ("Kommunikationsnetze");
 --
 -- 28.08.17
 
-CREATE TABLE `upload` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `type` varchar(50) NOT NULL, `size` int(11) NOT NULL, `content` longblob NOT NULL,`studienfach` varchar(50) NOT NULL,PRIMARY KEY (`id`));
+CREATE TABLE `upload` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `type` varchar(50) NOT NULL, `size` int(11) NOT NULL, `content` longblob NOT NULL,`studienfach` varchar(50) NOT NULL, `Datum` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`));
 
 -- --------------------------------------------------------
 

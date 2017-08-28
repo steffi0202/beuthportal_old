@@ -3,7 +3,7 @@ session_start();
 //require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
-include("templates/header.inc.php")
+include("templatesforregister/headerregister.inc.php")
 ?>
 <div class="container main-container registration-form" style="max-width:500px;">
 <h1>Registrierung</h1>
@@ -164,5 +164,5 @@ if($showFormular) {
 ?>
 </div>
 <?php
-include("templates/footer.inc.php")
+include("../templates/footer.inc.php")
 ?>
