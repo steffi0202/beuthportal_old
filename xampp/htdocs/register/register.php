@@ -3,7 +3,7 @@ session_start();
 //require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
-include("templates/header.inc.php")
+include("templatesforregister/headerregister.inc.php")
 ?>
 <div class="container main-container registration-form" style="max-width:500px;">
 <h1>Registrierung</h1>
@@ -31,7 +31,7 @@ if(isset($_GET['register'])) {
 		echo "<font color='#FF0000'>Bitte eine gültige E-Mail-Adresse eingeben<br></font>";
 		$error = true;
 	}
-	
+
 	if(strlen($passwort) == 0) {
 		echo "<font color='#FF0000'>Bitte ein Passwort angeben<br></font>";
 		$error = true;
@@ -52,7 +52,7 @@ if(isset($_GET['register'])) {
 			$error = true;
 		}
 	}
-	
+
 	//Überprüfe, dass die E-Mail-Adresse eine Beuth-Adresse ist
 	if(!$error) {
 		list ($user, $domain) = explode('@', $email);
@@ -61,15 +61,15 @@ if(isset($_GET['register'])) {
 			echo "<font color='#FF0000'>Deine E-Mail-Adresse ist keine gültige Beuth-Email-Adresse!<br></font>";
 			$error = true;
 		}
-	}	
-	
+	}
+
 	//Das Passwort muss bestimmte Richtlinien befolgen
 	if(!$error) {
 		if (!preg_match('/[A-Z]/', $passwort) OR !preg_match('/[a-z]/', $passwort) OR !preg_match('/[0-9]/', $passwort)  OR strlen($passwort) < 8) {
 			echo "<font color='#FF0000'>Das Passwort muss mindestens 8 Zeichen lang sein und aus Zahlen, Klein- und Grossbuchstaben bestehen<br></font>";
 			$error = true;
 		}
-	}	
+	}
 
 	//Keine Fehler, wir können den Nutzer registrieren
 	if(!$error) {
@@ -79,19 +79,19 @@ if(isset($_GET['register'])) {
 		$result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vorname, 'nachname' => $nachname, 'hash' => $hash, 'active' => $active));
 
 		if($result) {
-			
-			
+
+
 			//start neu
-	
+
 				$_SESSION['active'] = 0; //solange 0 bis User aktiviert -> verify.php
 				$_SESSION['logged_in'] = true; // User ist eingeloggt
 				$_SESSION['message'] =
-						
+
 						 "Ein Bestätigungslink wurde an $email verschickt,
 						 bitte bestätige deine Registrierung durch einen Klick auf den Bestätigungslink!";
 				$to      = $email;
-		
-				$url_registrierungsverfikation = getSiteURL().'verify.php?email='.$email.'&hash='.$hash.'&active='.$active;  
+
+				$url_registrierungsverfikation = getSiteURL().'verify.php?email='.$email.'&hash='.$hash.'&active='.$active;
 				$subject = 'Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)';
 				$message_body = '
 				Hallo '.$vorname.',
@@ -101,23 +101,23 @@ if(isset($_GET['register'])) {
 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
 
 				'.$url_registrierungsverfikation.'
-				
+
 				Viele Gruesse,
-				
+
 				dein Studentenportal-Team';
-				
-				$headers =  'MIME-Version: 1.0' . "\r\n"; 
+
+				$headers =  'MIME-Version: 1.0' . "\r\n";
 				$headers .= 'From: Beuth-Portal <beuthportal@gmail.com>' . "\r\n";
-				//$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+				//$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 				mail( $to, $subject, $message_body, $headers );
-			
+
 			//ende neu
-			
-			
+
+
 			echo "<font color='#008000'>Du wurdest erfolgreich registriert.<br /> <br />
-			Bitte bestaetige die E-Mail, die wir an $to gesendet haben, bevor du dich anmelden kannst.</font>"; 
-			
+			Bitte bestaetige die E-Mail, die wir an $to gesendet haben, bevor du dich anmelden kannst.</font>";
+
 			$showFormular = false;
 		} else {
 			echo "<font color='#FF0000'>Beim Abspeichern ist ein Fehler aufgetreten<br></font>";
@@ -164,5 +164,5 @@ if($showFormular) {
 ?>
 </div>
 <?php
-include("templates/footer.inc.php")
+include("../templates/footer.inc.php")
 ?>
