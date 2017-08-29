@@ -91,6 +91,59 @@ $user = check_user();
               </section>
         </div-->
     </header>
+
+
+
+
+	<!-- ------------------------------------Die Datenbankeinträge von Bewertungen in der Gesamtübersicht START-->
+<div class="row">
+			<div class="call-to-action">
+				<div class="col-lg-8 col-lg-offset-2 text-center"><br /><br />
+
+	<?php
+	 $verbindung = mysqli_connect ("localhost", "root", "")
+      or die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
+      mysqli_select_db($verbindung, "beuthportal") or die ("Die Datenbank existiert nicht.");
+      //* Datenbankverbindung aufbauen (ENDE)
+
+      //* Überprüfung der Eingabe
+          $abfrage = "SELECT * FROM ranking";
+          $ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
+           ?>
+			<h2 class="section-heading">Bisherige Bewertungen</h2>
+			<br />
+          <table style="width:100%; border-style:solid; border-width:1px;">
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Bewertungsdatum</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Studiengang</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Modul</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Semester</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Dozent</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Bewertung</b></td>
+			</tr>
+			<?php
+			 while($ausgabe = mysqli_fetch_assoc($ergebnis)){
+				 ?>
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><?php echo $ausgabe['created_at']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Studiengang']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Modul']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Semester']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Dozent']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Sterne']?></td>
+			</tr>
+				<?php
+				}?>
+				</table>
+       </div>
+	   </div>
+	   </div>
+	   <!-- ------------------------------------Die Datenbankeinträge von Bewertungen in der Gesamtübersicht ENDE-->
+
+
+
+
+
 	<div class="container">
 		<div class="row">
 			<div class="call-to-action">
@@ -114,6 +167,97 @@ $user = check_user();
 			</div>
 		</div>
 	</div>
+
+
+	<!-- ------------------------------------Alternative Anzeige von Suchergebnissen------------ START -->
+
+
+		<div class="row">
+			<div class="call-to-action">
+				<div class="col-lg-8 col-lg-offset-2 text-center"><br /><br />
+
+	<?php
+
+	$ergebnis = 0;
+	$suchbegriff = '';
+    if(isset($_GET['search']))
+    {
+	 $verbindung = mysqli_connect ("localhost", "root", "")
+	 or die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
+      mysqli_select_db($verbindung, "beuthportal") or die ("Die Datenbank existiert nicht.");
+      //* Datenbankverbindung aufbauen (ENDE)
+      $suchbegriff = $_POST["search"];
+      //* Überprüfung der Eingabe
+          $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%'";
+          $ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
+
+           ?>
+			<h2 class="section-heading">Ergebnis der Suche</h2>
+			<br />
+
+			<?php
+			 while($ausgabe = mysqli_fetch_assoc($ergebnis)){
+				 ?>
+          <table style="width:100%; border-style:solid; border-width:1px;">
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Bewertungsdatum</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Studiengang</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Modul</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Semester</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Dozent</b></td>
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><b>Bewertung</b></td>
+			</tr>
+
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="max-width:16.6%; text-align:center; border-style:solid; border-width:1px;"><?php echo $ausgabe['created_at']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Studiengang']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Modul']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Semester']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Dozent']?></td>
+				<td style="max-width:16.6%; text-align:center;border-style:solid; border-width:1px;"><?php echo $ausgabe['Sterne']?></td>
+			</tr>
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="text-align:left;" colspan="6"><?php echo "Zeitaufwand: ". $ausgabe['Zeitaufwand']?></td>
+			</tr>
+			<tr style="border-style:solid; border-width:1px;">
+				<td  style="text-align:left;" colspan="6"><?php echo "Modulbeschreibung: ". $ausgabe['Modul_des']?></td>
+			</tr>
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="text-align:left;" colspan="6"><?php echo "Dozentenbeschreibung: ". $ausgabe['Dozent_des']?></td>
+			</tr>
+			<tr style="border-style:solid; border-width:1px;">
+				<td style="text-align:left;" colspan="6"><?php echo "<br />"?></td>
+			</tr>
+				<?php
+				}?>
+				</table>
+
+				<?php
+				  }?>
+
+  <div class="container">
+		<div class="row">
+			<div class="call-to-action">
+				<div class="col-lg-8 col-lg-offset-2 text-center"><br /><br />
+					<h4 class="section-heading">
+					<?php
+						if (!empty($_GET) AND !$ergebnis || mysqli_num_rows($ergebnis) == 0) {
+						 echo "<font color='#FF0000'>Es wurde kein Ergebnis unter dem Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
+						   Bitte versuche es mit einem anderen Begriff.
+						   </font>";
+						   //<a href='dashboard.php'>Zurueck!</a>
+						 }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
+
+					?>
+       </div>
+	   </div>
+	   </div>
+
+
+
+	<!-- ------------------------------------Alternative Anzeige von Suchergebnissen------------ ENDE -->
+
+
     <?php
 	$ergebnis = 0;
 	$suchbegriff = '';
@@ -131,7 +275,7 @@ $user = check_user();
 
          while($ausgabe = mysqli_fetch_assoc($ergebnis)){
            ?>
-          <h4><?php echo "Bewertung vom ".$ausgabe['created_at'].":"?></h4>
+          <h1><?php echo "Bewertung vom ".$ausgabe['created_at'].":"?></h1>
        </div>
        <section class="text-center" id="searchOutput">
 
@@ -173,6 +317,20 @@ $user = check_user();
              </div>
        </div>
       </div>
+
+
+	   <div class="col-sm-3 col-md-3 col-xs-12">
+     <div class="box-1 center">
+       <div class="panel panel-success panel-pricing">
+         <div class="panel-heading">
+           <h3>Belegt im</h3>
+         </div>
+         <div class="panel-body text-center">
+           <p><strong><?php echo "".$ausgabe['Semester'].""?></strong></p>
+         </div>
+         </div>
+   </div>
+  </div>
 
      <div class="col-sm-3 col-md-3 col-xs-12">
        <div class="box-1 center">
