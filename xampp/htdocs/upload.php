@@ -27,16 +27,13 @@ $user = check_user();
 	<h2 >Upload-Area</h2>
 	<br>
 	 		
-	<div class="container" style="width: 40%">	 
+	<div class="container" style="width: 550px">	 
 	<form method="post" enctype="multipart/form-data">
 		
 		<button class="browse btn btn-primary pull-left" type="button"><i class="glyphicon glyphicon-search"></i> Browse </button>
 		<input style="width: 400px;" type="text" class="form-control pull-left" disabled placeholder="Dein Upload, max. 25 MByte">
 		<input type="file" name="userfile" id="userfile" style="visibility: hidden;" class="click">
 
-  	</div>
-
-	<div class="container" style="width: 40%">
 
 	<label class="pull-left" for="Modulup">Für welches Studienfach ist der Upload?</label>
 	    <select class="form-control pull-left" name="Modulup" style="width: 500px;">
@@ -55,13 +52,11 @@ $user = check_user();
 	          ?>
 
 	    </select>
-	</div>
-
-	<div class="container" style="width: 40%">
-	
+		
 		<input name="upload" type="submit" class="box btn btn-success" id="upload" value=" Upload " style="width: 100px" >
-	</form>
-	
+
+		</form>
+	</div>
 <br>
 <br>
 <br>
@@ -76,7 +71,8 @@ $user = check_user();
 	<div class="container" style="width: 40%">
 	<form method="get" enctype="text/plain">
 	<label style="width: 300px" for="Moduldown">Welches Fach interessiert dich?</label>
-	    <select style="width: 230px" class="form-control" name="Moduldown" onchange="this.form.submit()">
+
+	    <p><select style="width: 230px" class="form-control" name="Moduldown" onchange="this.form.submit()"></p>
 	         <option></option>
 	         
 	         <?php 
@@ -138,7 +134,7 @@ $result = $statement->execute(array('name' => $fileName, 'size' => $fileSize, 't
 
 } elseif (isset($_POST['upload']) && $_FILES['userfile']['size'] >= 26214400) {
 
-	# Fehlermeldung für Dateien über 50 MB.
+	# Fehlermeldung für Dateien über 25 MB.
 
 	echo "<script type='text/javascript'>alert('Die Datei ist leider zu groß!')</script>";
 
@@ -170,28 +166,27 @@ if(isset($_GET['Moduldown'])){
 	$studienfach = trim($_GET['Moduldown']);
 
 
-	$sql = "SELECT id, name, studienfach, ROUND((size/1024/1024),2) as filesize FROM upload where Studienfach = '$studienfach'";
+	// Datum mit Uhrzeit--> DATE_FORMAT(Datum, '%d.%m.%Y %H:%i:%s')
+
+	$sql = "SELECT id, name, studienfach, ROUND((size/1024/1024),2) as filesize, DATE_FORMAT(Datum, '%d.%m.%Y') AS Datum FROM upload where Studienfach = '$studienfach'";
 
 	   		echo "<center><table style=\" font-family: arial, sans-serif;border-collapse: collapse;width: 50%; \"><tr style=\"background-color: #dddddd; :nth-child(even); \">
 	    			<th style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">Studienfach</th>
 	    			<th style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">Datei</th>
 	    			<th style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">Größe</th>
+	    			<th style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">Datum</th>
   				</tr>";
 
 	foreach ($pdo->query($sql) as $row) {
    		  		
-
   		echo "<tr><td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['studienfach']. 
   		
-  		"</td><td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px;width: 60% \"> <a href=\"download.php?id=".$row['id']."\"> ".$row['name']." </a>
+  		"</td><td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px;width: 400px \"> <a href=\"download.php?id=".$row['id']."\"> ".$row['name']." </a>
 
-  		<td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['filesize']. " MByte </td></tr>";
+  		<td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['filesize']. " MByte </td>
 
-   		//echo $row['studienfach']." <a href=\"download.php?id=".$row['id']."\"> ".$row['name']." </a> " .$row['filesize']. " MByte <br />";
-
-
-  		
-
+  		<td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['Datum']. " </td><tr>";
+ 		
 	}
 	echo "</table></center>";
 }
