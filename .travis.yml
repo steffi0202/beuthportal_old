@@ -1,24 +1,33 @@
 language: php
 
-# list any PHP version you want to test against
 php:
-  # using major version aliases
+    - 5.3
+    - 5.4
+    - 5.5
+    - 5.6
+    - 7.0
+    - hhvm
 
-  # aliased to 5.2.17
-  #- 5.2
-  # aliased to 5.3.29
-  #- 5.3
-  # aliased to a recent 5.4.x version
-  #- 5.4
-  # aliased to a recent 5.5.x version
-  - 5.5
-  # aliased to a recent 5.6.x version
-  - 5.6
-  # aliased to a recent 7.x version
-  - 7.0
-  # aliased to a recent hhvm version
-  - hhvm
+sudo: false
 
-phpunit: --self-update
+env:
+  - SYMFONY_VERSION=2.7.*
 
+matrix:
+  include:
+    - php: 5.6
+      env: SYMFONY_VERSION=2.3.*
+    - php: 5.6
+      env: SYMFONY_VERSION=2.8.*@dev
+    - php: 5.6
+      env: SYMFONY_VERSION=3.0.*@dev
+    - php: 5.3
+      env: COMPOSER_FLAGS="--prefer-lowest"
 
+before_install:
+  - composer self-update
+  - if [ "$SYMFONY_VERSION" != "" ]; then composer require "symfony/symfony:${SYMFONY_VERSION}" --no-update; fi;
+
+install: composer update --prefer-source $COMPOSER_FLAGS
+
+script: phpunit --coverage-text
