@@ -38,6 +38,7 @@ $user = check_user();
 					</div>
 				</a>
 
+				<a href="mensa.php">
               <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
@@ -45,6 +46,8 @@ $user = check_user();
                         <p class="text-muted">Hier folgt evtl. der Mensa-Content</p>
                     </div>
                 </div>
+				</a>
+				
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>

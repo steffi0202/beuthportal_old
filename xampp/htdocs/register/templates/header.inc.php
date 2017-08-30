@@ -73,7 +73,9 @@
   					<li>
                           <a class="page-scroll" href="dashboard.php">Dashboard</a>
                       </li>
-
+					<li>
+                          <a class="page-scroll" href="bewertung.php">Bewertung</a>
+                      </li>
                       <li>
                           <a class="page-scroll" href="upload.php">Upload</a>
                       </li>

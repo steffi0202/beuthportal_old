@@ -637,3 +637,61 @@
 02:17:50  [main] 	Deinitialisiere Module
 02:17:50  [main] 	Deinitialisiere Control Panel
 
+23:08:25  [main] 	Initialisere Control Panel
+23:08:25  [main] 	Windows Version:  Pro  64-bit
+23:08:25  [main] 	XAMPP Version: 5.6.30
+23:08:25  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+23:08:25  [main] 	Dein Benutzerprofil besitzt keine Administratorenrechte! Das reicht aus für die meisten
+23:08:25  [main] 	Anwendungsfunktionen, aber wann immer du etwas mit Windows-Diensten tun möchtest,
+23:08:25  [main] 	wird eine Sicherheitsabfrage erscheinen oder etwas wird garnicht erst funktionieren!
+23:08:25  [main] 	Also denke daran diese Anwendung mit Administratorrechten zu starten!
+23:08:25  [main] 	XAMPP Installationsverzeichnis: "c:\xampp\beuthportal_old\xampp\"
+23:08:25  [main] 	Voraussetzungen werden geprüft
+23:08:29  [main] 	Alle Voraussetzungen sind erfüllt
+23:08:29  [main] 	Initialisiere Module
+23:08:29  [main] 	Das FileZilla Modul ist deaktiviert
+23:08:29  [main] 	Das Mercury Modul ist deaktiviert
+23:08:29  [main] 	Das Tomcat Modul ist deaktiviert
+23:08:29  [main] 	Starte Check-Timer
+23:08:29  [main] 	Control Panel bereit
+23:08:34  [Apache] 	Versuche Apache zu starten...
+23:08:34  [Apache] 	Statusänderung erkannt: gestartet
+23:08:34  [mysql] 	Versuche MySQL zu starten...
+23:08:38  [mysql] 	Statusänderung erkannt: gestartet
+23:15:10  [mysql] 	Versuche MySQL zu beenden...
+23:15:11  [Apache] 	stoppe Modul Apache (PID: 9452)
+23:15:11  [Apache] 	stoppe Modul Apache (PID: 9792)
+23:15:11  [Apache] 	Statusänderung erkannt: gestoppt
+23:15:11  [mysql] 	Statusänderung erkannt: gestoppt
+23:15:23  [main] 	Deinitialisiere Module
+23:15:23  [main] 	Deinitialisiere Control Panel
+
+21:39:12  [main] 	Initialisere Control Panel
+21:39:12  [main] 	Windows Version:  Pro  64-bit
+21:39:12  [main] 	XAMPP Version: 5.6.30
+21:39:12  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+21:39:12  [main] 	Dein Benutzerprofil besitzt keine Administratorenrechte! Das reicht aus für die meisten
+21:39:12  [main] 	Anwendungsfunktionen, aber wann immer du etwas mit Windows-Diensten tun möchtest,
+21:39:12  [main] 	wird eine Sicherheitsabfrage erscheinen oder etwas wird garnicht erst funktionieren!
+21:39:12  [main] 	Also denke daran diese Anwendung mit Administratorrechten zu starten!
+21:39:12  [main] 	XAMPP Installationsverzeichnis: "c:\xampp\beuthportal_old\xampp\"
+21:39:12  [main] 	Voraussetzungen werden geprüft
+21:39:13  [main] 	Alle Voraussetzungen sind erfüllt
+21:39:13  [main] 	Initialisiere Module
+21:39:13  [main] 	Das FileZilla Modul ist deaktiviert
+21:39:13  [main] 	Das Mercury Modul ist deaktiviert
+21:39:13  [main] 	Das Tomcat Modul ist deaktiviert
+21:39:13  [main] 	Starte Check-Timer
+21:39:13  [main] 	Control Panel bereit
+21:39:15  [Apache] 	Versuche Apache zu starten...
+21:39:15  [Apache] 	Statusänderung erkannt: gestartet
+21:39:15  [mysql] 	Versuche MySQL zu starten...
+21:39:21  [mysql] 	Statusänderung erkannt: gestartet
+21:58:33  [mysql] 	Versuche MySQL zu beenden...
+21:58:34  [mysql] 	Statusänderung erkannt: gestoppt
+21:58:34  [Apache] 	stoppe Modul Apache (PID: 8080)
+21:58:34  [Apache] 	stoppe Modul Apache (PID: 9032)
+21:58:34  [Apache] 	Statusänderung erkannt: gestoppt
+00:34:17  [main] 	Deinitialisiere Module
+00:34:17  [main] 	Deinitialisiere Control Panel
+
