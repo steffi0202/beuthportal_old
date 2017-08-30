@@ -63,6 +63,6 @@ matrix:
   allow_failures:
     - php: 7.0
     - php: hhvm
-script: ./xampp/beuthportal_old/xampp/php/phpunit --configuration ./xampp/beuthportal_old/xampp/htdocs/test/phpunit.xml --coverage-text
+script: phpunit --configuration ./xampp/beuthportal_old/xampp/htdocs/test/phpunit.xml --coverage-text
 
 
