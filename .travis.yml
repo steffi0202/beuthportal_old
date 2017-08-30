@@ -19,6 +19,6 @@ php:
   # aliased to a recent hhvm version
   - hhvm
 
-phpunit --self-update
+phpunit: --self-update
 
 
