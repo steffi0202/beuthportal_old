@@ -61,3 +61,5 @@ matrix:
 
 env:
   - WP_VERSION=master WP_MULTISITE=1
+  
+script:C:\phpbin\phpunit
