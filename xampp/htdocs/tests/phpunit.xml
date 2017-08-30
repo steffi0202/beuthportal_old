@@ -1,0 +1,12 @@
+<phpunit>
+
+	
+	
+	<testsuites>
+		<testsuite name="My Test Suite">
+			<!--directory>/C:/xampp/</directory-->
+			<file>/pushpoptest.php</file>
+			<!--exclude>/path/to/exclude</exclude-->
+		</testsuite>
+	</testsuites>
+</phpunit>
