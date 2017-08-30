@@ -19,8 +19,6 @@ php:
   # aliased to a recent hhvm version
   - hhvm
 
-os: windows
-
 phpunit --self-update
 
 
