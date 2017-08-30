@@ -120,6 +120,8 @@ INSERT INTO `securitytokens` (`id`, `user_id`, `identifier`, `securitytoken`, `c
 --
 -- 28.08.17
 
+DROP TABLE IF EXISTS `studienfach`;
+
 CREATE TABLE studienfach (id INT NOT NULL AUTO_INCREMENT,studienfach_name VARCHAR(100), PRIMARY KEY(id));
 
 --
@@ -168,6 +170,8 @@ INSERT INTO studienfach (studienfach_name) VALUES ("Kommunikationsnetze");
 -- Tabellenstruktur für Tabelle `upload`
 --
 -- 28.08.17
+
+DROP TABLE IF EXISTS `upload`;
 
 CREATE TABLE `upload` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `type` varchar(50) NOT NULL, `size` int(11) NOT NULL, `content` longblob NOT NULL,`studienfach` varchar(50) NOT NULL, `Datum` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`));
 
