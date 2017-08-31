@@ -1,9 +1,9 @@
-﻿-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 28. Aug 2017 um 15:47
+-- Erstellungszeit: 31. Aug 2017 um 18:59
 -- Server-Version: 10.1.21-MariaDB
 -- PHP-Version: 7.1.7
 
@@ -111,69 +111,82 @@ INSERT INTO `securitytokens` (`id`, `user_id`, `identifier`, `securitytoken`, `c
 (34, 3, 'd9effaaf5efdac312bf1f9ab7dbdc580', '72963f283175e181600de42d3aced7cd19c2fbcd', '2017-08-28 13:32:53'),
 (35, 3, '1a4ed5fbd534418b9dffeeffd4c35cfa', '01aba95d6d3430a42152b6337a866f7f697f44fe', '2017-08-28 13:35:04'),
 (36, 3, '3022095fe68d66213d16b8d23570c424', '01c682ddf5f0797c325f0e8fef0e90e51b21ed81', '2017-08-28 13:40:01'),
-(37, 3, '6ea8462eb07b1623a1889b8c46245fe1', 'ccd302fced3011ffbe7039eff712ea9de55f13bf', '2017-08-28 13:45:45');
+(37, 3, '6ea8462eb07b1623a1889b8c46245fe1', 'ccd302fced3011ffbe7039eff712ea9de55f13bf', '2017-08-28 13:45:45'),
+(38, 3, '1008eddd29c61e501d519c07f6de02bc', 'e64b6ade3d50f67d9ef0cadebc3d750f6ad0fc64', '2017-08-28 14:04:23'),
+(39, 3, 'f2370b131b4359d90d0aca50481793b7', '5c094d19286a05c8ea97aff79d2c8fc695430c27', '2017-08-28 21:08:51'),
+(40, 3, '7389631bb1998ad56afc5eee1db07a82', 'ae0e28f6632e880643c5ae1ca0d94272261bcc58', '2017-08-28 21:10:34'),
+(41, 3, '63079bfddabd687c136ab720586d11b2', '3e431487607f5424edd7568d31df6f2d12e257d6', '2017-08-29 19:52:30'),
+(42, 3, '4ef25a3c67b8cfd4c1d307eb23293fd5', '26911cec60b66e0240b96221f7fc69a8768cc9f6', '2017-08-29 19:56:56'),
+(43, 3, '9b68c3d94e3a6925684e0707f710f801', 'fd9efd3167bb2e3208dfc123f74993f1e3d08cd6', '2017-08-30 13:02:47'),
+(44, 3, 'f6476b15570305fb2c5cfa2d8be57c60', 'bb818cdc3f508e3d7f0f0d16bfc552a55f7f9596', '2017-08-31 16:48:40');
 
 -- --------------------------------------------------------
--- --------------------------------------------------------
+
 --
 -- Tabellenstruktur für Tabelle `studienfach`
 --
--- 28.08.17
 
-DROP TABLE IF EXISTS `studienfach`;
-
-CREATE TABLE studienfach (id INT NOT NULL AUTO_INCREMENT,studienfach_name VARCHAR(100), PRIMARY KEY(id));
+CREATE TABLE `studienfach` (
+  `id` int(11) NOT NULL,
+  `studienfach_name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Daten für die Tabelle `studienfach`
+-- Daten für Tabelle `studienfach`
 --
-INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in die Betriebswirtschaftslehre I");
-INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in die Wirtschaftsinformatik");
-INSERT INTO studienfach (studienfach_name) VALUES ("English for Computer Scientists");
-INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen der Mathematik");
-INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen der Programmierung I");
-INSERT INTO studienfach (studienfach_name) VALUES ("Kommunikation, Fuehrung und Selbstmanagement");
-INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in die Betriebswirtschaftslehre II");
-INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen betrieblicher Anwendungssysteme");
-INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen der Programmierung II");
-INSERT INTO studienfach (studienfach_name) VALUES ("Mensch-Computer-Kommunikation");
-INSERT INTO studienfach (studienfach_name) VALUES ("Organisationslehre");
-INSERT INTO studienfach (studienfach_name) VALUES ("Rechnernetze");
-INSERT INTO studienfach (studienfach_name) VALUES ("Algorithmen und Datenstrukturen");
-INSERT INTO studienfach (studienfach_name) VALUES ("Datenbanken");
-INSERT INTO studienfach (studienfach_name) VALUES ("IT-Recht");
-INSERT INTO studienfach (studienfach_name) VALUES ("Internettechnologie / Client / Server");
-INSERT INTO studienfach (studienfach_name) VALUES ("Projektmanagement");
-INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsstatistik");
-INSERT INTO studienfach (studienfach_name) VALUES ("Business Engineering");
-INSERT INTO studienfach (studienfach_name) VALUES ("Einfuehrung in wissenschaftliche Projektarbeit");
-INSERT INTO studienfach (studienfach_name) VALUES ("Kosten- und Erloesrechnung");
-INSERT INTO studienfach (studienfach_name) VALUES ("Operations Research");
-INSERT INTO studienfach (studienfach_name) VALUES ("Softwaretechnik");
-INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsinformatik-Projekt");
-INSERT INTO studienfach (studienfach_name) VALUES ("Business Intelligence");
-INSERT INTO studienfach (studienfach_name) VALUES ("Informationsmanagement");
-INSERT INTO studienfach (studienfach_name) VALUES ("Softwaretechnik-Projekt");
-INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsinformatik-Workshop");
-INSERT INTO studienfach (studienfach_name) VALUES ("Wirtschaftsrecht");
-INSERT INTO studienfach (studienfach_name) VALUES ("Projektphase");
-INSERT INTO studienfach (studienfach_name) VALUES ("Bachelor-Arbeit und -kolloquium");
-INSERT INTO studienfach (studienfach_name) VALUES ("Business English");
-INSERT INTO studienfach (studienfach_name) VALUES ("Controlling");
-INSERT INTO studienfach (studienfach_name) VALUES ("Grundlagen IT-Sicherheit");
-INSERT INTO studienfach (studienfach_name) VALUES ("Kommunikationsnetze");
 
+INSERT INTO `studienfach` (`id`, `studienfach_name`) VALUES
+(1, 'Einfuehrung in die Betriebswirtschaftslehre I'),
+(2, 'Einfuehrung in die Wirtschaftsinformatik'),
+(3, 'English for Computer Scientists'),
+(4, 'Grundlagen der Mathematik'),
+(5, 'Grundlagen der Programmierung I'),
+(6, 'Kommunikation, Fuehrung und Selbstmanagement'),
+(7, 'Einfuehrung in die Betriebswirtschaftslehre II'),
+(8, 'Grundlagen betrieblicher Anwendungssysteme'),
+(9, 'Grundlagen der Programmierung II'),
+(10, 'Mensch-Computer-Kommunikation'),
+(11, 'Organisationslehre'),
+(12, 'Rechnernetze'),
+(13, 'Algorithmen und Datenstrukturen'),
+(14, 'Datenbanken'),
+(15, 'IT-Recht'),
+(16, 'Internettechnologie / Client / Server'),
+(17, 'Projektmanagement'),
+(18, 'Wirtschaftsstatistik'),
+(19, 'Business Engineering'),
+(20, 'Einfuehrung in wissenschaftliche Projektarbeit'),
+(21, 'Kosten- und Erloesrechnung'),
+(22, 'Operations Research'),
+(23, 'Softwaretechnik'),
+(24, 'Wirtschaftsinformatik-Projekt'),
+(25, 'Business Intelligence'),
+(26, 'Informationsmanagement'),
+(27, 'Softwaretechnik-Projekt'),
+(28, 'Wirtschaftsinformatik-Workshop'),
+(29, 'Wirtschaftsrecht'),
+(30, 'Projektphase'),
+(31, 'Bachelor-Arbeit und -kolloquium'),
+(32, 'Business English'),
+(33, 'Controlling'),
+(34, 'Grundlagen IT-Sicherheit'),
+(35, 'Kommunikationsnetze');
 
-
+-- --------------------------------------------------------
 
 --
 -- Tabellenstruktur für Tabelle `upload`
 --
--- 28.08.17
 
-DROP TABLE IF EXISTS `upload`;
-
-CREATE TABLE `upload` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `type` varchar(50) NOT NULL, `size` int(11) NOT NULL, `content` longblob NOT NULL,`studienfach` varchar(50) NOT NULL, `Datum` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`));
+CREATE TABLE `upload` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `size` int(11) NOT NULL,
+  `content` longblob NOT NULL,
+  `studienfach` varchar(50) NOT NULL,
+  `Datum` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -192,8 +205,7 @@ CREATE TABLE `users` (
   `passwortcode` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `passwortcode_time` timestamp NULL DEFAULT NULL,
   `hash` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
-  `active` tinyint(1) NOT NULL DEFAULT '0'
-
+  `active` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -203,7 +215,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `email`, `passwort`, `vorname`, `nachname`, `created_at`, `updated_at`, `passwortcode`, `passwortcode_time`, `hash`, `active`) VALUES
 (1, 'test@test.de', '$2y$10$NDWkaKpR0t6HKxYApi3PZeRXZGrTgY8G4VcivBTMgIDwiAzl2To6K', 'test', 'test', '2017-07-19 14:09:02', NULL, '0416ab4975eba3941e784c27ff69cf38905fff0d', '2017-07-20 15:17:26', '', 1),
 (2, 'test2@test.de', '$2y$10$UKIBTjVKuUtHZkZ3VHcC/.GA4LvnypXf8dqVGNaurdOTdcPIP5FY2', 'test2', 'test2', '2017-08-09 10:13:47', NULL, NULL, NULL, '', 1),
-(3, 's49317@beuth-hochschule.de', '$2y$10$ezVUNBo.Y4K048soY/PO4eYShRZndWepCdgK8DK.BV60Meli6R2BK', 'Alexander', 'Roessner', '2017-08-28 13:23:06', NULL, NULL, NULL, '3a0772443a0739141292a5429b952fe6', 1);
+(3, 's49317@beuth-hochschule.de', '$2y$10$97/AwBrPT8ZSJ1x/JcrIvuktDL/FwunMkL3s7L8AbzFazpG8XTzvu', 'Alexander', 'RÃ¶ÃŸner', '2017-08-31 16:46:11', NULL, NULL, NULL, '8b6dd7db9af49e67306feb59a8bdc52c', 1);
 
 --
 -- Indizes der exportierten Tabellen
@@ -219,6 +231,12 @@ ALTER TABLE `ranking`
 -- Indizes für die Tabelle `securitytokens`
 --
 ALTER TABLE `securitytokens`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `studienfach`
+--
+ALTER TABLE `studienfach`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -247,7 +265,12 @@ ALTER TABLE `ranking`
 -- AUTO_INCREMENT für Tabelle `securitytokens`
 --
 ALTER TABLE `securitytokens`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+--
+-- AUTO_INCREMENT für Tabelle `studienfach`
+--
+ALTER TABLE `studienfach`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT für Tabelle `upload`
 --
