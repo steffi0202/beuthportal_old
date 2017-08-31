@@ -22,14 +22,14 @@ include("../templates/header.inc.php");
 
 <div class="container main-container" style="text-align:center; font-size:120%;">
 <br /> <br />
-Dein Logout war erfolgreich. 
+Dein Logout war erfolgreich.
 <br /> <br />
 <a href="../index.php">Zurück zur Startseite</a>
 <!--Du wirst in 5 Sekunden zur Startseite weitergeleitet.-->
 <br /> <br />
 </div>
 <?php
-include("templates/footer.inc.php")
+include("../templates/footer.inc.php")
 ?>
 </body>
 </html>
