@@ -107,21 +107,89 @@ $user = check_user();
                      <div id="v1" style="display:none;" class="form-group">
                         <label for="Modul">Wähle dein Modul:</label>
                             <select class="form-control" name="Modul" >
+                                 <option>Einführung in die Betriebswirtschaftslehre 1</option>
+                                 <option>Einführung in die Wirtschaftsinformatik</option>
+                                 <option>English for Computer Scientists</option>
+                                 <option>Grundlagen der Mathematik</option>
+                                 <option>Grundlagen der Programmierung 1</option>
+                                 <option>Kommunikation, Führung und Selbstmanagement</option>
+                                 <option>Grundlagen der Programmierung 2</option>
+                                 <option>Einführung in die Betriebswirtschaftslehre 2</option>
+                                 <option>Grundlagen betrieblicher Anwendungssysteme</option>
+                                 <option>Organisationslehre</option>
+                                 <option>Rechnernetze</option>
+                                 <option>Mensch-Computer-Kommunikation</option>
+                                 <option>Algorithmen und Datenstrukturen</option>
+                                 <option>Datenbanken</option>
+                                 <option>Internettechnologie / Client/Server</option>
+                                 <option>Projektmanagement</option>
+                                 <option>Wirtschaftsstatistik</option>
+                                 <option>IT-Recht</option>
                                  <option>Business Engineering</option>
+                                 <option>Einführung in wissenschaftliche Projektarbeit</option>
+                                 <option>Kosten- und Erlösrechnung</option>
                                  <option>Operations Research</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
+                                 <option>Softwaretechnik</option>
+                                 <option>Wirtschaftsinformatik-Projekt</option>
+                                 <option>Wirtschaftsrecht</option>
+                                 <option>Softwaretechnik-Projekt</option>
+                                 <option>Business Intelligence</option>
+                                 <option>Informationsmanagement</option>
+                                 <option>Wirtschaftsinformatik-Workshop</option>
+                                 <option>WP: Grundlagen der IT-Sicherheit</option>
+                                 <option>WP: Kommunikationsnetze</option>
+                                 <option>WP: Controlling</option>
+                                 <option>WP: Marketing</option>
+                                 <option>WP: Rich Media Anwendungen</option>
+                                 <option>WP: Unternehmensplanspiel</option>
+                                 <option>WP: Business English</option>
+
+
                             </select>
                      </div>
                      <div id="v2" style="display:none;" class="form-group">
                         <label for="Modul">Wähle dein Modul:</label>
                             <select class="form-control" name="Modul">
-                                 <option>Medieninfo1</option>
-                                 <option>2</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
+                                 <option>Computerarchitektur und Betriebssysteme</option>
+                                 <option>Einführung in die Informatik</option>
+                                 <option>Grundlagen der Programmierung 1</option>
+                                 <option>Kommunikation, Führung und Selbstmanagement</option>
+                                 <option>Lineare Algebra</option>
+                                 <option>Mediendesign 1</option>
+                                 <option>Grundlagen der Programmierung 2</option>
+                                 <option>Kommunikationsnetze 1</option>
+                                 <option>Mediendesign 2</option>
+                                 <option>Mensch-Computer-Kommunikation</option>
+                                 <option>Relationen und Funktionen</option>
+                                 <option>Theoretische Informatik</option>
+                                 <option>Algorithmen und Datenstrukturen</option>
+                                 <option>Computergrafik 1</option>
+                                 <option>Datenbanken</option>
+                                 <option>IT-Recht</option>
+                                 <option>Multimediatechnik</option>
+                                 <option>Web-Programmierung</option>
+                                 <option>Betriebswirtschaftslehre</option>
+                                 <option>Einführung in wissenschaftliche Projektarbeit</option>
+                                 <option>Grundlagen IT-Sicherheit</option>
+                                 <option>Internet-Anwendungen für mobile Geräte</option>
+                                 <option>Internetserver-Programmierung</option>
+                                 <option>Softwaretechnik</option>
+                                 <option>Pattern und Frameworks</option>
+                                 <option>Praxisprojekt</option>
+                                 <option>Informationsmanagement</option>
+                                 <option>WP: Anforderungsanalyse und Modellierung</option>
+                                 <option>WP: Ausgewählte Kapitel zu Betriebssystemen</option>
+                                 <option>WP: Bildbearbeitung und Bildverarbeitung</option>
+                                 <option>WP: Content Management Systeme</option>
+                                 <option>WP: Einführung Projektmanagement</option>
+                                 <option>WP: Grundlagen virtueller Welten</option>
+                                 <option>WP: Kommunikationsnetze 2</option>
+                                 <option>WP: Medienwirtschaft und Kommunikationspolitik</option>
+                                 <option>WP: Objektorientierte Skriptsprachen</option>
+                                 <option>WP: Programmierung in C++ (Teile 1 und 2)</option>
+                                 <option>WP: Rich Media Anwendungen</option>
+                                 <option>WP: Sicherheit von Mediendaten und Medienanwendungen</option>
+                                <option>WP: Technisches Englisch</option>
                             </select>
                      </div>
 
