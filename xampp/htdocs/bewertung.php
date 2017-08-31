@@ -213,11 +213,30 @@ $user = check_user();
                          <div class="form-group">
                             <label for="Dozent">Wähle deinen Dozenten</label>
                                 <select class="form-control" name="Dozent">
-                                     <option>Prof. Dr. Peter Weimann</option>
-                                     <option>Agathe Merceron</option>
-                                     <option>Jane Brosnan</option>
-                                     <option>4</option>
-                                     <option>5</option>
+                                     <option>Arnke, Peter, Prof. Dipl.-Ing.</option>
+                                     <option>Bode, Christopher, Prof. Dr.-Ing.</option>
+                                     <option>Celebi, Furutan, Prof.</option>
+                                     <option>Downie, Timothy, Prof. Dr.</option>
+                                     <option>Edlich, Stefan, Prof. Dr.-Ing.</option>
+                                     <option>Finke, Ulrich, Prof. Dr.</option>
+                                     <option>Edlich, Stefan, Prof. Dr.-Ing.</option>
+                                     <option>Görlitz, Gudrun, Prof. Dr.</option>
+                                     <option>Hambrecht, Andreas, Prof. Dr.-Ing.</option>
+                                     <option>Irrgang, Klaus-Dieter, Prof. Dr..</option>
+                                     <option>Jekel, Nicole, Prof. Dr..</option>
+                                     <option>Körner, Ursula, Prof. Dr.-Ing.</option>
+                                     <option>Lunau, Ralf, Prof. Dr.</option>
+                                     <option>Merceron, Agathe, Prof. Dr.</option>
+                                     <option>Newesely, Bri, Prof. Dr.-Ing.</option>
+                                     <option>Off, Thomas, Prof. Dr.</option>
+                                     <option>Pinardi, Mara, Prof. Dipl.-Ing.</option>
+                                     <option>Richter, Markus, Prof. Dr.</option>
+                                     <option>Stock, Detlev, Prof. Dr. rer. pol.</option>
+                                     <option>Trettin, Karin, Prof. Dr. rer. nat.</option>
+                                     <option>Ullmann, Werner, Prof. Dr.-Ing.</option>
+                                     <option>Voß, Sven-Hendrik, Prof. Dr.</option>
+                                     <option>Weimann, Peter, Prof. Dr. phil.</option>
+                                     <option>Ziouziou, Sammy, Prof. Dr. phil.</option>
                                 </select>
                          </div>
 
