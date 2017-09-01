@@ -20,7 +20,7 @@ $user = check_user();
 						<a href="bewertung.php">
 							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
 								<div class="service-box">
-									<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+									<i class="fa fa-4x fa-thumbs-up text-primary sr-icons"></i>
 									<h3>Studiengang bewerten</h3>
 									<p class="text-muted" style="color:white;">Bewerte Module und Dozenten</p>
 								</div>
@@ -29,7 +29,7 @@ $user = check_user();
 						<a href="upload.php">
 							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
 								<div class="service-box">
-									<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+									<i class="fa fa-4x fa-cloud-upload  text-primary sr-icons"></i>
 									<h3>Dokument-Area</h3>
 									<p class="text-muted" style="color:white;">Lade z. B. alte Klausuren hoch oder runter</p>
 								</div>
@@ -38,7 +38,7 @@ $user = check_user();
 						<a href="mensa.php">
 							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
 								<div class="service-box">
-									<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+									<i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
 									<h3>Mensapläne</h3>
 									<p class="text-muted" style="color:white;">Die aktuellen Mensa-Speisepläne</p>
 								</div>
@@ -47,7 +47,7 @@ $user = check_user();
 						<a href="forum.php">
 							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
 								<div class="service-box">
-									<i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+									<i class="fa fa-4x fa-comments text-primary sr-icons"></i>
 									<h3>Forum</h3>
 									<p class="text-muted" style="color:white;">Tausche dich im Forum mit anderen aus</p>
 								</div>
