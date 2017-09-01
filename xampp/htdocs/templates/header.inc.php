@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Loginscript</title>
+  <title>Studentenportal Beuth Hochschule</title>
 
   <!-- Bootstrap Core CSS -->
  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,9 +81,13 @@
                       <li>
                           <a class="page-scroll" href="mensa.php">Mensa</a>
                       </li>
-
+					  
+					  <li>
+                          <a class="page-scroll" href="forum.php">Forum</a>
+                      </li>
+					  
                       <li>
-                          <a class="page-scroll" href="register/settings.php">Persönliche Daten</a>
+                          <a class="page-scroll" href="settings.php">Persönliche Daten</a>
                       </li>
   					<?php endif; ?>
   					 <?php if(!is_checked_in()): ?>

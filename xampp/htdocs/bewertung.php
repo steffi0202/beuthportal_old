@@ -1,28 +1,15 @@
 <?php
 session_start();
-//require_once("inc/config.inc.php");
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
-
 include("templates/header.inc.php");
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
-
-//Überprüfe, dass der User eingeloggt ist
-//Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
-
-?>
-<?php
 $user = check_user();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <body id="page-top">
-        </div>
-          <!--/.container-fluid-->
-     </nav>
-
     <header>
         <div class="header-content">
             <div class="header-content-inner">

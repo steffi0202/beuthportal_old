@@ -79,6 +79,12 @@
                       <li>
                           <a class="page-scroll" href="upload.php">Upload</a>
                       </li>
+					  <li>
+                          <a class="page-scroll" href="mensa.php">Mensa</a>
+                      </li>
+					  <li>
+                          <a class="page-scroll" href="forum.php">Forum</a>
+                      </li>
                       <li>
                           <a class="page-scroll" href="register/settings.php">Persönliche Daten</a>
                       </li>

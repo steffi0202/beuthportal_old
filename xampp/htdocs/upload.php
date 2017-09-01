@@ -1,101 +1,77 @@
 <?php
 session_start();
-
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 include("templates/header.inc.php");
-
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
-
-//Überprüfe, dass der User eingeloggt ist
-//Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
 $user = check_user();
-
 ?>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
+<head>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 	<script src="js/btn_upload.js"></script>
+</head>
 
-<body>
+<body id="page-top">
+    <header>
+		<center>
+        <div class="header-content">
+            <div class="header-content-inner">
+				<div class="container main-container" style="text-align:center; font-size:120%; max-width:100%;">				
+					<h2>Upload-Area</h2>
+					<br />
+					<div class="container" style="width: 550px">	 
+						<form method="post" enctype="multipart/form-data">
+							<button class="browse btn btn-primary pull-left" type="button"><i class="glyphicon glyphicon-search"></i> Browse </button>
+							<input style="width: 400px;" type="text" class="form-control pull-left" disabled placeholder="Dein Upload, max. 25 MByte">
+							<input type="file" name="userfile" id="userfile" style="visibility: hidden;" class="click">
+							<label class="pull-left" for="Modulup">Für welches Studienfach ist der Upload?</label>
+								<select class="form-control pull-left" name="Modulup" style="width: 500px;">
+									 <option></option>
+									 <?php 
+										$sql = "SELECT studienfach_name FROM studienfach order by 1 ASC";
+										foreach ($pdo->query($sql) as $row) {
+											echo "<option>" .$row['studienfach_name']. "</option>";
+										}
+									  ?>
+								</select>
+							<input name="upload" type="submit" class="box btn btn-success" id="upload" value=" Upload " style="width: 100px" >
+						</form>
+					</div>
+					<br />
+					<br />
+					<h2 >Download-Area</h2>
+					<br />
+					<div class="container" style="width: 40%">
+						<form method="get" enctype="text/plain">
+							<label style="width: 300px" for="Moduldown">Welches Fach interessiert dich?</label>
+							<p><select style="width: 230px" class="form-control" name="Moduldown" onchange="this.form.submit()"></p>
+							<option></option>
+							<?php 
+								$sql = "SELECT DISTINCT(studienfach) FROM upload order by 1 ASC";
+								foreach ($pdo->query($sql) as $row) {
+									echo "<option>" .$row['studienfach']. "</option>";
+								}
+							?>
+							</select>
+						</form>
+					</div>
+				</div>
+			</div>
+			<?php 
+				if(isset($_GET['Moduldown'])){
+					echo "<div style ='font:16px Arial,tahoma,sans-serif;color:#40FF00'>Deine Suchergebnisse werden unten angezeigt:</div>";
+				}
+			?>
+        </div>
+		</center>
+	
+	</header> 
 
-<center>
-
-	<h2 >Upload-Area</h2>
-	<br>
-	 		
-	<div class="container" style="width: 550px">	 
-	<form method="post" enctype="multipart/form-data">
-		
-		<button class="browse btn btn-primary pull-left" type="button"><i class="glyphicon glyphicon-search"></i> Browse </button>
-		<input style="width: 400px;" type="text" class="form-control pull-left" disabled placeholder="Dein Upload, max. 25 MByte">
-		<input type="file" name="userfile" id="userfile" style="visibility: hidden;" class="click">
-
-
-	<label class="pull-left" for="Modulup">Für welches Studienfach ist der Upload?</label>
-	    <select class="form-control pull-left" name="Modulup" style="width: 500px;">
-	         <option></option>
-	       
-	         <?php 
-
-				$sql = "SELECT studienfach_name FROM studienfach order by 1 ASC";
-
-				foreach ($pdo->query($sql) as $row) {
-   		  		
-  					echo "<option>" .$row['studienfach_name']. "</option>";
-  			
-  				}
-
-	          ?>
-
-	    </select>
-		
-		<input name="upload" type="submit" class="box btn btn-success" id="upload" value=" Upload " style="width: 100px" >
-
-		</form>
-	</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-<h2 >Download-Area</h2>
-<br>
-
-	<div class="container" style="width: 40%">
-	<form method="get" enctype="text/plain">
-	<label style="width: 300px" for="Moduldown">Welches Fach interessiert dich?</label>
-
-	    <p><select style="width: 230px" class="form-control" name="Moduldown" onchange="this.form.submit()"></p>
-	         <option></option>
-	         
-	         <?php 
-
-				$sql = "SELECT DISTINCT(studienfach) FROM upload order by 1 ASC";
-
-				foreach ($pdo->query($sql) as $row) {
-   		  		
-  					echo "<option>" .$row['studienfach']. "</option>";
-  			
-  				}
-
-	          ?>
-
-	    </select>
-	</form>
-</div>
-</center>
-</body>
-</html>
-
- 
-<?php
+	<?php
 
 /*
 
@@ -192,3 +168,10 @@ if(isset($_GET['Moduldown'])){
 }
 
 ?>
+
+
+</body>
+<?php
+include("templates/footer.inc.php")
+?>
+</html>

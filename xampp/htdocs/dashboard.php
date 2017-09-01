@@ -3,109 +3,71 @@ session_start();
 require_once("register/inc/config.inc.php");
 require_once("register/inc/functions.inc.php");
 include("templates/header.inc.php");
-//Überprüfe, dass der User eingeloggt ist
-//Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
 $user = check_user();
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
 <body id="page-top">
-</div>
-  <!--/.container-fluid-->
-</nav>
     <header>
-
-	<div class="header-content" style="">
-				<div class="header-content-inner">
-					<h1 id="homeHeading">Hallo <?php $user = check_user(); echo htmlentities($user['vorname']); ?>!<br /></h1>
-			<hr>
-			<div class="container">
-            <div class="row">
-                <a href="bewertung.php"><div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Studiengang bewerten</h3>
-                        <p class="text-muted">Bewerte Module und Dozenten</p>
-                    </div>
-                </div></a>
-
-               <a href="upload.php">
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box">
-							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-							<h3>Dokument-Area</h3>
-							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
-						</div>
+		<div class="header-content">
+			<div class="header-content-inner">
+				<h1 id="homeHeading"><br /><br />Hallo <?php $user = check_user(); echo htmlentities($user['vorname']); ?>!</h1><br />
+				<hr>
+				<div class="container" style="max-width:100%;">
+					<div class="row" style="max-width:100%;">
+						<a href="bewertung.php">
+							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
+								<div class="service-box">
+									<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+									<h3>Studiengang bewerten</h3>
+									<p class="text-muted" style="color:white;">Bewerte Module und Dozenten</p>
+								</div>
+							</div>
+						</a>
+						<a href="upload.php">
+							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
+								<div class="service-box">
+									<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+									<h3>Dokument-Area</h3>
+									<p class="text-muted" style="color:white;">Lade z. B. alte Klausuren hoch oder runter</p>
+								</div>
+							</div>
+						</a>
+						<a href="mensa.php">
+							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
+								<div class="service-box">
+									<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+									<h3>Mensapläne</h3>
+									<p class="text-muted" style="color:white;">Die aktuellen Mensa-Speisepläne</p>
+								</div>
+							</div>
+						</a>				
+							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
+								<div class="service-box">
+									<i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+									<h3>Forum</h3>
+									<p class="text-muted" style="color:white;">Hier folgt evtl. das Forum</p>
+								</div>
+							</div>
 					</div>
-				</a>
-
-				<a href="mensa.php">
-              <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Mensapläne</h3>
-                        <p class="text-muted">Hier folgt evtl. der Mensa-Content</p>
-                    </div>
-                </div>
-				</a>
-				
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Forum</h3>
-                        <p class="text-muted">Hier folgt evtl. das Forum</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
 				</div>
 			</div>
-        <!--div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Hallo <?php// echo htmlentities($user['vorname']); ?>!<br></h1>
-                <hr>
-            </div>
-                  <div class="container">
-                      <div class="row">
-                        <div class="call-to-action">
-          	               <div class="col-lg-8 col-lg-offset-2 text-center">
-                              <h2 class="section-heading">Suche nach Studiengängen, Dozenten und Modulen</h2>
-                            <!--  <hr class="light">
-                              <p class="text-faded">Hilf anderen Studenten und teile deinen Content und Erfahrungen zum Studium hier!</p>>
-                              <div class="container" style="margin-top: 8%;">
-                                <form id="search" method="post" action="?search#searchOutput">
-                                  <div class="form-group">
-                                    <div class="input-group">
-                                      <input style="width: 650px" class="form-control"  type="text" name="search" placeholder="Search..." required/>
-                                      <span class="input-group-btn">
-                                        <button style= "margin-right: 400px" class="btn btn-success" type="submit">
-                                          <i class="glyphicon glyphicon-search" aria-hidden="true"></i>Search
-                                        </button>
-                                      </span>
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-        </div-->
+		</div>
     </header>
-	<div class="container">
-		<div class="row">
-			<div class="call-to-action">
-				<div class="col-lg-8 col-lg-offset-2 text-center"><br /><br />
-					<h2 class="section-heading">Suche nach Studiengängen, Dozenten und Modulen...</h2>
-					<div class="container" style="margin-top: 8%;">
+	<div class="container" style="max-width:100%;">
+		<div class="row" style="max-width:100%;">
+			<div class="call-to-action" style="max-width:100%;">
+				<div class="col-lg-8 col-lg-offset-2 text-center" style="max-width:100%;"><br /><br />
+					<h2 class="section-heading" style="max-width:100%;">Suche nach Studiengängen, Dozenten und Modulen...</h2>
+					<div class="container" style="margin-top:8%; max-width:100%;">
 						<form id="search" method="post" action="?search#searchOutput">
-							<div class="form-group">
-								<div class="input-group">
-									<input style="width: 650px" class="form-control"  type="text" name="search" placeholder="Search..." required/>
+							<div class="form-group" style="max-width:100%;">
+								<div class="input-group" style="max-width:100%;">
+									<input class="form-control"  type="text" name="search" placeholder="Search..." style="max-width:100%;" required/>
 									<span class="input-group-btn">
-										<button style= "margin-right: 400px" class="btn btn-success" type="submit">
+										<button style= "margin-right:0px;" class="btn btn-success" type="submit">
 											<i class="glyphicon glyphicon-search" aria-hidden="true"></i>Search
 										</button>
 									</span>
@@ -133,132 +95,125 @@ $user = check_user();
           $ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
 
          while($ausgabe = mysqli_fetch_assoc($ergebnis)){
-           ?>
-          <h4><?php echo "Bewertung vom ".$ausgabe['created_at'].":"?></h4>
-       </div>
-       <section class="text-center" id="searchOutput">
-
-	  <div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
-         <div class="box-1 center">
-           <div class="panel panel-success panel-pricing">
-             <div class="panel-heading">
-               <h3>Studiengang</h3>
-             </div>
-             <div class="panel-body text-center">
-               <p><strong><?php echo "".$ausgabe['Studiengang'].""?></strong></p>
-             </div>
-             </div>
-       </div>
-      </div>
-
-	   <div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
-        <div class="box-1 center">
-          <div class="panel panel-success panel-pricing">
-            <div class="panel-heading">
-              <h3>Modul</h3>
-            </div>
-            <div class="panel-body text-center">
-              <p><strong><?php echo "".$ausgabe['Modul'].""?></strong></p>
-            </div>
-            </div>
-      </div>
-     </div>
-
-	  <div class="col-sm-3 col-md-3 col-xs-12">
-         <div class="box-1 center">
-           <div class="panel panel-success panel-pricing">
-             <div class="panel-heading">
-               <h3>Dozent</h3>
-             </div>
-             <div class="panel-body text-center">
-               <p><strong><?php echo "".$ausgabe['Dozent'].""?></strong></p>
-             </div>
-             </div>
-       </div>
-      </div>
-
-     <div class="col-sm-3 col-md-3 col-xs-12">
-       <div class="box-1 center">
-         <div class="panel panel-success panel-pricing">
-           <div class="panel-heading">
-             <h3>Zeitaufwand</h3>
-           </div>
-           <div class="panel-body text-center">
-             <p><strong><?php echo "".$ausgabe['Zeitaufwand'].""?></strong></p>
-           </div>
-           </div>
-     </div>
-    </div>
-
-	  <div class="col-sm-3 col-md-3 col-xs-12">
-    <div class="box-1 center">
-      <div class="panel panel-success panel-pricing">
-        <div class="panel-heading">
-          <h3>Gesamtwertung</h3>
-        </div>
-        <div class="panel-body text-center">
-          <p><strong><?php echo "".$ausgabe['Sterne']." von 5"?></strong></p>
-        </div>
-        </div>
-  </div>
- </div>
-
-    <div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
-      <div class="box-1 center">
-        <div class="panel panel-success panel-pricing">
-          <div class="panel-heading">
-            <h3>Beschreibung des Dozenten</h3>
-          </div>
-          <div class="panel-body text-center">
-            <p><strong><?php echo "".$ausgabe['Dozent_des'].""?></strong></p>
-          </div>
-          </div>
-    </div>
-   </div>
-
-   <div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
-     <div class="box-1 center">
-       <div class="panel panel-success panel-pricing">
-         <div class="panel-heading">
-           <h3>Beschreibung des Moduls</h3>
-         </div>
-         <div class="panel-body text-center">
-           <p><strong><?php echo "".$ausgabe['Modul_des'].""?></strong></p>
-         </div>
-         </div>
-   </div>
-  </div>
-
- </section>
-      <?php
-    }
-  }
-  ?>
-  <section>
-  <div class="container">
-		<div class="row">
-			<div class="call-to-action">
-				<div class="col-lg-8 col-lg-offset-2 text-center"><br /><br />
-					<h4 class="section-heading">
-					<?php
-						if (!empty($_GET) AND !$ergebnis || mysqli_num_rows($ergebnis) == 0) {
-						 echo "<font color='#FF0000'>Es wurde kein Ergebnis unter dem Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
-						   Bitte versuche es mit einem anderen Begriff.
-						   </font>";
-						   //<a href='dashboard.php'>Zurueck!</a>
-						 }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
-
-					?>
-
-
-					</h4>
-
+    ?>
+    <h4><?php echo "Bewertung vom ".$ausgabe['created_at'].":"?></h4>
+    <section class="text-center" id="searchOutput">
+		<div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Studiengang</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Studiengang'].""?></strong></p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-  </section>
+		<div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Modul</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Modul'].""?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-sm-3 col-md-3 col-xs-12">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Dozent</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Dozent'].""?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-xs-12">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Zeitaufwand</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Zeitaufwand'].""?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-xs-12">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Gesamtwertung</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Sterne']." von 5"?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Beschreibung des Dozenten</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Dozent_des'].""?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-xs-12" style="width:100%;">
+			<div class="box-1 center">
+				<div class="panel panel-success panel-pricing">
+					<div class="panel-heading">
+						<h3>Beschreibung des Moduls</h3>
+					</div>
+					<div class="panel-body text-center">
+						<p><strong><?php echo "".$ausgabe['Modul_des'].""?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <?php
+		}
+	}
+	?>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="call-to-action">
+					<div class="col-lg-8 col-lg-offset-2 text-center"><br /><br />
+						<h4 class="section-heading">
+						<?php
+							if (!empty($_GET) AND !$ergebnis || mysqli_num_rows($ergebnis) == 0) {
+							 echo "<font color='#FF0000'>Es wurde kein Ergebnis unter dem Begriff \"<u>$suchbegriff</u>\" gefunden.<br />
+							   Bitte versuche es mit einem anderen Begriff.
+							   </font>";
+							   //<a href='dashboard.php'>Zurueck!</a>
+							 }    // * Wenn nichts gefunden wurde, dann kommt diese Fehlermeldung.*/
+
+						?>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
   <!--section class="text-center">
