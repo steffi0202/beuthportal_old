@@ -11,7 +11,7 @@ $user = check_user();
 <body id="page-top">
     <header>
         <div class="header-content" style="max-width:100%;">
-            <div class="header-content-inner">
+            <div class="header-content-inner" style="background-color:grey;">
                 
 				<?php 
 						/* showanswers.php */ 
@@ -26,9 +26,11 @@ $user = check_user();
 						while($ausgabe = mysqli_fetch_assoc($ergebnis)){
 							$text = nl2br($ausgabe["text"]);
 							echo "<p>"; 
-							echo "Titel des Beitrags: ".$ausgabe['topic']."<br>"; 
-							echo "Name des Autors: ".$ausgabe['user']."<br>"; 
-							echo "Nachricht: ".$text."<br />"; 
+							echo "Antwort #: ".$ausgabe['id']."<br />";
+							echo "Von: ".$ausgabe['user']."<br />"; 
+							echo "Am: ".$ausgabe['created']."<br /><br />";
+							echo "Betreff: ".$ausgabe['topic']."<br /><br />"; 
+							echo "Beitrag: ".$text."<br />"; 
 							echo "</p>";
 						}
 				?>
@@ -39,6 +41,6 @@ $user = check_user();
 	</header>
 </body>
 <?php
-include("templates/footer.inc.php")
+include("templates/footer.inc.php");
 ?>
 </html>

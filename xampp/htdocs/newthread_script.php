@@ -57,6 +57,6 @@ $user = check_user();
 	</header>
 </body>
 <?php
-include("templates/footer.inc.php")
+include("templates/footer.inc.php");
 ?>
 </html>

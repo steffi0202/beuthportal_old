@@ -12,19 +12,16 @@ $user = check_user();
     <header>
         <div class="header-content" style="max-width:100%;">
             <div class="header-content-inner">
-                <form action="newthread_script.php" method="post" id="newthread">
-                    First name:<br />
-					<input type="text" name="firstname" value="Mickey"><br />
-					Last name:<br />
-					<input type="text" name="lastname" value="Mouse"><br /><br />
-					Dein Beitrag:<br />
-					
-					<input type="submit" value="Submit">
-                   
-				</form>
+                <form action="textarea.html" method="post"> 
+					<div>  
+						<label for="text">Anmerkung</label>
+							<textarea id="text" name="text" cols="35" rows="15"></textarea> 	
+						<input type="submit" value="Senden" />
+					</div> 
+				</form> 
 				
 				
-				<textarea name="comment" form="newthread">Enter text here...</textarea>
+			
 				
 			</div>
 			
@@ -33,6 +30,6 @@ $user = check_user();
 	</header>
 </body>
 <?php
-include("templates/footer.inc.php")
+include("templates/footer.inc.php");
 ?>
 </html>

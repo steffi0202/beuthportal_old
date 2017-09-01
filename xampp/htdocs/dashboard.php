@@ -43,14 +43,16 @@ $user = check_user();
 									<p class="text-muted" style="color:white;">Die aktuellen Mensa-Speisepläne</p>
 								</div>
 							</div>
-						</a>				
+						</a>
+						<a href="forum.php">
 							<div class="col-lg-3 col-md-6 text-center" style="max-width:100%;">
 								<div class="service-box">
 									<i class="fa fa-4x fa-heart text-primary sr-icons"></i>
 									<h3>Forum</h3>
-									<p class="text-muted" style="color:white;">Hier folgt evtl. das Forum</p>
+									<p class="text-muted" style="color:white;">Tausche dich im Forum mit anderen aus</p>
 								</div>
 							</div>
+						</a>
 					</div>
 				</div>
 			</div>
