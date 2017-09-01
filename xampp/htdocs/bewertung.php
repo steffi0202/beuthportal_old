@@ -69,7 +69,7 @@ $user = check_user();
                       var selectBox = document.getElementById("Studiengang");
                       var selectedValue = selectBox.options[selectBox.selectedIndex].value;
                       //alert(selectedValue);
-                      if(selectedValue == 1) {
+                      if(selectedValue == Wirtschaftsinformatik - Online) {
                         document.getElementById('v1').style.display='block';
                         document.getElementById('v2').style.display='none';
                       } else {
@@ -87,8 +87,8 @@ $user = check_user();
                         <label for="Studiengang">Wähle deinen Studiengang:</label>
                           <select onChange="doit();" id="Studiengang" class="form-control" name="Studiengang">
                                 <option >Bitte Studiengang auswählen</option>
-                                 <option value="1" >Wirtschaftsinformatik - Online</option>
-                                 <option value="2">Medieninformatik - Online</option>
+                                 <option value="Wirtschaftsinformatik - Online" >Wirtschaftsinformatik - Online</option>
+                                 <option value="Medieninformatik - Online">Medieninformatik - Online</option>
                      </select>
                      </div>
                      <div id="v1" style="display:none;" class="form-group">

@@ -20,10 +20,10 @@ $user = check_user();
 		<center>
         <div class="header-content">
             <div class="header-content-inner">
-				<div class="container main-container" style="text-align:center; font-size:120%; max-width:100%;">				
+				<div class="container main-container" style="text-align:center; font-size:120%; max-width:100%;">
 					<h2>Upload-Area</h2>
 					<br />
-					<div class="container" style="width: 550px">	 
+					<div class="container" style="width: 550px">
 						<form method="post" enctype="multipart/form-data">
 							<button class="browse btn btn-primary pull-left" type="button"><i class="glyphicon glyphicon-search"></i> Browse </button>
 							<input style="width: 400px;" type="text" class="form-control pull-left" disabled placeholder="Dein Upload, max. 25 MByte">
@@ -31,14 +31,14 @@ $user = check_user();
 							<label class="pull-left" for="Modulup">Für welches Studienfach ist der Upload?</label>
 								<select class="form-control pull-left" name="Modulup" style="width: 500px;">
 									 <option></option>
-									 <?php 
+									 <?php
 										$sql = "SELECT studienfach_name FROM studienfach order by 1 ASC";
 										foreach ($pdo->query($sql) as $row) {
 											echo "<option>" .$row['studienfach_name']. "</option>";
 										}
 									  ?>
 								</select>
-							<input name="upload" type="submit" class="box btn btn-success" id="upload" value=" Upload " style="width: 100px" >
+							<input name="upload" type="submit" class="box btn btn-primary btn-success" id="upload" value=" Upload " style="width: 100px" >
 						</form>
 					</div>
 					<br />
@@ -50,7 +50,7 @@ $user = check_user();
 							<label style="width: 300px" for="Moduldown">Welches Fach interessiert dich?</label>
 							<p><select style="width: 230px" class="form-control" name="Moduldown" onchange="this.form.submit()"></p>
 							<option></option>
-							<?php 
+							<?php
 								$sql = "SELECT DISTINCT(studienfach) FROM upload order by 1 ASC";
 								foreach ($pdo->query($sql) as $row) {
 									echo "<option>" .$row['studienfach']. "</option>";
@@ -61,15 +61,15 @@ $user = check_user();
 					</div>
 				</div>
 			</div>
-			<?php 
+			<?php
 				if(isset($_GET['Moduldown'])){
 					echo "<div style ='font:16px Arial,tahoma,sans-serif;color:#40FF00'>Deine Suchergebnisse werden unten angezeigt:</div>";
 				}
 			?>
         </div>
 		</center>
-	
-	</header> 
+
+	</header>
 
 	<?php
 
@@ -104,7 +104,7 @@ $result = $statement->execute(array('name' => $fileName, 'size' => $fileSize, 't
 	# Erfolgreicher Upload
 
 	echo '<meta http-equiv="refresh" content="0; url=http://localhost/upload.php">';
-	
+
 	echo "<script type='text/javascript'>alert('Die Daten wurden erfolgreich übertragen!')</script>";
 
 
@@ -115,7 +115,7 @@ $result = $statement->execute(array('name' => $fileName, 'size' => $fileSize, 't
 	echo "<script type='text/javascript'>alert('Die Datei ist leider zu groß!')</script>";
 
 } elseif (isset($_POST['upload']) && $_POST['Modulup'] == "") {
-	
+
 	# Fehlermeldung wenn kein Studienfach für den Upload angegeben wurde.
 
 	echo "<script type='text/javascript'>alert('Du hast vergessen ein Studienfach zu benennen für den Upload!')</script>";
@@ -154,15 +154,15 @@ if(isset($_GET['Moduldown'])){
   				</tr>";
 
 	foreach ($pdo->query($sql) as $row) {
-   		  		
-  		echo "<tr><td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['studienfach']. 
-  		
+
+  		echo "<tr><td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['studienfach'].
+
   		"</td><td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px;width: 400px \"> <a href=\"download.php?id=".$row['id']."\"> ".$row['name']." </a>
 
   		<td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['filesize']. " MByte </td>
 
   		<td style=\"border: 1px solid #dddddd; text-align: left; padding: 8px; \">" .$row['Datum']. " </td><tr>";
- 		
+
 	}
 	echo "</table></center>";
 }
