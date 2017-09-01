@@ -22,32 +22,28 @@ $user = check_user();
 						$pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 
 						$fid = $_POST["fid"]; 
-						$topic = $_POST["topic"]; 
+						$tid = $_POST["tid"]; 
+						//$topic = $_POST["topic"]; 
 						$text = $_POST["text"]; 
 						$ersteller = $_POST["ersteller"]; 
-						 						
-						$statement = $pdo->prepare("INSERT INTO threads (ersteller, text, topic, fid) VALUES (:ersteller, :text, :topic, :fid)");
-                        $result = $statement->execute(array('ersteller' => $ersteller, 'text' => $text, 'topic' => $topic, 'fid' => $fid));
-
-
-						//nun brauchen wir noch die neue ID des Threads, um sie in answers 
-						// einzutragen 
+					
 						
-						//$abfrage = "SELECT max(id) AS max FROM threads";
-						//$ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
+						$abfrage = "SELECT max(id) AS max FROM threads";
+						$ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
 						
 						
-						//$ausgabe = mysqli_fetch_assoc($ergebnis);
-						//$thread_id = $ausgabe["max"]; 
+						$ausgabe = mysqli_fetch_assoc($ergebnis);
+						$thread_id = $ausgabe["max"]; 
 
 						//so nun schreiben wir den eigentlichen Beitrag in die DB 
-						//$statement = $pdo->prepare("INSERT INTO answers (text, topic, user, fid, tid) VALUES (:text, :topic, :user, :fid, :tid)");
-                       // $result = $statement->execute(array('text' => $text, 'topic' => $topic, 'user' => $ersteller, 'fid' => $fid, 'tid' => $thread_id));
+						$statement = $pdo->prepare("INSERT INTO answers (text, user, fid, tid) VALUES (:text, :user, :fid, :tid)");
+                        $result = $statement->execute(array('text' => $text, 'user' => $ersteller, 'fid' => $fid, 'tid' => $tid));
 
 					
 						//Weiterleitung zu der Auflistung der Threads im 
 						//bereits ausgewählten Forum 
-						header("Location: showthreads.php?id=".$fid); 
+						
+						header("Location: showanswers.php?fid=".$_POST["fid"]."&tid=".$_POST["tid"]); 
 						//print_r($_POST);
 						
 					?>
