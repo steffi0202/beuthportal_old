@@ -167,7 +167,7 @@ if(is_checked_in()){
             <div class="row">
                 <!--a href="bewertung.php"--><div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-thumbs-up text-primary sr-icons"></i>
                         <h3>Studiengang bewerten</h3>
                         <p class="text-muted">Bewerte Module und Dozenten</p>
                     </div>
@@ -175,7 +175,7 @@ if(is_checked_in()){
 
 					<div class="col-lg-3 col-md-6 text-center">
 						<div class="service-box">
-							<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+							<i class="fa fa-4x fa-cloud-upload text-primary sr-icons"></i>
 							<h3>Dokument-Area</h3>
 							<p class="text-muted">Lade z. B. alte Klausuren hoch oder runter</p>
 						</div>
@@ -183,7 +183,7 @@ if(is_checked_in()){
 
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
                         <h3>Mensapläne</h3>
                         <p class="text-muted">
 													<!--a href="mensa.php" -->Hier folgt evtl. der Mensa-Content</a>
@@ -192,7 +192,7 @@ if(is_checked_in()){
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-comments text-primary sr-icons"></i>
                         <h3>Forum</h3>
                         <p class="text-muted">Hier folgt evtl. das Forum</p>
                     </div>
