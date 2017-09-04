@@ -98,7 +98,7 @@ $user = check_user();
 
          while($ausgabe = mysqli_fetch_assoc($ergebnis)){
     ?>
-		<div class="list-group" style="margin:50px;" id="search#searchOutput">
+		<div class="list-group" style="margin:50px;" id="searchOutput">
 	  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" style="border-color:#333;">
 	    <div class="d-flex w-100 justify-content-between">
         <table width="100%">
