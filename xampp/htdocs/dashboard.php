@@ -93,17 +93,28 @@ $user = check_user();
       //* Datenbankverbindung aufbauen (ENDE)
       $suchbegriff = $_POST["search"];
       //* Überprüfung der Eingabe
-          $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%'";
+          $abfrage = "SELECT * FROM ranking WHERE Dozent LIKE '%$suchbegriff%' OR  Modul LIKE '%$suchbegriff%' OR  Studiengang LIKE '%$suchbegriff%' ORDER BY created_at DESC";
           $ergebnis = mysqli_query($verbindung, $abfrage) or die(mysqli_error($verbindung));
 
          while($ausgabe = mysqli_fetch_assoc($ergebnis)){
     ?>
-		<div class="list-group">
-	  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+		<div class="list-group" style="margin:50px;" id="search#searchOutput">
+	  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" style="border-color:#333;">
 	    <div class="d-flex w-100 justify-content-between">
-	      <h5 class="mb-1"><b><?php echo "".$ausgabe['Studiengang'].", "?> <?php echo "".$ausgabe['Modul']." bei "?> <?php echo "".$ausgabe['Dozent'].""?></b></h5>
-				<h5 class="mb-1"><?php echo "Zeitaufwand: ".$ausgabe['Zeitaufwand']." Stunden pro Woche"?></h5>
-				<small><p  class="text-right"><?php echo "".$ausgabe['Sterne']." von 5 Sternen"?></p></small>
+        <table width="100%">
+          <tr>
+            <td>
+              <h5 class="mb-1"><b><?php echo "".$ausgabe['Studiengang'].", "?> <?php echo "".$ausgabe['Modul']." bei "?> <?php echo "".$ausgabe['Dozent'].""?></b></h5>
+      				<h5 class="mb-1"><?php echo "Zeitaufwand: ".$ausgabe['Zeitaufwand']." Stunden pro Woche"?></h5>
+            </td>
+          <!--<td align="right"><small><p  class="text-right"><?php echo "".$ausgabe['Sterne']." von 5 Sternen"?></p></small></td>-->
+            <td align="right">
+              <i style="background-color:#e6e6e6"><b style="background-image:url('img/stars2.png');background-repeat:no-repeat;background-position: <?php $x = $ausgabe['Sterne']*100/5;echo -100+$x.'px 0px'; ?>;"><img src="img/stars1.png"></b></i>
+            </td>
+          </tr>
+        </table>
+
+
 				</div>
 			<p class="mb-1"><b>Modul: </b><?php echo "".$ausgabe['Modul_des'].""?></p>
 	    <p class="mb-1"><b>Dozent/in: </b>	<?php echo " ".$ausgabe['Dozent_des'].""?></p>
