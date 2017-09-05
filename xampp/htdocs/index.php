@@ -316,7 +316,7 @@ if(is_checked_in()){
                 </div>-->
                 <div class="col-lg-12 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:beuthportal@gmail.com">beuthportal@gmail.com</a></p>
+                    <p><a href="mailto:beuthportal@web.de">beuthportal@web.de</a></p>
                 </div>
             </div>
         </div>

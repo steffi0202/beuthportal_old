@@ -1999,3 +1999,270 @@
 17.08.31 20:04:47 ** Disconnected.
 17.08.31 20:04:47 ** Disconnected.
 17.08.31 20:04:47 ** Disconnected.
+17.09.05 13:40:56 ** --- MESSAGE BEGIN ---
+17.09.05 13:40:56 ** To: 
+17.09.05 13:40:56 ** Subject: 
+17.09.05 13:40:56 ** MIME-Version: 1.0
+17.09.05 13:40:56 ** From: Beuth-Portal <beuthportal@gmail.com>
+17.09.05 13:40:56 ** 
+17.09.05 13:40:56 ** 
+17.09.05 13:40:56 ** --- MESSAGE END ---
+17.09.05 13:40:56 ** Message is missing recipient's address
+17.09.05 13:42:47 ** --- MESSAGE BEGIN ---
+17.09.05 13:42:47 ** To: 
+17.09.05 13:42:47 ** Subject: 
+17.09.05 13:42:47 ** MIME-Version: 1.0
+17.09.05 13:42:47 ** From: Beuth-Portal <beuthportal@gmail.com>
+17.09.05 13:42:47 ** 
+17.09.05 13:42:47 ** 
+17.09.05 13:42:47 ** --- MESSAGE END ---
+17.09.05 13:42:47 ** Message is missing recipient's address
+17.09.05 13:42:56 ** --- MESSAGE BEGIN ---
+17.09.05 13:42:56 ** To: 
+17.09.05 13:42:56 ** Subject: 
+17.09.05 13:42:56 ** MIME-Version: 1.0
+17.09.05 13:42:56 ** From: Beuth-Portal <beuthportal@gmail.com>
+17.09.05 13:42:56 ** 
+17.09.05 13:42:56 ** 
+17.09.05 13:42:56 ** --- MESSAGE END ---
+17.09.05 13:42:56 ** Message is missing recipient's address
+17.09.05 13:43:41 ** --- MESSAGE BEGIN ---
+17.09.05 13:43:41 ** To: s49317@beuth-hochschule.de
+17.09.05 13:43:41 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.09.05 13:43:41 ** MIME-Version: 1.0
+17.09.05 13:43:41 ** From: Beuth-Portal <beuthportal@gmail.com>
+17.09.05 13:43:41 ** 
+17.09.05 13:43:41 ** Hallo Alexander,
+17.09.05 13:43:41 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.09.05 13:43:41 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.09.05 13:43:41 ** http://localhost/register/passwortzuruecksetzen.php?userid=3&code=d623475a43396d0a7a9dcc3b21394d62
+17.09.05 13:43:41 ** 
+17.09.05 13:43:41 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.09.05 13:43:41 ** 
+17.09.05 13:43:41 ** Viele Gruesse,
+17.09.05 13:43:41 ** dein Studentenportal-Team
+17.09.05 13:43:41 ** --- MESSAGE END ---
+17.09.05 13:43:42 ** Connecting to smtp.web.de:587
+17.09.05 13:43:43 ** Connected.
+17.09.05 13:43:43 << 220 web.de (mrweb004) Nemesis ESMTP Service ready<EOL>
+17.09.05 13:43:43 >> EHLO aa-PC<EOL>
+17.09.05 13:43:43 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.05 13:43:43 ** Authenticating as beuthportal@web.de
+17.09.05 13:43:43 >> STARTTLS<EOL>
+17.09.05 13:43:43 << 220 OK<EOL>
+17.09.05 13:43:43 >> EHLO aa-PC<EOL>
+17.09.05 13:43:43 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.05 13:43:43 >> AUTH LOGIN<EOL>
+17.09.05 13:43:43 << 334 VXNlcm5hbWU6<EOL>
+17.09.05 13:43:43 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.05 13:43:43 << 334 UGFzc3dvcmQ6<EOL>
+17.09.05 13:43:43 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.05 13:43:43 << 235 Authentication succeeded<EOL>
+17.09.05 13:43:43 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.05 13:43:43 << 250 Requested mail action okay, completed<EOL>
+17.09.05 13:43:43 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.05 13:43:43 << 250 OK<EOL>
+17.09.05 13:43:43 >> DATA<EOL>
+17.09.05 13:43:43 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.05 13:43:43 >> Date: Tue, 5 Sep 2017 13:43:43 +0200<EOL>
+17.09.05 13:43:43 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.05 13:43:43 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.09.05 13:43:43 >> MIME-Version: 1.0<EOL>
+17.09.05 13:43:43 >> From: Beuth-Portal <beuthportal@gmail.com><EOL>
+17.09.05 13:43:43 >> <EOL>
+17.09.05 13:43:43 >> Hallo Alexander,<EOL>
+17.09.05 13:43:43 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.09.05 13:43:43 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.09.05 13:43:43 >> http://localhost/register/passwortzuruecksetzen.php?userid=3&code=d623475a43396d0a7a9dcc3b21394d62<EOL>
+17.09.05 13:43:43 >> <EOL>
+17.09.05 13:43:43 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.09.05 13:43:43 >> <EOL>
+17.09.05 13:43:43 >> Viele Gruesse,<EOL>
+17.09.05 13:43:43 >> dein Studentenportal-Team<EOL>
+17.09.05 13:43:43 >> .<EOL>
+17.09.05 13:43:43 << 250 Requested mail action okay, completed: id=0MIkOm-1dmzLC0tbs-002IQW<EOL>
+17.09.05 13:43:43 >> QUIT<EOL>
+17.09.05 13:43:44 << 221 web.de Service closing transmission channel<EOL>
+17.09.05 13:43:44 ** Disconnecting from smtp.web.de:587
+17.09.05 13:43:44 ** Disconnected.
+17.09.05 13:43:44 ** Disconnected.
+17.09.05 13:49:58 ** --- MESSAGE BEGIN ---
+17.09.05 13:49:58 ** To: s49317@beuth-hochschule.de
+17.09.05 13:49:58 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.09.05 13:49:58 ** MIME-Version: 1.0
+17.09.05 13:49:58 ** From: Beuth-Portal <beuthportal@web.de>
+17.09.05 13:49:58 ** 
+17.09.05 13:49:58 ** Hallo Alexander,
+17.09.05 13:49:58 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.09.05 13:49:58 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.09.05 13:49:58 ** http://localhost/register/passwortzuruecksetzen.php?userid=3&code=bc2c90c079a494b973d8597d60452fdc
+17.09.05 13:49:58 ** 
+17.09.05 13:49:58 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.09.05 13:49:58 ** 
+17.09.05 13:49:58 ** Viele Gruesse,
+17.09.05 13:49:58 ** dein Studentenportal-Team
+17.09.05 13:49:58 ** --- MESSAGE END ---
+17.09.05 13:50:00 ** Connecting to smtp.web.de:587
+17.09.05 13:50:00 ** Connected.
+17.09.05 13:50:00 << 220 web.de (mrweb003) Nemesis ESMTP Service ready<EOL>
+17.09.05 13:50:00 >> EHLO aa-PC<EOL>
+17.09.05 13:50:00 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.05 13:50:00 ** Authenticating as beuthportal@web.de
+17.09.05 13:50:00 >> STARTTLS<EOL>
+17.09.05 13:50:00 << 220 OK<EOL>
+17.09.05 13:50:00 >> EHLO aa-PC<EOL>
+17.09.05 13:50:00 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.05 13:50:00 >> AUTH LOGIN<EOL>
+17.09.05 13:50:00 << 334 VXNlcm5hbWU6<EOL>
+17.09.05 13:50:00 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.05 13:50:00 << 334 UGFzc3dvcmQ6<EOL>
+17.09.05 13:50:00 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.05 13:50:00 << 235 Authentication succeeded<EOL>
+17.09.05 13:50:00 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.05 13:50:00 << 250 Requested mail action okay, completed<EOL>
+17.09.05 13:50:00 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.05 13:50:00 << 250 OK<EOL>
+17.09.05 13:50:00 >> DATA<EOL>
+17.09.05 13:50:00 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.05 13:50:00 >> Date: Tue, 5 Sep 2017 13:50:00 +0200<EOL>
+17.09.05 13:50:00 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.05 13:50:00 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.09.05 13:50:00 >> MIME-Version: 1.0<EOL>
+17.09.05 13:50:00 >> From: Beuth-Portal <beuthportal@web.de><EOL>
+17.09.05 13:50:00 >> <EOL>
+17.09.05 13:50:00 >> Hallo Alexander,<EOL>
+17.09.05 13:50:00 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.09.05 13:50:00 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.09.05 13:50:00 >> http://localhost/register/passwortzuruecksetzen.php?userid=3&code=bc2c90c079a494b973d8597d60452fdc<EOL>
+17.09.05 13:50:00 >> <EOL>
+17.09.05 13:50:00 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.09.05 13:50:00 >> <EOL>
+17.09.05 13:50:00 >> Viele Gruesse,<EOL>
+17.09.05 13:50:00 >> dein Studentenportal-Team<EOL>
+17.09.05 13:50:00 >> .<EOL>
+17.09.05 13:50:00 << 250 Requested mail action okay, completed: id=0MIvaT-1dnGQQ0nof-002YvS<EOL>
+17.09.05 13:50:00 >> QUIT<EOL>
+17.09.05 13:50:01 << 221 web.de Service closing transmission channel<EOL>
+17.09.05 13:50:01 ** Disconnecting from smtp.web.de:587
+17.09.05 13:50:01 ** Disconnected.
+17.09.05 13:50:01 ** Disconnected.
+17.09.05 13:50:41 ** --- MESSAGE BEGIN ---
+17.09.05 13:50:41 ** To: s49317@beuth-hochschule.de
+17.09.05 13:50:41 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.09.05 13:50:41 ** MIME-Version: 1.0
+17.09.05 13:50:41 ** From: Beuth-Portal <beuthportal@web.de>
+17.09.05 13:50:41 ** 
+17.09.05 13:50:41 ** Hallo Alexander,
+17.09.05 13:50:41 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.09.05 13:50:41 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.09.05 13:50:41 ** http://localhost/register/passwortzuruecksetzen.php?userid=3&code=4f11b59ed01099e0fc40ccb3884ba6ae
+17.09.05 13:50:41 ** 
+17.09.05 13:50:41 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.09.05 13:50:41 ** 
+17.09.05 13:50:41 ** Viele Gruesse,
+17.09.05 13:50:41 ** dein Studentenportal-Team
+17.09.05 13:50:41 ** --- MESSAGE END ---
+17.09.05 13:50:42 ** Connecting to smtp.web.de:587
+17.09.05 13:50:42 ** Connected.
+17.09.05 13:50:42 << 220 web.de (mrweb101) Nemesis ESMTP Service ready<EOL>
+17.09.05 13:50:42 >> EHLO aa-PC<EOL>
+17.09.05 13:50:43 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.05 13:50:43 ** Authenticating as beuthportal@web.de
+17.09.05 13:50:43 >> STARTTLS<EOL>
+17.09.05 13:50:43 << 220 OK<EOL>
+17.09.05 13:50:43 >> EHLO aa-PC<EOL>
+17.09.05 13:50:43 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.05 13:50:43 >> AUTH LOGIN<EOL>
+17.09.05 13:50:43 << 334 VXNlcm5hbWU6<EOL>
+17.09.05 13:50:43 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.05 13:50:43 << 334 UGFzc3dvcmQ6<EOL>
+17.09.05 13:50:43 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.05 13:50:43 << 235 Authentication succeeded<EOL>
+17.09.05 13:50:43 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.05 13:50:43 << 250 Requested mail action okay, completed<EOL>
+17.09.05 13:50:43 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.05 13:50:43 << 250 OK<EOL>
+17.09.05 13:50:43 >> DATA<EOL>
+17.09.05 13:50:43 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.05 13:50:43 >> Date: Tue, 5 Sep 2017 13:50:43 +0200<EOL>
+17.09.05 13:50:43 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.05 13:50:43 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.09.05 13:50:43 >> MIME-Version: 1.0<EOL>
+17.09.05 13:50:43 >> From: Beuth-Portal <beuthportal@web.de><EOL>
+17.09.05 13:50:43 >> <EOL>
+17.09.05 13:50:43 >> Hallo Alexander,<EOL>
+17.09.05 13:50:43 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.09.05 13:50:43 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.09.05 13:50:43 >> http://localhost/register/passwortzuruecksetzen.php?userid=3&code=4f11b59ed01099e0fc40ccb3884ba6ae<EOL>
+17.09.05 13:50:43 >> <EOL>
+17.09.05 13:50:43 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.09.05 13:50:43 >> <EOL>
+17.09.05 13:50:43 >> Viele Gruesse,<EOL>
+17.09.05 13:50:43 >> dein Studentenportal-Team<EOL>
+17.09.05 13:50:43 >> .<EOL>
+17.09.05 13:50:43 << 250 Requested mail action okay, completed: id=0Lo0V2-1dI4Tp3lvc-00fz5m<EOL>
+17.09.05 13:50:43 >> QUIT<EOL>
+17.09.05 13:50:43 << 221 web.de Service closing transmission channel<EOL>
+17.09.05 13:50:43 ** Disconnected.
+17.09.05 13:50:43 ** Disconnected.
+17.09.05 13:50:43 ** Disconnected.
+17.09.05 13:53:09 ** --- MESSAGE BEGIN ---
+17.09.05 13:53:09 ** To: s49317@beuth-hochschule.de
+17.09.05 13:53:09 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.09.05 13:53:09 ** MIME-Version: 1.0
+17.09.05 13:53:09 ** From: Beuth-Portal <beuthportal@web.de>
+17.09.05 13:53:09 ** 
+17.09.05 13:53:09 ** Hallo Alexander,
+17.09.05 13:53:09 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.09.05 13:53:09 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.09.05 13:53:09 ** http://localhost/register/passwortzuruecksetzen.php?userid=3&code=3419692f65c5ae0fd1521e5efaed97de
+17.09.05 13:53:09 ** 
+17.09.05 13:53:09 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.09.05 13:53:09 ** 
+17.09.05 13:53:09 ** Viele Gruesse,
+17.09.05 13:53:09 ** dein Studentenportal-Team
+17.09.05 13:53:09 ** --- MESSAGE END ---
+17.09.05 13:53:10 ** Connecting to smtp.web.de:587
+17.09.05 13:53:11 ** Connected.
+17.09.05 13:53:11 << 220 web.de (mrweb102) Nemesis ESMTP Service ready<EOL>
+17.09.05 13:53:11 >> EHLO aa-PC<EOL>
+17.09.05 13:53:11 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.05 13:53:11 ** Authenticating as beuthportal@web.de
+17.09.05 13:53:11 >> STARTTLS<EOL>
+17.09.05 13:53:11 << 220 OK<EOL>
+17.09.05 13:53:11 >> EHLO aa-PC<EOL>
+17.09.05 13:53:11 << 250-web.de Hello aa-PC [178.12.57.177]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.05 13:53:11 >> AUTH LOGIN<EOL>
+17.09.05 13:53:11 << 334 VXNlcm5hbWU6<EOL>
+17.09.05 13:53:11 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.05 13:53:11 << 334 UGFzc3dvcmQ6<EOL>
+17.09.05 13:53:11 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.05 13:53:11 << 235 Authentication succeeded<EOL>
+17.09.05 13:53:11 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.05 13:53:11 << 250 Requested mail action okay, completed<EOL>
+17.09.05 13:53:11 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.05 13:53:11 << 250 OK<EOL>
+17.09.05 13:53:11 >> DATA<EOL>
+17.09.05 13:53:11 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.05 13:53:11 >> Date: Tue, 5 Sep 2017 13:53:11 +0200<EOL>
+17.09.05 13:53:11 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.05 13:53:11 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.09.05 13:53:11 >> MIME-Version: 1.0<EOL>
+17.09.05 13:53:11 >> From: Beuth-Portal <beuthportal@web.de><EOL>
+17.09.05 13:53:11 >> <EOL>
+17.09.05 13:53:11 >> Hallo Alexander,<EOL>
+17.09.05 13:53:11 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.09.05 13:53:11 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.09.05 13:53:11 >> http://localhost/register/passwortzuruecksetzen.php?userid=3&code=3419692f65c5ae0fd1521e5efaed97de<EOL>
+17.09.05 13:53:11 >> <EOL>
+17.09.05 13:53:11 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.09.05 13:53:11 >> <EOL>
+17.09.05 13:53:11 >> Viele Gruesse,<EOL>
+17.09.05 13:53:11 >> dein Studentenportal-Team<EOL>
+17.09.05 13:53:11 >> .<EOL>
+17.09.05 13:53:11 << 250 Requested mail action okay, completed: id=0LnjBT-1dGgkU47qB-00huFG<EOL>
+17.09.05 13:53:11 >> QUIT<EOL>
+17.09.05 13:53:11 << 221 web.de Service closing transmission channel<EOL>
+17.09.05 13:53:11 ** Disconnecting from smtp.web.de:587
+17.09.05 13:53:11 ** Disconnected.
+17.09.05 13:53:11 ** Disconnected.

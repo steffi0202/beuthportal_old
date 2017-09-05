@@ -4,7 +4,7 @@ session_start();
 $pdo = new PDO('mysql:host=localhost;dbname=beuthportal', 'root', '');
 require_once("inc/functions.inc.php");
 
-include("templates/header.inc.php");
+include("../templates/header.inc.php");
 ?>
  <div class="container small-container-330" style="max-width:400px; align-items: center; justify-content: center;">
 	<h2 >Passwort vergessen</h2>
@@ -31,7 +31,7 @@ if(isset($_GET['send']) ) {
 
 			$empfaenger = $user['email'];
 			$betreff = "Neues Passwort fuer deinen Beuth-Portal-Account"; 
-			$from = "From: Studentenportal der Beuth Hochschule Berlin <beuthportal@gmail.com>"; 
+			$from = "From: Studentenportal der Beuth Hochschule Berlin <beuthportal@web.de>"; 
 			$url_passwortcode = getSiteURL().'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode; 
 			$text = 'Hallo '.$user['vorname'].',
 fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
@@ -47,11 +47,11 @@ dein Studentenportal-Team';
 			//mail($empfaenger, $betreff, $text);
 			
 			$headers =  'MIME-Version: 1.0' . "\r\n"; 
-			$headers .= 'From: Beuth-Portal <beuthportal@gmail.com>' . "\r\n";
+			$headers .= 'From: Beuth-Portal <beuthportal@web.de>' . "\r\n";
 			//$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
-			mail( $to, $subject, $message_body, $headers );
+			mail( $empfaenger, $betreff, $text, $headers );
 
-			echo "Ein Link zum Zurücksetzen deines Passworts wurde an <span>$empfaenger</span> gesendet.";
+			echo "<font color='#008000'>Ein Link zum Zurücksetzen deines Passworts wurde an <span>$empfaenger</span> gesendet.</font>";
 			$showForm = false;
 		}
 	}

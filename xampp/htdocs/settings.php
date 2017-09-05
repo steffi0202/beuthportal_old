@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Logout</title>
+  <title>Settings</title>
 
   <!-- Bootstrap Core CSS -->
  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -112,9 +112,16 @@ if(isset($_GET['save'])) {
 			$error_msg = "Das Passwort darf nicht leer sein.";
 		} else if(!password_verify($passwortAlt, $user['passwort'])) {
 			$error_msg = "Bitte korrektes Passwort eingeben.";
-		} else {
+		} 
+		
+		else if (!preg_match('/[A-Z]/', $passwortNeu) OR !preg_match('/[a-z]/', $passwortNeu) OR !preg_match('/[0-9]/', $passwortNeu)  OR strlen($passwortNeu) < 8) {
+			$error_msg = "Das Passwort muss mindestens 8 Zeichen lang sein und aus Zahlen, Klein- und Grossbuchstaben bestehen.";
+		}
+		
+		else {
 			$passwort_hash = password_hash($passwortNeu, PASSWORD_DEFAULT);
 
+			$updated_at = time();
 			$statement = $pdo->prepare("UPDATE users SET passwort = :passwort WHERE id = :userid");
 			$result = $statement->execute(array('passwort' => $passwort_hash, 'userid' => $user['id'] ));
 

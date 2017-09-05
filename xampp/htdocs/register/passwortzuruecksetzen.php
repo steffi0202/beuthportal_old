@@ -2,6 +2,7 @@
 session_start();
 require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
+include("../templates/header.inc.php");
 if(!isset($_GET['userid']) || !isset($_GET['code'])) {
 	error("<font color='#FF0000'><br />Leider wurde beim Aufruf dieser Website kein Code zum Zurücksetzen deines Passworts übermittelt<br /></font>");
 }
@@ -50,13 +51,14 @@ if(isset($_GET['send'])) {
 		
 		if($result) {
 			$msg = "<font color='#008000'><br />Dein Passwort wurde erfolgreich geändert.<br /><br />
-			Du kannst dich jetzt mit dem neuen Passwort anmelden.<br /></font>";
+			Du kannst dich jetzt mit dem neuen Passwort anmelden.<br /></font><br /> <br /><a href='login.php'>Zum Login</a>";
 			$showForm = false;
+			
 		}
 	}
 }
 
-include("templates/header.inc.php");
+include("../templates/header.inc.php");
 ?>
 
  <div class="container small-container-500" style="max-width:400px; align-items: center; justify-content: center;">
