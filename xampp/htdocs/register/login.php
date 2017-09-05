@@ -143,12 +143,15 @@ if(isset($error_msg) && !empty($error_msg)) {
 	  </label>
 	</div>
 	<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+	<div style="font-size:110%; font-family:Arial;">
+	<br />
 	<br />
 	<a href="passwortvergessen.php">Passwort vergessen</a>
 	<br /><br />
-	<a href="register.php">Registrieren</a>
+	<a href="register.php">Zur Registrierung</a>
 	<br /><br />
 	<a href="../index.php">Zur Startseite</a>
+	</div>
   </form>
 
 </div> <!-- /container -->
