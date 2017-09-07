@@ -81,6 +81,40 @@ $user = check_user();
 			</div>
 		</div>
 	</div>
+  <h4 style="margin-left:50px">Der zuletzt getätigte Eintrag: </h4>
+  <?php
+  //* Datenbankverbindung aufbauen (START)
+  $verbindung = mysqli_connect ("localhost", "root", "")
+  or die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
+  mysqli_select_db($verbindung, "beuthportal") or die ("Die Datenbank existiert nicht.");
+
+  $select = "SELECT * From ranking ORDER BY id DESC LIMIT 1";
+  $ergebnis = mysqli_query($verbindung, $select) or die(mysqli_error($verbindung));
+  $ausgabe = mysqli_fetch_assoc($ergebnis);
+   ?>
+  <div class="list-group" style="margin:50px;" id="lastranking">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" style="border-color:#333;">
+    <div class="d-flex w-100 justify-content-between">
+      <table width="100%">
+        <tr>
+          <td>
+            <h5 class="mb-1"><b><?php echo "".$ausgabe['Studiengang'].", "?> <?php echo "".$ausgabe['Modul']." bei "?> <?php echo "".$ausgabe['Dozent'].""?></b></h5>
+            <h5 class="mb-1"><?php echo "Zeitaufwand: ".$ausgabe['Zeitaufwand']." Stunden pro Woche"?></h5>
+          </td>
+          <td align="right">
+            <i style="background-color:#e6e6e6"><b style="background-image:url('img/stars2.png');background-repeat:no-repeat;background-position: <?php $x = $ausgabe['Sterne']*100/5;echo -100+$x.'px 0px'; ?>;"><img src="img/stars1.png"></b></i><?php echo " ".$ausgabe['Sterne'].""?>
+          </td>
+        </tr>
+      </table>
+
+
+      </div>
+    <p class="mb-1"><b>Modul: </b><?php echo "".$ausgabe['Modul_des'].""?></p>
+    <p class="mb-1"><b>Dozent/in: </b>	<?php echo " ".$ausgabe['Dozent_des'].""?></p>
+    <small>	<?php echo "".$ausgabe['created_at']." "?></small>
+  </a>
+  </div>
+
     <?php
 	$ergebnis = 0;
 	$suchbegriff = '';
@@ -107,9 +141,8 @@ $user = check_user();
               <h5 class="mb-1"><b><?php echo "".$ausgabe['Studiengang'].", "?> <?php echo "".$ausgabe['Modul']." bei "?> <?php echo "".$ausgabe['Dozent'].""?></b></h5>
       				<h5 class="mb-1"><?php echo "Zeitaufwand: ".$ausgabe['Zeitaufwand']." Stunden pro Woche"?></h5>
             </td>
-          <!--<td align="right"><small><p  class="text-right"><?php echo "".$ausgabe['Sterne']." von 5 Sternen"?></p></small></td>-->
-            <td align="right">
-              <i style="background-color:#e6e6e6"><b style="background-image:url('img/stars2.png');background-repeat:no-repeat;background-position: <?php $x = $ausgabe['Sterne']*100/5;echo -100+$x.'px 0px'; ?>;"><img src="img/stars1.png"></b></i>
+              <td align="right">
+              <i style="background-color:#e6e6e6"><b style="background-image:url('img/stars2.png');background-repeat:no-repeat;background-position: <?php $x = $ausgabe['Sterne']*100/5;echo -100+$x.'px 0px'; ?>;"><img src="img/stars1.png"></b></i><?php echo " ".$ausgabe['Sterne'].""?>
             </td>
           </tr>
         </table>

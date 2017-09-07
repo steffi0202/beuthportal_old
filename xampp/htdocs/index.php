@@ -186,7 +186,7 @@ if(is_checked_in()){
                         <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
                         <h3>Mensapläne</h3>
                         <p class="text-muted">
-													<!--a href="mensa.php" -->Hier folgt evtl. der Mensa-Content</a>
+													<!--a href="mensa.php" -->Du hast Zugriff auf den aktuellen Speiseplan in der Mensa</a>
 												</p>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ if(is_checked_in()){
                     <div class="service-box">
                         <i class="fa fa-4x fa-comments text-primary sr-icons"></i>
                         <h3>Forum</h3>
-                        <p class="text-muted">Hier folgt evtl. das Forum</p>
+                        <p class="text-muted">Tausche dich im Forum mit anderen Studenten aus</p>
                     </div>
                 </div>
             </div>
