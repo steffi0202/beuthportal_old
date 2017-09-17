@@ -1,25 +1,15 @@
 <?php
 
-class DatabaseTest extends PHPUnit_Extensions_Database_TestCase
+class databaseTest extends PHPUnit_Framework_TestCase
 {
-     
-    static private $pdo = null;
-    private $conn = null;
-     
-    public function getConnection()
-    {
+     //TESTET DIE DATENBANKVERBINDUNG UND OB EINTRÄGE VORHANDEN SIND
+	 
+$db_host = 'localhost';
+$db_name = 'beuthportal';
+$db_user = 'root';
+$db_password = '';
+$pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
+
  
-        if ($this->conn === null)
-        {
-            if (self::$pdo == null)
-            {
-                self::$pdo = Database::connect();
-            }
- 
-            $this->conn = $this->createDefaultDBConnection(self::$pdo, "person");
-        }
-         
-        return $this->conn;
-         
-    }
+$this->assertNotNull($pdo);
 }
