@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit 
-	backupStaticAttributes="false"
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"      
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+		 
+		 backupStaticAttributes="false"
 
      cacheTokens="false"
      colors="false"
@@ -19,7 +27,7 @@
      testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
 
      strict="false"
-     verbose="false"
+     verbose="false">
     <testsuites>
         <testsuite name="Test">
             <directory>/xampp/htdocs/tests</directory>
