@@ -17,9 +17,10 @@ class FunctionsTest extends PHPUnit_Framework_TestCase
 				$str = md5(uniqid('your_secret_string', true));
 			}
 			return $str;
+			$this->assertNotNull($str);
+			$this->assertNotEquals('your_secret_string', $str);
 		}
-		$this->assertNotNull($str);
-		$this->assertNotEquals('your_secret_string', $str);
+		
 	}
 			
 			
