@@ -18,8 +18,8 @@
      verbose="false">
     <testsuites>
         <testsuite name="Test">
-            <directory>/xampp/htdocs/tests</directory>
-			<file>/xampp/htdocs/tests/pushpoptest.php</file>
+            <directory>xampp/htdocs/tests</directory>
+			<file>xampp/htdocs/tests/pushpoptest.php</file>
         </testsuite>
     </testsuites>
     <php>
