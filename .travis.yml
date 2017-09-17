@@ -2,6 +2,10 @@
 
 # Tell Travis CI we're using PHP
 language: php
+
+before_install:
+- composer self-update
+- composer clear-cache
   
 # Script, failures in this section will result in build status 'failed'
-script: "phpunit -c phpunit.xml"
+script: "phpunit --configuration phpunit.xml"
