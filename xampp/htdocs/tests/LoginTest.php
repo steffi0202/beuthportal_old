@@ -3,7 +3,7 @@
 class LoginTest extends PHPUnit_Framework_TestCase
 {
      //TESTET DIE LOGIN-FUNKTIONEN
-	 public function testLogin()
+	 public function testStringLength()
 	{
 		//Test der Stringlänge-Funktion
 		$binary_string = 'Test';
@@ -16,7 +16,8 @@ class LoginTest extends PHPUnit_Framework_TestCase
 		$this->assertNotNull($binary_string);
 		$this->assertEquals(4, strlen($binary_string));
 		
-		
+	}
+	public function testSubString{
 		
 		//TEst der Substring-Funktion
 		$start = 1;
@@ -30,7 +31,7 @@ class LoginTest extends PHPUnit_Framework_TestCase
 		$this->assertNotNull($binary_string);
 		$this->assertEquals('es', substr($binary_string, $start, $length));
 		
-		
+	}
 		
 		
 		
