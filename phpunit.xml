@@ -10,6 +10,7 @@
     <testsuites>
         <testsuite name="Unit">
             <directory suffix="pushpoptest.php"></directory>
+			<file>pushpoptest.php</file>
         </testsuite>
     </testsuites>
     <php>
