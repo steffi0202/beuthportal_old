@@ -21,6 +21,7 @@
             <directory>xampp/htdocs/tests</directory>
 			<file>xampp/htdocs/tests/pushpoptest.php</file>
 			<file>xampp/htdocs/tests/HelloWorldTest.php</file>
+			<file>xampp/htdocs/tests/databaseTest.php</file>
         </testsuite>
     </testsuites>
     <php>
