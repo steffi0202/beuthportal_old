@@ -8,8 +8,8 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Unit">
-            <directory suffix="pushpoptest.php"></directory>
+        <testsuite name="Test">
+            <directory>/xampp/htdocs/tests</directory>
 			<file>pushpoptest.php</file>
         </testsuite>
     </testsuites>
