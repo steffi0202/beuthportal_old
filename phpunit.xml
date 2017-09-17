@@ -9,8 +9,8 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Test">
-            <directory>/xampp/htdocs/tests</directory>
-			<file>pushpoptest.php</file>
+           
+			<file>/xampp/htdocs/testspushpoptest.php</file>
         </testsuite>
     </testsuites>
     <php>
