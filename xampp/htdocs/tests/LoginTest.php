@@ -17,7 +17,7 @@ class LoginTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals(4, strlen($binary_string));
 		
 	}
-	public function testSubString{
+	public function testSubString(){
 		
 		//TEst der Substring-Funktion
 		$start = 1;
