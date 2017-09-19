@@ -69,7 +69,7 @@ $user = check_user();
                       var selectBox = document.getElementById("Studiengang");
                       var selectedValue = selectBox.options[selectBox.selectedIndex].value;
                       //alert(selectedValue);
-                      if(selectedValue == Wirtschaftsinformatik - Online) {
+                      if(selectedValue == 'Wirtschaftsinformatik - Online') {
                         document.getElementById('v1').style.display='block';
                         document.getElementById('v2').style.display='none';
                       } else {
@@ -78,10 +78,8 @@ $user = check_user();
                       }
 
                      }
-
-
-
                     </script>
+
                     <form method="post" action="?bewertung">
                     <div class="form-group">
                         <label for="Studiengang">Wähle deinen Studiengang:</label>
@@ -91,7 +89,7 @@ $user = check_user();
                                  <option value="Medieninformatik - Online">Medieninformatik - Online</option>
                      </select>
                      </div>
-                     <div id="v1" style="display:none;" class="form-group">
+                     <div id="v1" style="display:none;"  class="form-group">
                         <label for="Modul">Wähle dein Modul:</label>
                             <select class="form-control" name="Modul" >
                                  <option>Einführung in die Betriebswirtschaftslehre 1</option>
