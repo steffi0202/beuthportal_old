@@ -48,8 +48,8 @@ $user = check_user();
                         <h2 class="section-heading">Besser-Esser</h2>
                         <hr class="light">
                         <p class="text-faded">Hier erfahrt ihr, was euer Mensa-Team in den kommenden Wochen auf den Tisch zaubert.</p>
-                        <a class="btn btn-primary btn-xl page-scroll" href="Menue1.pdf" target="_blank" rel="noopener">Menue 17.07.-21.07.2017</a>
-                        <a class="btn btn-primary btn-xl page-scroll" href="Menue2.pdf" target="_blank" rel="noopener">Menue 24.07.-28.07.2017</a>
+                        <a class="btn btn-primary btn-xl page-scroll" href="Menue1.pdf" target="_blank" rel="noopener">Menue 09.10.-13.10.2017</a>
+                        <a class="btn btn-primary btn-xl page-scroll" href="Menue2.pdf" target="_blank" rel="noopener">Menue 16.10.-20.10.2017</a>
                     </div>
                 </div>
             </div>
