@@ -2452,3 +2452,195 @@
 17.09.05 15:07:16 ** Disconnecting from smtp.web.de:587
 17.09.05 15:07:16 ** Disconnected.
 17.09.05 15:07:16 ** Disconnected.
+17.09.21 15:46:01 ** --- MESSAGE BEGIN ---
+17.09.21 15:46:01 ** To: s49317@beuth-hochschule.de
+17.09.21 15:46:01 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.09.21 15:46:01 ** MIME-Version: 1.0
+17.09.21 15:46:01 ** From: Beuth-Portal <beuthportal@web.de>
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 				Hallo Alexander,
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=8d6dc35e506fc23349dd10ee68dabb64&active=0
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 				Viele Gruesse,
+17.09.21 15:46:01 ** 
+17.09.21 15:46:01 ** 				dein Studentenportal-Team
+17.09.21 15:46:01 ** --- MESSAGE END ---
+17.09.21 15:46:03 ** Connecting to smtp.web.de:587
+17.09.21 15:46:04 ** Connected.
+17.09.21 15:46:04 << 220 web.de (mrweb101) Nemesis ESMTP Service ready<EOL>
+17.09.21 15:46:04 >> EHLO aa-PC<EOL>
+17.09.21 15:46:04 << 250-web.de Hello aa-PC [178.12.57.20]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.21 15:46:04 ** Authenticating as beuthportal@web.de
+17.09.21 15:46:04 >> STARTTLS<EOL>
+17.09.21 15:46:04 << 220 OK<EOL>
+17.09.21 15:46:04 >> EHLO aa-PC<EOL>
+17.09.21 15:46:04 << 250-web.de Hello aa-PC [178.12.57.20]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.21 15:46:04 >> AUTH LOGIN<EOL>
+17.09.21 15:46:04 << 334 VXNlcm5hbWU6<EOL>
+17.09.21 15:46:04 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.21 15:46:04 << 334 UGFzc3dvcmQ6<EOL>
+17.09.21 15:46:04 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.21 15:46:04 << 235 Authentication succeeded<EOL>
+17.09.21 15:46:04 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.21 15:46:04 << 250 Requested mail action okay, completed<EOL>
+17.09.21 15:46:04 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.21 15:46:05 << 250 OK<EOL>
+17.09.21 15:46:05 >> DATA<EOL>
+17.09.21 15:46:05 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.21 15:46:05 >> Date: Thu, 21 Sep 2017 15:46:05 +0200<EOL>
+17.09.21 15:46:05 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.21 15:46:05 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.09.21 15:46:05 >> MIME-Version: 1.0<EOL>
+17.09.21 15:46:05 >> From: Beuth-Portal <beuthportal@web.de><EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> 				Hallo Alexander,<EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=8d6dc35e506fc23349dd10ee68dabb64&active=0<EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> 				Viele Gruesse,<EOL>
+17.09.21 15:46:05 >> <EOL>
+17.09.21 15:46:05 >> 				dein Studentenportal-Team<EOL>
+17.09.21 15:46:05 >> .<EOL>
+17.09.21 15:46:05 << 250 Requested mail action okay, completed: id=0MXYeQ-1drACq3IYA-00WW7D<EOL>
+17.09.21 15:46:05 >> QUIT<EOL>
+17.09.21 15:46:05 << 221 web.de Service closing transmission channel<EOL>
+17.09.21 15:46:05 ** Disconnecting from smtp.web.de:587
+17.09.21 15:46:05 ** Disconnected.
+17.09.21 15:46:05 ** Disconnected.
+17.09.21 15:51:58 ** --- MESSAGE BEGIN ---
+17.09.21 15:51:58 ** To: s49317@beuth-hochschule.de
+17.09.21 15:51:58 ** Subject: Neues Passwort fuer deinen Beuth-Portal-Account
+17.09.21 15:51:58 ** MIME-Version: 1.0
+17.09.21 15:51:58 ** From: Beuth-Portal <beuthportal@web.de>
+17.09.21 15:51:58 ** 
+17.09.21 15:51:58 ** Hallo Alexander,
+17.09.21 15:51:58 ** fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. 
+17.09.21 15:51:58 ** Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:
+17.09.21 15:51:58 ** http://localhost/register/passwortzuruecksetzen.php?userid=6&code=65164ee31dcdcb1a5f8b41686483f1f2
+17.09.21 15:51:58 ** 
+17.09.21 15:51:58 ** Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.
+17.09.21 15:51:58 ** 
+17.09.21 15:51:58 ** Viele Gruesse,
+17.09.21 15:51:58 ** dein Studentenportal-Team
+17.09.21 15:51:58 ** --- MESSAGE END ---
+17.09.21 15:51:59 ** Connecting to smtp.web.de:587
+17.09.21 15:51:59 ** Connected.
+17.09.21 15:51:59 << 220 web.de (mrweb101) Nemesis ESMTP Service ready<EOL>
+17.09.21 15:51:59 >> EHLO aa-PC<EOL>
+17.09.21 15:51:59 << 250-web.de Hello aa-PC [178.12.57.20]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.21 15:51:59 ** Authenticating as beuthportal@web.de
+17.09.21 15:51:59 >> STARTTLS<EOL>
+17.09.21 15:51:59 << 220 OK<EOL>
+17.09.21 15:52:00 >> EHLO aa-PC<EOL>
+17.09.21 15:52:00 << 250-web.de Hello aa-PC [178.12.57.20]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.21 15:52:00 >> AUTH LOGIN<EOL>
+17.09.21 15:52:00 << 334 VXNlcm5hbWU6<EOL>
+17.09.21 15:52:00 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.21 15:52:00 << 334 UGFzc3dvcmQ6<EOL>
+17.09.21 15:52:00 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.21 15:52:00 << 235 Authentication succeeded<EOL>
+17.09.21 15:52:00 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.21 15:52:00 << 250 Requested mail action okay, completed<EOL>
+17.09.21 15:52:00 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.21 15:52:00 << 250 OK<EOL>
+17.09.21 15:52:00 >> DATA<EOL>
+17.09.21 15:52:00 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.21 15:52:00 >> Date: Thu, 21 Sep 2017 15:52:00 +0200<EOL>
+17.09.21 15:52:00 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.21 15:52:00 >> Subject: Neues Passwort fuer deinen Beuth-Portal-Account<EOL>
+17.09.21 15:52:00 >> MIME-Version: 1.0<EOL>
+17.09.21 15:52:00 >> From: Beuth-Portal <beuthportal@web.de><EOL>
+17.09.21 15:52:00 >> <EOL>
+17.09.21 15:52:00 >> Hallo Alexander,<EOL>
+17.09.21 15:52:00 >> fuer deinen Account des Studentenportals der Beuth Hochschule Berlin wurde nach einem neuen Passwort gefragt. <EOL>
+17.09.21 15:52:00 >> Um ein neues Passwort zu vergeben, rufe innerhalb der naechsten 24 Stunden den folgenden Link auf:<EOL>
+17.09.21 15:52:00 >> http://localhost/register/passwortzuruecksetzen.php?userid=6&code=65164ee31dcdcb1a5f8b41686483f1f2<EOL>
+17.09.21 15:52:00 >> <EOL>
+17.09.21 15:52:00 >> Sollte dir dein Passwort wieder eingefallen sein oder hast du dieses nicht angefordert, ignoriere diese E-Mail einfach.<EOL>
+17.09.21 15:52:00 >> <EOL>
+17.09.21 15:52:00 >> Viele Gruesse,<EOL>
+17.09.21 15:52:00 >> dein Studentenportal-Team<EOL>
+17.09.21 15:52:00 >> .<EOL>
+17.09.21 15:52:00 << 250 Requested mail action okay, completed: id=0MduAD-1dkob51G8r-00PgfS<EOL>
+17.09.21 15:52:00 >> QUIT<EOL>
+17.09.21 15:52:00 << 221 web.de Service closing transmission channel<EOL>
+17.09.21 15:52:00 ** Disconnecting from smtp.web.de:587
+17.09.21 15:52:00 ** Disconnected.
+17.09.21 15:52:00 ** Disconnected.
+17.09.21 16:28:02 ** --- MESSAGE BEGIN ---
+17.09.21 16:28:02 ** To: s49317@beuth-hochschule.de
+17.09.21 16:28:02 ** Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)
+17.09.21 16:28:02 ** MIME-Version: 1.0
+17.09.21 16:28:02 ** From: Beuth-Portal <beuthportal@web.de>
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 				Hallo Alexander,
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=f73b76ce8949fe29bf2a537cfa420e8f&active=0
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 				Viele Gruesse,
+17.09.21 16:28:02 ** 
+17.09.21 16:28:02 ** 				dein Studentenportal-Team
+17.09.21 16:28:02 ** --- MESSAGE END ---
+17.09.21 16:28:03 ** Connecting to smtp.web.de:587
+17.09.21 16:28:04 ** Connected.
+17.09.21 16:28:04 << 220 web.de (mrweb103) Nemesis ESMTP Service ready<EOL>
+17.09.21 16:28:04 >> EHLO aa-PC<EOL>
+17.09.21 16:28:04 << 250-web.de Hello aa-PC [178.12.57.20]<EOL>250-AUTH LOGIN PLAIN<EOL>250-SIZE 141557760<EOL>250 STARTTLS<EOL>
+17.09.21 16:28:04 ** Authenticating as beuthportal@web.de
+17.09.21 16:28:04 >> STARTTLS<EOL>
+17.09.21 16:28:04 << 220 OK<EOL>
+17.09.21 16:28:04 >> EHLO aa-PC<EOL>
+17.09.21 16:28:04 << 250-web.de Hello aa-PC [178.12.57.20]<EOL>250-AUTH LOGIN PLAIN<EOL>250 SIZE 141557760<EOL>
+17.09.21 16:28:04 >> AUTH LOGIN<EOL>
+17.09.21 16:28:04 << 334 VXNlcm5hbWU6<EOL>
+17.09.21 16:28:04 >> YmV1dGhwb3J0YWxAd2ViLmRl<EOL>
+17.09.21 16:28:04 << 334 UGFzc3dvcmQ6<EOL>
+17.09.21 16:28:04 >> Mzg5NXU4amRzamZzYWpma2xKREZKRkpLTA==<EOL>
+17.09.21 16:28:04 << 235 Authentication succeeded<EOL>
+17.09.21 16:28:04 >> MAIL FROM: <beuthportal@web.de><EOL>
+17.09.21 16:28:04 << 250 Requested mail action okay, completed<EOL>
+17.09.21 16:28:04 >> RCPT TO: <s49317@beuth-hochschule.de><EOL>
+17.09.21 16:28:05 << 250 OK<EOL>
+17.09.21 16:28:05 >> DATA<EOL>
+17.09.21 16:28:05 << 354 Start mail input; end with <CRLF>.<CRLF><EOL>
+17.09.21 16:28:05 >> Date: Thu, 21 Sep 2017 16:28:05 +0200<EOL>
+17.09.21 16:28:05 >> To: s49317@beuth-hochschule.de<EOL>
+17.09.21 16:28:05 >> Subject: Bestaetigung deiner Registrierung (Studentenportal der Beuth Hochschule Berlin)<EOL>
+17.09.21 16:28:05 >> MIME-Version: 1.0<EOL>
+17.09.21 16:28:05 >> From: Beuth-Portal <beuthportal@web.de><EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> 				Hallo Alexander,<EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> 				danke fuer deine Registrierung beim Studentenportal der Beuth Hochschule Berlin!<EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> 				Mit einem Klick auf den folgenden Link bestaetigst du deine Registrierung:<EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> 				http://localhost/register/verify.php?email=s49317@beuth-hochschule.de&hash=f73b76ce8949fe29bf2a537cfa420e8f&active=0<EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> 				Viele Gruesse,<EOL>
+17.09.21 16:28:05 >> <EOL>
+17.09.21 16:28:05 >> 				dein Studentenportal-Team<EOL>
+17.09.21 16:28:05 >> .<EOL>
+17.09.21 16:28:05 << 250 Requested mail action okay, completed: id=0LjJH1-1dOAY93i87-00dZsJ<EOL>
+17.09.21 16:28:05 >> QUIT<EOL>
+17.09.21 16:28:05 << 221 web.de Service closing transmission channel<EOL>
+17.09.21 16:28:05 ** Disconnected.
+17.09.21 16:28:05 ** Disconnected.
+17.09.21 16:28:05 ** Disconnected.

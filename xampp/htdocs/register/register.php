@@ -206,7 +206,7 @@ if($showFormular) {
 </div>
 
 <div class="form-group">
-<label for="inputEmail">E-Mail:</label>
+<label for="inputEmail">E-Mail (@beuth-hochschule.de):</label>
 <input type="email" id="inputEmail" size="40" maxlength="250" name="email" class="form-control" required>
 </div>
 
